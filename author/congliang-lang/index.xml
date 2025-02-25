@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Congliang Lang | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/author/congliang-lang/</link>
+      <atom:link href="https://fiction-zju.github.io/author/congliang-lang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Congliang Lang</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 26 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Congliang Lang</title>
+      <link>https://fiction-zju.github.io/author/congliang-lang/</link>
+    </image>
+    
+    <item>
+      <title>Fast-USYN: Fast Synthesis from Unitary Matrices to High-Quality Quantum Circuits</title>
+      <link>https://fiction-zju.github.io/publication/tan-jos2025/</link>
+      <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/tan-jos2025/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>QuFEM: Fast and Accurate Quantum Readout Calibration Using the Finite Element Method</title>
+      <link>https://fiction-zju.github.io/publication/tan-asplos2024/</link>
+      <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/tan-asplos2024/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

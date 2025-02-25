@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tobias Winkler | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/author/tobias-winkler/</link>
+      <atom:link href="https://fiction-zju.github.io/author/tobias-winkler/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tobias Winkler</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 15 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Tobias Winkler</title>
+      <link>https://fiction-zju.github.io/author/tobias-winkler/</link>
+    </image>
+    
+    <item>
+      <title>Exact Probabilistic Inference Using Generating Functions</title>
+      <link>https://fiction-zju.github.io/publication/klinkenberg-lafi2023/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/klinkenberg-lafi2023/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Does a Program Yield the Right Distribution?</title>
+      <link>https://fiction-zju.github.io/publication/chen-cav2022/</link>
+      <pubDate>Sun, 07 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/chen-cav2022/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

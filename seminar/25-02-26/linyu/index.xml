@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coinduction All the Way Up | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/seminar/25-02-26/linyu/</link>
+      <atom:link href="https://fiction-zju.github.io/seminar/25-02-26/linyu/index.xml" rel="self" type="application/rss+xml" />
+    <description>Coinduction All the Way Up</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 26 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Coinduction All the Way Up</title>
+      <link>https://fiction-zju.github.io/seminar/25-02-26/linyu/</link>
+    </image>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stochastic systems | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/tag/stochastic-systems/</link>
+      <atom:link href="https://fiction-zju.github.io/tag/stochastic-systems/index.xml" rel="self" type="application/rss+xml" />
+    <description>stochastic systems</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 14 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>stochastic systems</title>
+      <link>https://fiction-zju.github.io/tag/stochastic-systems/</link>
+    </image>
+    
+    <item>
+      <title>Unbounded-Time Safety Verification of Stochastic Differential Dynamics</title>
+      <link>https://fiction-zju.github.io/publication/feng-cav2020/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/feng-cav2020/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unbounded-Time Safety Verification of Stochastic Differential Dynamics</title>
+      <link>https://fiction-zju.github.io/pulp/20-06-04-pulp-sdes/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/pulp/20-06-04-pulp-sdes/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;While writing my book [Stochastic Processes] I had an argument with Feller. He asserted that everyone said &amp;lsquo;random variable&amp;rsquo; and I asserted that everyone said &amp;lsquo;chance variable&amp;rsquo;. We obviously had to use the same name in our books, so we decided the issue by a stochastic procedure. That is, we tossed for it and he won.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ndash; &lt;cite&gt;Joseph L. Doob, 1910 &amp;ndash; 2004&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A &lt;a href=&#34;https://mp.weixin.qq.com/s/pdGlYIHiywD7sdkEDsG9AQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blog post&lt;/a&gt; (in Chinese) for &lt;a href=&#34;https://fiction-zju.github.io/publication/feng-cav2020/&#34;&gt;this publication&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

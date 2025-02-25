@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BWoS: Formally Verified Block-based Work Stealing for Parallel Processing | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/seminar/24-07-21/xiaqing/</link>
+      <atom:link href="https://fiction-zju.github.io/seminar/24-07-21/xiaqing/index.xml" rel="self" type="application/rss+xml" />
+    <description>BWoS: Formally Verified Block-based Work Stealing for Parallel Processing</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 21 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>BWoS: Formally Verified Block-based Work Stealing for Parallel Processing</title>
+      <link>https://fiction-zju.github.io/seminar/24-07-21/xiaqing/</link>
+    </image>
+    
+  </channel>
+</rss>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Strong Invariants Are Hard: On the Hardness of Strongest Polynomial Invariants for (Probabilistic) Programs | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/seminar/24-07-21/sergei/</link>
+      <atom:link href="https://fiction-zju.github.io/seminar/24-07-21/sergei/index.xml" rel="self" type="application/rss+xml" />
+    <description>Strong Invariants Are Hard: On the Hardness of Strongest Polynomial Invariants for (Probabilistic) Programs</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 21 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Strong Invariants Are Hard: On the Hardness of Strongest Polynomial Invariants for (Probabilistic) Programs</title>
+      <link>https://fiction-zju.github.io/seminar/24-07-21/sergei/</link>
+    </image>
+    
+  </channel>
+</rss>

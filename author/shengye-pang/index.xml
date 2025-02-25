@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shengye Pang | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/author/shengye-pang/</link>
+      <atom:link href="https://fiction-zju.github.io/author/shengye-pang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Shengye Pang</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 28 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Shengye Pang</title>
+      <link>https://fiction-zju.github.io/author/shengye-pang/</link>
+    </image>
+    
+    <item>
+      <title>UniGM: Unifying Multiple Pre-trained Graph Models via Adaptive Knowledge Aggregation</title>
+      <link>https://fiction-zju.github.io/publication/chen-acmmm2024/</link>
+      <pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/chen-acmmm2024/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Privacy Policy Text Compliance Reasoning Framework with Large Language Models for Healthcare Services</title>
+      <link>https://fiction-zju.github.io/publication/chen-tst2024/</link>
+      <pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/chen-tst2024/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

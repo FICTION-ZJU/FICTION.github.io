@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>games | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/tag/games/</link>
+      <atom:link href="https://fiction-zju.github.io/tag/games/index.xml" rel="self" type="application/rss+xml" />
+    <description>games</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 20 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>games</title>
+      <link>https://fiction-zju.github.io/tag/games/</link>
+    </image>
+    
+    <item>
+      <title>Indecision and Delays are the Parents of Failure</title>
+      <link>https://fiction-zju.github.io/publication/chen-acin2021/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/chen-acin2021/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s to Come is Still Unsure</title>
+      <link>https://fiction-zju.github.io/publication/chen-atva2018/</link>
+      <pubDate>Sun, 30 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/chen-atva2018/</guid>
+      <description>&lt;!-- ![Distinguished Paper Award @ ATVA 2018](/files/DPA-ATVA18.png &#34;Distinguished Paper Award @ ATVA 2018&#34;)
+![Distinguished Paper Award @ ATVA 2018](/files/DPA-ATVA18-photo.jpeg &#34;Distinguished Paper Award @ ATVA 2018&#34;) --&gt;
+&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

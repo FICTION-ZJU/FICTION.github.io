@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sensitivity | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/tag/sensitivity/</link>
+      <atom:link href="https://fiction-zju.github.io/tag/sensitivity/index.xml" rel="self" type="application/rss+xml" />
+    <description>sensitivity</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 03 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>sensitivity</title>
+      <link>https://fiction-zju.github.io/tag/sensitivity/</link>
+    </image>
+    
+    <item>
+      <title>Safe Over- and Under-Approximation of Reachable Sets for Delay Differential Equations</title>
+      <link>https://fiction-zju.github.io/publication/xue-formats2017/</link>
+      <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/xue-formats2017/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Validated Simulation-Based Verification of Delayed Differential Dynamics</title>
+      <link>https://fiction-zju.github.io/publication/chen-fm2016/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/chen-fm2016/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

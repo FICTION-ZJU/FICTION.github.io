@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FICTION | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/tag/fiction/</link>
+      <atom:link href="https://fiction-zju.github.io/tag/fiction/index.xml" rel="self" type="application/rss+xml" />
+    <description>FICTION</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>FICTION</title>
+      <link>https://fiction-zju.github.io/tag/fiction/</link>
+    </image>
+    
+    <item>
+      <title>FICTION Website Is Online</title>
+      <link>https://fiction-zju.github.io/news/22-11-27-fiction-online/</link>
+      <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/news/22-11-27-fiction-online/</guid>
+      <description>&lt;p&gt;We have just launched this website for our FICTION research group at ZJU.&lt;/p&gt;
+&lt;p&gt;The FICTION website is published by &lt;a href=&#34;https://wowchemy.com/?utm_campaign=poweredby&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt;; see &lt;a href=&#34;https://www.jameswright.xyz/post/20200409/deploy_wowchemy_to_githubio/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;James Wright&amp;rsquo;s post&lt;/a&gt; on automating the deployment. The design is inspired by &lt;a href=&#34;http://geneticlogiclab.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Genetic Logic Lab&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

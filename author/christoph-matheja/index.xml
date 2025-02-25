@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Christoph Matheja | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/author/christoph-matheja/</link>
+      <atom:link href="https://fiction-zju.github.io/author/christoph-matheja/index.xml" rel="self" type="application/rss+xml" />
+    <description>Christoph Matheja</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 20 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Christoph Matheja</title>
+      <link>https://fiction-zju.github.io/author/christoph-matheja/</link>
+    </image>
+    
+    <item>
+      <title>Probabilistic Program Verification via Inductive Synthesis of Inductive Invariants</title>
+      <link>https://fiction-zju.github.io/publication/batz-cegis2023/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/batz-cegis2023/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Latticed $k$-Induction with an Application to Probabilistic Programs</title>
+      <link>https://fiction-zju.github.io/publication/batz-cav2021/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/batz-cav2021/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

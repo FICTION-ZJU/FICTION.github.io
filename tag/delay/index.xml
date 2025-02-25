@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>delay | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/tag/delay/</link>
+      <atom:link href="https://fiction-zju.github.io/tag/delay/index.xml" rel="self" type="application/rss+xml" />
+    <description>delay</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 20 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>delay</title>
+      <link>https://fiction-zju.github.io/tag/delay/</link>
+    </image>
+    
+    <item>
+      <title>Indecision and Delays are the Parents of Failure</title>
+      <link>https://fiction-zju.github.io/publication/chen-acin2021/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/chen-acin2021/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Taming Delays in Dynamical Systems</title>
+      <link>https://fiction-zju.github.io/publication/feng-cav2019/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/feng-cav2019/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Verification and Synthesis of Time-Delayed Dynamical Systems</title>
+      <link>https://fiction-zju.github.io/publication/chen-thesis2019/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/chen-thesis2019/</guid>
+      <description>&lt;!-- ![CAS-President Special Award](/files/CAS-President-SA.png &#34;CAS-President Special Award&#34;) --&gt;
+&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s to Come is Still Unsure</title>
+      <link>https://fiction-zju.github.io/publication/chen-atva2018/</link>
+      <pubDate>Sun, 30 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/chen-atva2018/</guid>
+      <description>&lt;!-- ![Distinguished Paper Award @ ATVA 2018](/files/DPA-ATVA18.png &#34;Distinguished Paper Award @ ATVA 2018&#34;)
+![Distinguished Paper Award @ ATVA 2018](/files/DPA-ATVA18-photo.jpeg &#34;Distinguished Paper Award @ ATVA 2018&#34;) --&gt;
+&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Safe Over- and Under-Approximation of Reachable Sets for Delay Differential Equations</title>
+      <link>https://fiction-zju.github.io/publication/xue-formats2017/</link>
+      <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/xue-formats2017/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Validated Simulation-Based Verification of Delayed Differential Dynamics</title>
+      <link>https://fiction-zju.github.io/publication/chen-fm2016/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/chen-fm2016/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

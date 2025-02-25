@@ -1,0 +1,8862 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.6.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="The Formal Verification Group (FICTION), headed by Prof. Dr. Mingshuai Chen, is a research unit embedded in the College of Computer Science and Technology at Zhejiang University, Hangzhou, China. We develop formal reasoning techniques for programs and hybrid discrete-continuous systems for ensuring the reliability and effectiveness of safety-critical software systems while pushing the limits of automation as far as possible." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://fiction-zju.github.io/publication/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.eae541781b54fa7848b1a55d8c72c5da.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+    <link rel="alternate" href="/publication/index.xml" type="application/rss+xml" title="Formal Verification Group" />
+  
+
+  
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu05dae1538d00d7195fbc8a02478b8221_4208_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu05dae1538d00d7195fbc8a02478b8221_4208_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://fiction-zju.github.io/publication/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="Formal Verification Group" />
+  <meta property="og:url" content="https://fiction-zju.github.io/publication/" />
+  <meta property="og:title" content="Publications | Formal Verification Group" />
+  <meta property="og:description" content="The Formal Verification Group (FICTION), headed by Prof. Dr. Mingshuai Chen, is a research unit embedded in the College of Computer Science and Technology at Zhejiang University, Hangzhou, China. We develop formal reasoning techniques for programs and hybrid discrete-continuous systems for ensuring the reliability and effectiveness of safety-critical software systems while pushing the limits of automation as far as possible." /><meta property="og:image" content="https://fiction-zju.github.io/media/sharing.jpeg" />
+    <meta property="twitter:image" content="https://fiction-zju.github.io/media/sharing.jpeg" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2025-02-24T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+
+
+  
+
+
+  <title>Publications | Formal Verification Group</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+      
+      
+<meta name="google-site-verification" content="egmOGCPk-Y14FThPF-zP9WbIjo-_dPe6RRYb0DWo7Xs" />
+
+      
+    
+  
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="3a079e7dad19be978a318345a7749d34" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.613040fe4f2c0f007b4dcb64404201cb.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo.svg" alt="Formal Verification Group"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo.svg" alt="Formal Verification Group"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/news"><span>News</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/seminar"><span>Seminar</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/courses"><span>Courses</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/vacancies"><span>Vacancies</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/pulp"><span>Pulp Fictions</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+<div class="universal-wrapper pt-3">
+  <h1>Publications</h1>
+
+  
+
+  
+</div>
+
+
+
+<div class="universal-wrapper">
+  <div class="row">
+    <div class="col-lg-12">
+
+      
+
+      
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+
+      <div class="form-row mb-4">
+        <div class="col-auto">
+          <input type="search" class="filter-search form-control form-control-sm" placeholder="Search..." autocapitalize="off"
+          autocomplete="off" autocorrect="off" role="textbox" spellcheck="false">
+        </div>
+        <div class="col-auto">
+          <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
+            <option value="*">Type</option>
+            
+            
+            <option value=".pubtype-1">
+              Conference paper
+            </option>
+            
+            <option value=".pubtype-2">
+              Journal article
+            </option>
+            
+            <option value=".pubtype-3">
+              Preprint
+            </option>
+            
+            <option value=".pubtype-6">
+              Book section
+            </option>
+            
+            <option value=".pubtype-7">
+              Thesis
+            </option>
+            
+          </select>
+        </div>
+        <div class="col-auto">
+          <select class="pub-filters form-control form-control-sm" data-filter-group="year">
+            <option value="*">Date</option>
+            
+            
+            
+            <option value=".year-2025">
+              2025
+            </option>
+            
+            <option value=".year-2024">
+              2024
+            </option>
+            
+            <option value=".year-2023">
+              2023
+            </option>
+            
+            <option value=".year-2022">
+              2022
+            </option>
+            
+            <option value=".year-2021">
+              2021
+            </option>
+            
+            <option value=".year-2020">
+              2020
+            </option>
+            
+            <option value=".year-2019">
+              2019
+            </option>
+            
+            <option value=".year-2018">
+              2018
+            </option>
+            
+            <option value=".year-2017">
+              2017
+            </option>
+            
+            <option value=".year-2016">
+              2016
+            </option>
+            
+            <option value=".year-2015">
+              2015
+            </option>
+            
+            
+          </select>
+        </div>
+      </div>
+
+      <div id="container-publications">
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2025">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/yutao-sun/">Yutao Sun</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/tiancheng-zhao/">Tiancheng Zhao</a></span>, <span >
+      <a href="/author/ruochen-xu/">Ruochen Xu</a></span>, <span >
+      <a href="/author/zilun-zhang/">Zilun Zhang</a></span>, <span >
+      <a href="/author/jianwei-yin/">Jianwei Yin</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    February 2025
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>arXiv</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/sun-cresecnt/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/sun-cresecnt/featured_hud55e0cd75d9816fe2b6776d9c2e1b354_1640570_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="The Self-Improvement Paradox: Can Language Models Bootstrap Reasoning Capabilities without External Scaffolding?" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/sun-cresecnt/" >The Self-Improvement Paradox: Can Language Models Bootstrap Reasoning Capabilities without External Scaffolding?</a>
+  </div>
+
+  
+  <a href="/publication/sun-cresecnt/"  class="summary-link">
+    <div class="article-style">
+      <p>Self-improving large language models (LLMs) &ndash; i.e., to improve the performance of an LLM by fine-tuning it with synthetic data generated by itself &ndash; is a promising way to advance the capabilities of LLMs while avoiding extensive supervision. Existing approaches to self-improvement often rely on external supervision signals in the form of seed data and/or assistance from third-party models. This paper presents Crescent &ndash; a simple yet effective framework for generating high-quality synthetic question-answer data in a fully autonomous manner. Crescent first elicits the LLM to generate raw questions via a bait prompt, then diversifies these questions leveraging a rejection sampling-based self-deduplication, and finally feeds the questions to the LLM and collects the corresponding answers by means of majority voting. We show that Crescent sheds light on the potential of true self-improvement with zero external supervision signals for math reasoning; in particular, Crescent-generated question-answer pairs suffice to (i) improve the reasoning capabilities of an LLM while preserving its general performance (especially in the 0-shot setting); and (ii) distil LLM knowledge to weaker models more effectively than existing methods based on seed-dataset augmentation.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2502.13441" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/sun-cresecnt/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2024">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/siwei-tan/">Siwei Tan</a></span>, <span >
+      <a href="/author/liqiang-lu/">Liqiang Lu</a></span>, <span >
+      <a href="/author/congliang-lang/">Congliang Lang</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/jianwei-yin/">Jianwei Yin</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    November 2024
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>J. Softw.</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/tan-jos2025/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/tan-jos2025/featured_hu6e49e5ab4656fc190a32a7d2c7d291bd_346736_808x455_fill_q75_h2_lanczos_center_3.webp" height="455" width="808"
+           class="article-banner" alt="Fast-USYN: Fast Synthesis from Unitary Matrices to High-Quality Quantum Circuits" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/tan-jos2025/" >Fast-USYN: Fast Synthesis from Unitary Matrices to High-Quality Quantum Circuits</a>
+  </div>
+
+  
+  <a href="/publication/tan-jos2025/"  class="summary-link">
+    <div class="article-style">
+      <p>Current quantum programs are usually represented as quantum circuits, including various quantum gates. If the program contains gates that are represented as unitary matrices, these gates need to be transformed into quantum circuits composed of basic gates. However, current synthesis methods may generate inferior circuits with thousands of gates, which leads to failure when deploying to real-world quantum hardware. Moreover, the process to minimize the number of gate takes weeks or even months when the number of qubits goes to 8. In this work, we propose Fast-USYN that enables fast synthesis from unitary to high-quality quantum circuits. We first introduce an iterative approach that approximates the target unitary by inserting circuit blocks. The minimization of gates is achieved by a look-ahead strategy with a rewarding mechanism to reduce redundant gates. In the acceleration of unitary synthesis, instead of exhaustively enumerating tremendous candidates, we construct the search space by depicting the closure of each candidate. Furthermore, to reduce the overhead of searching the optimal gate parameters, we pack the selected candidates with the target unitary into a uniform circuit so that we can quickly obtain the approximation distance by calculating its expectation on the ground state. Experiments show that Fast-USYN achieves 1.6-2.7 times gate reduction and 3.7-20.6 times speedup for 5-qubit to 8-qubit synthesis, compared to QuCT and QFAST.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/JoS2025.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/tan-jos2025/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-6 year-2024">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/shenghua-feng/">Shenghua Feng</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/author/tengshun-yang/">Tengshun Yang</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    November 2024
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>JPK&rsquo;s Festschrift</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/feng-jpk60/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/feng-jpk60/featured_hub2598d8524e25943609957b6b7a116fd_49557_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="A Unified Framework for Quantitative Analysis of Probabilistic Programs" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/feng-jpk60/" >A Unified Framework for Quantitative Analysis of Probabilistic Programs</a>
+  </div>
+
+  
+  <a href="/publication/feng-jpk60/"  class="summary-link">
+    <div class="article-style">
+      <p>Verifying probabilistic programs requires reasoning about various probabilistic behaviors, e.g., random sampling, nondeterminism, and conditioning, against multiple quantitative properties, e.g., assertion-violation probabilities, moments, and expected running times. It is desirable and theoretically significant to have a unified framework which can deal with quantitative analysis of programs with different probabilistic behaviors and properties. In this paper, we present a unified framework for the quantitative analysis of probabilistic programs, which incorporates and extends existing results on the analysis of termination, temporal properties, and expected cost. We show that these quantitative properties of a general probabilistic program can be characterized as solutions to equation systems of the corresponding Markov chain counterpart with a possibly uncountable state space. Based on such characterization, we propose sufficient conditions to establish upper and lower bounds on these quantitative properties. Moreover, we demonstrate how our approach can be adapted to address inference problems in Bayesian programming.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/JPK-60.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/feng-jpk60/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-031-75783-9_10" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2024">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/jintao-chen/">Jintao Chen</a></span>, <span >
+      <a href="/author/fan-wang/">Fan Wang</a></span>, <span >
+      <a href="/author/shengye-pang/">Shengye Pang</a></span>, <span >
+      <a href="/author/siwei-tan/">Siwei Tan</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/tiancheng-zhao/">Tiancheng Zhao</a></span>, <span >
+      <a href="/author/meng-xi/">Meng Xi</a></span>, <span >
+      <a href="/author/jianwei-yin/">Jianwei Yin</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    October 2024
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>ACM MM 2024</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/chen-acmmm2024/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/chen-acmmm2024/featured_hu38d8ef420f085b36d883a1e72018e0de_233858_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="UniGM: Unifying Multiple Pre-trained Graph Models via Adaptive Knowledge Aggregation" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/chen-acmmm2024/" >UniGM: Unifying Multiple Pre-trained Graph Models via Adaptive Knowledge Aggregation</a>
+  </div>
+
+  
+  <a href="/publication/chen-acmmm2024/"  class="summary-link">
+    <div class="article-style">
+      <p>Recent years have witnessed remarkable advances in graph representation learning using Graph Neural Networks (GNNs). To fully exploit the unlabeled graphs, researchers pre-train GNNs on large-scale graph databases and then fine-tune these pre-trained Graph Models (GMs) for better performance in downstream tasks. Because different GMs are developed with diverse pre-training tasks or datasets, they can be complementary to each other for a more complete knowledge base. Naturally, a compelling question is emerging: How can we exploit the diverse knowledge captured by different GMs simultaneously in downstream tasks? In this paper, we make one of the first attempts to exploit multiple GMs to advance the performance in the downstream tasks. More specifically, for homogeneous GMs that share the same model architecture but are obtained with different pre-training tasks or datasets, we align each layer of these GMs and then aggregate them adaptively on a per-sample basis with a tailored Recurrent Aggregation Policy Network (RAPNet). For heterogeneous GMs with different model architectures, we design an alignment module to align the output of diverse GMs and a meta-learner to decide the importance of each GM conditioned on each sample automatically before aggregating the GMs. Extensive experiments on various downstream tasks from 3 domains reveal our dominance over each single GM. Additionally, our methods (UniGM) can achieve better performance with moderate computational overhead compared to alternative approaches including ensemble and model fusion. Also, we verify that our methods are not limited to graph data but could be flexibly applied to image and text data. The code can be seen in the anonymous link: <a href="https://anonymous.4open.science/r/UniGM-DA65" target="_blank" rel="noopener">https://anonymous.4open.science/r/UniGM-DA65</a>.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/MM2024.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/chen-acmmm2024/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://anonymous.4open.science/r/UniGM-DA65" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1145/3664647.3681018" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2024">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/zhongyi-wang/">Zhongyi Wang</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="equal contribution"></i>, <span >
+      <a href="/author/linyu-yang/">Linyu Yang</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="equal contribution"></i>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/yixuan-bu/">Yixuan Bu</a></span>, <span >
+      <a href="/author/zhiyang-li/">Zhiyang Li</a></span>, <span >
+      <a href="/author/qiuye-wang/">Qiuye Wang</a></span>, <span >
+      <a href="/author/shengchao-qin/">Shengchao Qin</a></span>, <span >
+      <a href="/author/xiao-yi/">Xiao Yi</a></span>, <span >
+      <a href="/author/jianwei-yin/">Jianwei Yin</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    October 2024
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>ASE 2024</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/wang-ase2024/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/wang-ase2024/featured_hu65632fee1cb45e2af88f872453eb9f2b_168838_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Parf: Adaptive Parameter Refining for Abstract Interpretation" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/wang-ase2024/" >Parf: Adaptive Parameter Refining for Abstract Interpretation</a>
+  </div>
+
+  
+  <a href="/publication/wang-ase2024/"  class="summary-link">
+    <div class="article-style">
+      <p>Abstract interpretation is a key formal method for the static analysis of programs. The core challenge in applying abstract interpretation lies in the configuration of abstraction and analysis strategies encoded by a large number of external parameters of static analysis tools. To attain low false-positive rates (i.e., accuracy) while preserving analysis efficiency, tuning the parameters heavily relies on expert knowledge and is thus difficult to automate. In this paper, we present a fully automated framework called Parf to adaptively tune the external parameters of abstract interpretation-based static analyzers. Parf models various types of parameters as random variables subject to probability distributions over latticed parameter spaces. It incrementally refines the probability distributions based on accumulated intermediate results generated by repeatedly sampling and analyzing, thereby ultimately yielding a set of highly accurate parameter settings within a given time budget. We have implemented Parf on top of Frama-C/Eva &ndash; an off-the-shelf open-source abstract interpretation-based static analyzer for C programs &ndash; and compared it against the expert refinement strategy and Frama-C/Eva&rsquo;s official configurations over the Frama-C OSCS benchmark. Experimental results indicate that Parf achieves the lowest number of false positives on 34/37 (91.9%) program repositories with exclusively best results on 13/37 (35.1%) cases. In particular, Parf exhibits promising performance for analyzing complex, large-scale real-world programs.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/ASE2024.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/wang-ase2024/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://hub.docker.com/r/parfdocker/parf" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/ASE24.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://zenodo.org/records/14252572?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImY5ODE3NWYwLWM3ZjQtNDU2Yy04YWQ5LTZlZWYxYTdkYzgwYyIsImRhdGEiOnt9LCJyYW5kb20iOiJmNzU1ZWY3ZjkxNWM3YzgyYzJiNGVlNjNlZjgxZmYxZCJ9.qxP2OqbRu1l8URrZU4H9lzx39bKbozHo8k7G1rI583SXzJ24_vs2ZNuD6Jf5dftvU_cSGyqCQDZlxV9rwaeLSQ" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1145/3691620.3695487" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/files/Parf-ChinaSoft24.png" >
+    <i class="fas fa-certificate mr-1"></i>2nd Prize@ChinaSoft'24</a>
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2024">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/yutao-sun/">Yutao Sun</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/tiancheng-zhao/">Tiancheng Zhao</a></span>, <span >
+      <a href="/author/kangjia-zhao/">Kangjia Zhao</a></span>, <span >
+      <a href="/author/he-li/">He Li</a></span>, <span >
+      <a href="/author/jintao-chen/">Jintao Chen</a></span>, <span >
+      <a href="/author/liqiang-lu/">Liqiang Lu</a></span>, <span >
+      <a href="/author/xinkui-zhao/">Xinkui Zhao</a></span>, <span >
+      <a href="/author/shuiguang-deng/">Shuiguang Deng</a></span>, <span >
+      <a href="/author/jianwei-yin/">Jianwei Yin</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    July 2024
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>arXiv</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/sun-horae/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/sun-horae/featured_hu3f6972c06389ef0fe65e3dba7928116b_433148_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Horae: A Domain-Agnostic Modeling Language for Automating Multimodal Service Regulation" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/sun-horae/" >Horae: A Domain-Agnostic Modeling Language for Automating Multimodal Service Regulation</a>
+  </div>
+
+  
+  <a href="/publication/sun-horae/"  class="summary-link">
+    <div class="article-style">
+      <p>Artificial intelligence is rapidly encroaching on the field of service regulation. This work presents Horae, a unified specification language to model multimodal regulation rules across a diverse set of domains. We show how Horae facilitates an intelligent service regulation pipeline by further exploiting a fine-tuned large language model named RuleGPT that automates the Horae modeling process, thereby yielding an end-to-end framework for fully automated intelligent service regulation. The feasibility and effectiveness of our framework are demonstrated over a benchmark of various real-world regulation domains.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2406.06600" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/sun-horae/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/Xxxxxsun/RuleGPT" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://huggingface.co/datasets/Xfgll/SRR-Eval" target="_blank" rel="noopener">
+  Dataset
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2024">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/yican-sun/">Yican Sun</a></span>, <span >
+      <a href="/author/ruyi-ji/">Ruyi Ji</a></span>, <span >
+      <a href="/author/jian-fang/">Jian Fang</a></span>, <span >
+      <a href="/author/xuanlin-jiang/">Xuanlin Jiang</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/yingfei-xiong/">Yingfei Xiong</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    June 2024
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>FM 2024</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/sun-fm2024/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/sun-fm2024/featured_hu0cbb07b798fd1d37166103f0597a5650_122410_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Proving Functional Program Equivalence via Directed Lemma Synthesis" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/sun-fm2024/" >Proving Functional Program Equivalence via Directed Lemma Synthesis</a>
+  </div>
+
+  
+  <a href="/publication/sun-fm2024/"  class="summary-link">
+    <div class="article-style">
+      <p>Proving equivalence between functional programs is a fundamental problem in program verification, which often amounts to reasoning about <em>algebraic data types</em> (ADTs) and compositions of <em>structural recursions</em>. Modern theorem provers provide <em>structural induction</em> for such reasoning, but a structural induction on the original theorem is often insufficient for many equivalence theorems. In such cases, one has to invent a set of lemmas, prove these lemmas by additional induction, and use these lemmas to prove the original theorem. There is, however, a lack of systematic understanding of what lemmas are needed for inductive proofs and how these lemmas can be synthesized automatically. This paper presents <em>directed lemma synthesis</em>, an effective approach to automating equivalence proofs by discovering critical lemmas using program synthesis techniques. We first identify two <em>induction-friendly</em> forms of propositions that give formal guarantees to the progress of the proof. We then propose two tactics that synthesize and apply lemmas, thereby transforming the proof goal into induction-friendly forms. Both tactics reduce lemma synthesis to a set of independent and typically small program synthesis problems that can be efficiently solved. Experimental results demonstrate the effectiveness of our approach: Compared to state-of-the-art equivalence checkers employing heuristic-based lemma enumeration, directed lemma synthesis saves 95.47% runtime on average and solves 38 more tasks over an extended version of the standard benchmark set.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/FM2024.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/sun-fm2024/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-031-71162-6_28" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.5281/zenodo.12532389" target="_blank" rel="noopener">
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2024">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/yutao-sun/">Yutao Sun</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/kangjia-zhao/">Kangjia Zhao</a></span>, <span >
+      <a href="/author/jintao-chen/">Jintao Chen</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    June 2024
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>ICWS (SRG) 2024</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/sun-icws-srg2024/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/sun-icws-srg2024/featured_hu4139b40bf5cb357be7b66fd9b17b9487_247934_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Horae: A Domain-Agnostic Modeling Language for Automating Multimodal Service Regulation" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/sun-icws-srg2024/" >Horae: A Domain-Agnostic Modeling Language for Automating Multimodal Service Regulation</a>
+  </div>
+
+  
+  <a href="/publication/sun-icws-srg2024/"  class="summary-link">
+    <div class="article-style">
+      <p>Artificial intelligence is rapidly encroaching on the field of service regulation. This work-in-progress article presents the design principles behind Horae, a unified specification language to model multimodal regulation rules across a diverse set of domains. We show how Horae facilitates an intelligent service regulation pipeline by further exploiting a fine-tuned large language model named RuleGPT that automates the Horae modeling process, thereby yielding an end-to-end framework for fully automated intelligent service regulation.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/ICWS-SRG2024.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/sun-icws-srg2024/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1109/ICWS62655.2024.00046" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2024">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/jintao-chen/">Jintao Chen</a></span>, <span >
+      <a href="/author/fan-wang/">Fan Wang</a></span>, <span >
+      <a href="/author/shengye-pang/">Shengye Pang</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/meng-xi/">Meng Xi</a></span>, <span >
+      <a href="/author/tiancheng-zhao/">Tiancheng Zhao</a></span>, <span >
+      <a href="/author/jianwei-yin/">Jianwei Yin</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    May 2024
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>Tsinghua Sci. Tech.</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/chen-tst2024/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/chen-tst2024/featured_hu6145d0332b6f3ed04436dee679ff1ef4_226454_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="A Privacy Policy Text Compliance Reasoning Framework with Large Language Models for Healthcare Services" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/chen-tst2024/" >A Privacy Policy Text Compliance Reasoning Framework with Large Language Models for Healthcare Services</a>
+  </div>
+
+  
+  <a href="/publication/chen-tst2024/"  class="summary-link">
+    <div class="article-style">
+      <p>The advancement of AI-generated content (AIGC) drives the diversification of healthcare services, resulting in increased private information collection by healthcare service providers. Therefore, compliance with privacy regulations has increasingly become a paramount concern for both regulatory authorities and consumers. Privacy policies are crucial for consumers to understand how their personal information is collected, stored, and processed. In this work, we propose a privacy policy text compliance reasoning framework called FACTOR, which harnesses the power of large language models (LLMs). Since the General Data Protection Regulation (GDPR) has broad applicability, this work selects GDPR Article 13 as regulation requirements. FACTOR segments the privacy policy text using a sliding window strategy and employs LLM-based text entailment to assess compliance for each segment. The framework then applies a rule-based ensemble approach to aggregate the entailment results for all regulation requirements from GDPR. Our experiments on a synthetic corpus of 388 privacy policies demonstrate the effectiveness of FACTOR. Additionally, we analyze 100 randomly selected websites offering healthcare services, revealing that 9 of them lack a privacy policy altogether, while 29 have privacy policy texts that fail to meet the regulation requirements.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/TST2024.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/chen-tst2024/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2024">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/siwei-tan/">Siwei Tan</a></span>, <span >
+      <a href="/author/liqiang-lu/">Liqiang Lu</a></span>, <span >
+      <a href="/author/hanyu-zhang/">Hanyu Zhang</a></span>, <span >
+      <a href="/author/jia-yu/">Jia Yu</a></span>, <span >
+      <a href="/author/congliang-lang/">Congliang Lang</a></span>, <span >
+      <a href="/author/yongheng-shang/">Yongheng Shang</a></span>, <span >
+      <a href="/author/xinkui-zhao/">Xinkui Zhao</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/yun-liang/">Yun Liang</a></span>, <span >
+      <a href="/author/jianwei-yin/">Jianwei Yin</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    April 2024
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>ASPLOS 2024</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/tan-asplos2024/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/tan-asplos2024/featured_hu7547a755d3fb95544458ceefdb576bcc_174558_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="QuFEM: Fast and Accurate Quantum Readout Calibration Using the Finite Element Method" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/tan-asplos2024/" >QuFEM: Fast and Accurate Quantum Readout Calibration Using the Finite Element Method</a>
+  </div>
+
+  
+  <a href="/publication/tan-asplos2024/"  class="summary-link">
+    <div class="article-style">
+      <p>Quantum readout noise turns out to be the most significant source of error, which greatly affects the measurement fidelity. Matrix-based calibration has been demonstrated to be effective in various quantum platforms. However, existing methodologies are fundamentally limited in either scalability or accuracy. Inspired by the classical finite element method (FEM), a formal method to model the complex interaction between elements, we present our calibration framework named QuFEM. First, we apply a divide-and-conquer strategy that formulates the calibration as a series of tensor products with noise matrices. This matrices are iteratively characterized together with the calibrated probability distribution, aiming to capture the inherent locality of qubit interactions. Then, to accelerate the end-to-end calibration, we propose a sparse tensor-product engine to exploit the sparsity in the intermediate values. Our experiments show that QuFEM achieves $2.5 \times 10^{3}\times$ speedup in the 136-qubit calibration compared to the state-of-the-art matrix-based calibration technique, and provides 1.2$\times$ and 1.4$\times$ fidelity improvement on the 18-qubit and 36-qubit real-world quantum devices.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/ASPLOS2024-a.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/tan-asplos2024/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/JanusQ/QuFEM" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1145/3620665.3640380" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2024">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/siwei-tan/">Siwei Tan</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="equal contribution"></i>, <span >
+      <a href="/author/debin-xiang/">Debin Xiang</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="equal contribution"></i>, <span >
+      <a href="/author/liqiang-lu/">Liqiang Lu</a></span>, <span >
+      <a href="/author/junlin-lu/">Junlin Lu</a></span>, <span >
+      <a href="/author/qiuping-jiang/">Qiuping Jiang</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/jianwei-yin/">Jianwei Yin</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    April 2024
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>ASPLOS 2024</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/tan-asplos2024b/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/tan-asplos2024b/featured_hu19310f53edf215e71496fbd78fb4bbd3_195297_808x455_fill_q75_h2_lanczos_center_3.webp" height="455" width="808"
+           class="article-banner" alt="MorphQPV: Exploiting Isomorphism in Quantum Programs to Facilitate Confident Verification" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/tan-asplos2024b/" >MorphQPV: Exploiting Isomorphism in Quantum Programs to Facilitate Confident Verification</a>
+  </div>
+
+  
+  <a href="/publication/tan-asplos2024b/"  class="summary-link">
+    <div class="article-style">
+      <p>Unlike classical computing, quantum program verification (QPV) is much more challenging due to the non-duplicability of quantum states that collapse after measurement. Prior approaches rely on deductive verification that shows poor scalability. Or they require exhaustive assertions that cannot ensure the program is correct for all inputs. In this paper, we propose MorphQPV, a confident assertion-based verification methodology. Our key insight is to leverage the isomorphism in quantum programs, which implies a structure-preserve relation between the program runtime states. In the assertion statement, we define a tracepoint pragma to label the verified quantum state and an assume-guarantee primitive to specify the expected relation between states. Then, we characterize the ground-truth relation between states using an isomorphism-based approximation, which can effectively obtain the program states under various inputs while avoiding repeated executions. Finally, the verification is formulated as a constraint optimization problem with a confidence estimation model to enable rigorous analysis. Experiments suggest that MorphQPV reduces the number of program executions by $107.9\times$ when verifying the 27-qubit quantum lock algorithm and improves the probability of success by $3.3\times$-$9.9\times$ when debugging five benchmarks.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/ASPLOS2024-b.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/tan-asplos2024b/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/JanusQ/MorphQPV/" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1145/3620666.3651360" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://zenodo.org/records/10877687" target="_blank" rel="noopener">
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2024">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/qi-zhan/">Qi Zhan</a></span>, <span >
+      <a href="/author/xing-hu/">Xing Hu</a></span>, <span >
+      <a href="/author/zhiyang-li/">Zhiyang Li</a></span>, <span >
+      <a href="/author/xin-xia/">Xin Xia</a></span>, <span >
+      <a href="/author/david-lo/">David Lo</a></span>, <span >
+      <a href="/author/shanping-li/">Shanping Li</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    April 2024
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>ICSE 2024</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/zhan-icse2024/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/zhan-icse2024/featured_hu0142fd00125b55e1ad1f6ba54eeffaa1_395743_808x455_fill_q75_h2_lanczos_smart1.webp" height="455" width="808"
+           class="article-banner" alt="PS3: Precise Patch Presence Test Based on Semantic Symbolic Signature" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/zhan-icse2024/" >PS3: Precise Patch Presence Test Based on Semantic Symbolic Signature</a>
+  </div>
+
+  
+  <a href="/publication/zhan-icse2024/"  class="summary-link">
+    <div class="article-style">
+      <p>During software development, vulnerabilities have posed a significant threat to users. Applying patches is the most effective way to combat vulnerabilities. In a large scale software system, testing the presence of a security patch in every affected binary is crucial to ensure system security. Identifying whether a binary has been patched for a known vulnerability is challenging, as there may only be small differences between patched and vulnerable versions. Existing approaches mainly focus on detecting patches that are compiled in the same compiler options. However, it is common for developers to compile programs with very different compiler options in different situations, which causes inaccuracy for existing methods. In this paper, we propose a new approach named PS3, referring to precise patch presence test based on semantic-level symbolic signature. PS3 exploits symbolic emulation to extract signatures that are stable under different compiler options. Then, PS3 can test the presence of the patch precisely by comparing the signatures between the reference and the target at a semantic level.
+To evaluate the effectiveness of our approach, we constructed a dataset consisting of 3,631 (CVE, binary) pairs of 62 recent CVEs in four C/C++ projects. The experimental results show that PS3 achieves scores of 0.82, 0.97, and 0.89 in terms of precision, recall, and F1 score, respectively. PS3 outperforms the state-of-the-art baselines by improving 33% in terms of F1 score and remains stable in different compiler options.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/zhan-icse2024/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2024">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/lutz-klinkenberg/">Lutz Klinkenberg</a></span>, <span >
+      <a href="/author/christian-blumenthal/">Christian Blumenthal</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/darion-haase/">Darion Haase</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    April 2024
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>Proc. ACM Program. Lang. (OOPSLA)</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/klinkenberg-oopsla2024/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/klinkenberg-oopsla2024/featured_hu136c1c5b8b1a2c35f6e42865f20d3a5a_157204_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Exact Bayesian Inference for Loopy Probabilistic Programs using Generating Functions" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/klinkenberg-oopsla2024/" >Exact Bayesian Inference for Loopy Probabilistic Programs using Generating Functions</a>
+  </div>
+
+  
+  <a href="/publication/klinkenberg-oopsla2024/"  class="summary-link">
+    <div class="article-style">
+      <p>We present an exact Bayesian inference method for inferring posterior distributions encoded by probabilistic programs featuring possibly <em>unbounded loops</em>. Our method is built on a denotational semantics represented by <em>probability generating functions</em>, which resolves semantic intricacies induced by intertwining discrete probabilistic loops with conditioning (for encoding posterior observations). We implement our method in a tool called <span style="font-variant:small-caps;">Prodigy</span>; it augments existing computer algebra systems with the theory of generating functions for the (semi-)automatic inference and quantitative verification of conditioned probabilistic programs. Experimental results show that <span style="font-variant:small-caps;">Prodigy</span> can handle various infinite-state loopy programs and exhibits comparable performance to state-of-the-art exact inference tools over loop-free benchmarks.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/OOPSLA2024.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/klinkenberg-oopsla2024/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/LKlinke/Prodigy" target="_blank" rel="noopener">
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2024">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/mingqi-yang/">Mingqi Yang</a></span>, <span >
+      <a href="/author/kevin-batz/">Kevin Batz</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>, <span >
+      <a href="/author/zhiang-wu/">Zhiang Wu</a></span>, <span >
+      <a href="/author/jianwei-yin/">Jianwei Yin</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    March 2024
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>CIBD 2024</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/yang-cibd2024/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/yang-cibd2024/featured_hub3b18f179f1724e2ccb832ed60ac6d89_320806_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Latticed Craig Interpolation with an Application to Probabilistic Verification" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/yang-cibd2024/" >Latticed Craig Interpolation with an Application to Probabilistic Verification</a>
+  </div>
+
+  
+  <a href="/publication/yang-cibd2024/"  class="summary-link">
+    <div class="article-style">
+      <p><p>In this work, we are primarily concerned with the question: <em>Is Craig interpolation applicable to the automatic, quantitative verification of (infinite-state) probabilistic programs with potentially unbounded loops?</em> Our preliminary results indicate an affirmative answer:</p>
+<ul>
+<li><em>Quantitative Craig interpolants</em>. We propose a quantitative version of Craig interpolants by extending predicates to expectations (expected values), which can be used to discover quantitative loop invariants that suffice to establish upper bounds on the least fixed point;</li>
+<li><em>Latticed Craig interpolation</em>. We present latticed Craig interpolation by exploiting quantitative interpolants over complete lattices, which conservatively extends both McMillan&rsquo;s interpolation-based SAT model checking (to the <em>quantitative</em> setting) and Batz et al.&rsquo;s latticed bounded model checking (to the <em>unbounded</em> case);</li>
+<li><em>Soundness and Completeness</em>. We show that our latticed interpolation procedure is <em>sound</em> and establish sufficient conditions under which it is further <em>complete</em>.</li>
+<li><em>Synthesizing quantitative interpolants</em>. We (semi-)automated our verification procedure by employing a counterexample-guided inductive synthesis framework to automatically generate quantitative interpolants. Our implementation shows promise: It finds invariants for non-trivial infinite-state programs with unbounded loops.</li>
+</ul>
+</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/CIBD2024.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/yang-cibd2024/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2023">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/kevin-batz/">Kevin Batz</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/sebastian-junges/">Sebastian Junges</a></span>, <span >
+      <a href="/author/benjamin-lucien-kaminski/">Benjamin Lucien Kaminski</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>, <span >
+      <a href="/author/christoph-matheja/">Christoph Matheja</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    April 2023
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>TACAS 2023</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/batz-cegis2023/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/batz-cegis2023/featured_hu44ba891a282f372f695ed66a24c4638e_27051_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Probabilistic Program Verification via Inductive Synthesis of Inductive Invariants" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/batz-cegis2023/" >Probabilistic Program Verification via Inductive Synthesis of Inductive Invariants</a>
+  </div>
+
+  
+  <a href="/publication/batz-cegis2023/"  class="summary-link">
+    <div class="article-style">
+      <p>Essential tasks for the verification of probabilistic programs include bounding expected outcomes and proving termination in finite expected runtime. We contribute a simple yet effective <em>inductive synthesis</em> approach for proving such <em>quantitative reachability properties</em> by generating <em>inductive invariants</em> on <em>source-code level</em>. Our implementation shows promise: It finds invariants for (in)finite-state programs, can beat state-of-the-art probabilistic model checkers, and is competitive with modern tools dedicated to invariant synthesis and expected runtime reasoning.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/TACAS2023.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/batz-cegis2023/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-031-30820-8_25" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/moves-rwth/cegispro2" target="_blank" rel="noopener">
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2023">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/shenghua-feng/">Shenghua Feng</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/han-su/">Han Su</a></span>, <span >
+      <a href="/author/benjamin-lucien-kaminski/">Benjamin Lucien Kaminski</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    April 2023
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>Proc. ACM Program. Lang. (OOPSLA)</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/feng-oopsla2023/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/feng-oopsla2023/featured_hub3336149e3979eb5c1a290fccbc2737f_136546_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Lower Bounds for Possibly Divergent Probabilistic Programs" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/feng-oopsla2023/" >Lower Bounds for Possibly Divergent Probabilistic Programs</a>
+  </div>
+
+  
+  <a href="/publication/feng-oopsla2023/"  class="summary-link">
+    <div class="article-style">
+      <p>We present a new proof rule for verifying lower bounds on quantities of probabilistic programs. Our proof rule is not confined to almost-surely terminating programs &ndash; as is the case for existing rules &ndash; and can be used to establish non-trivial lower bounds on, e.g., termination probabilities and expected values, for possibly <em>divergent</em> probabilistic loops, e.g., the well-known three-dimensional random walk on a lattice.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/OOPSLA2023.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/feng-oopsla2023/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/OOPSLA23-POSTER.pdf" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/OOPSLA23.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1145/3586051" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2023">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/lutz-klinkenberg/">Lutz Klinkenberg</a></span>, <span >
+      <a href="/author/tobias-winkler/">Tobias Winkler</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    January 2023
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>LAFI 2023</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/klinkenberg-lafi2023/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/klinkenberg-lafi2023/featured_hubcceb658b774922216ece0c3045c03c9_41677_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Exact Probabilistic Inference Using Generating Functions" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/klinkenberg-lafi2023/" >Exact Probabilistic Inference Using Generating Functions</a>
+  </div>
+
+  
+  <a href="/publication/klinkenberg-lafi2023/"  class="summary-link">
+    <div class="article-style">
+      <p>Probabilistic programs are typically normal-looking programs describing posterior probability distributions. They intrinsically code up randomized algorithms and have long been at the heart of modern machine learning and approximate computing. We explore the theory of generating functions and investigate its usage in the exact quantitative reasoning of probabilistic programs. Important topics include the exact representation of program semantics, proving exact program equivalence, and – as our main focus in this extended abstract – exact probabilistic inference.
+In probabilistic programming, inference aims to derive a program&rsquo;s posterior distribution. In contrast to approximate inference, inferring exact distributions comes with several benefits, e.g., no loss of precision, natural support for symbolic parameters, and efficiency on models with certain structures. Exact probabilistic inference, however, is a notoriously hard task. The challenges mainly arise from three program constructs: (1) unbounded while-loops and/or recursion, (2) infinite-support distributions, and (3) conditioning (via posterior observations). We present our ongoing research in addressing these challenges (with a focus on conditioning) leveraging generating functions and show their potential in facilitating exact probabilistic inference for discrete probabilistic programs.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/LAFI2023.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/klinkenberg-lafi2023/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/LKlinke/Prodigy" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2022">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/qiuye-wang/">Qiuye Wang</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/bai-xue/">Bai Xue</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    September 2022
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>Inf. Comput.</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/wang-infcomp2022/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/wang-infcomp2022/featured_hua885e307a3468f28576a4e9d80123c63_76435_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Encoding Inductive Invariants as Barrier Certificates" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/wang-infcomp2022/" >Encoding Inductive Invariants as Barrier Certificates</a>
+  </div>
+
+  
+  <a href="/publication/wang-infcomp2022/"  class="summary-link">
+    <div class="article-style">
+      <p>We present the <em>invariant barrier-certificate condition</em> that witnesses unbounded-time safety of differential dynamical systems. The proposed condition is the weakest possible one to attain inductive invariance. We show that discharging the invariant barrier-certificate condition —thereby synthesizing invariant barrier certificates— can be encoded as solving an <em>optimization problem subject to bilinear matrix inequalities</em> (BMIs). We further propose a synthesis algorithm based on difference-of-convex programming, which approaches a local optimum of the BMI problem via solving <em>a series of convex optimization problems</em>. This algorithm is incorporated in a branch-and-bound framework that searches for the global optimum in a divide-and-conquer fashion. We present a weak completeness result of our method, namely, a barrier certificate is guaranteed to be found (under some mild assumptions) whenever there exists an inductive invariant (in the form of a given template) that suffices to certify safety. Experimental results on benchmarks demonstrate the effectiveness and efficiency of our approach.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/INFCOMP2022.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/wang-infcomp2022/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/Chenms404/BMI-DC" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/CAV21-a.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1016/j.ic.2022.104965" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2022">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/zhuoruo-zhang/">Zhuoruo Zhang</a></span>, <span >
+      <a href="/author/rui-chang/">Rui Chang</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/wenbo-shen/">Wenbo Shen</a></span>, <span >
+      <a href="/author/bo-feng/">Bo Feng</a></span>, <span >
+      <a href="/author/chenyang-yu/">Chenyang Yu</a></span>, <span >
+      <a href="/author/he-huang/">He Huang</a></span>, <span >
+      <a href="/author/qinming-dai/">Qinming Dai</a></span>, <span >
+      <a href="/author/yongwang-zhao/">Yongwang Zhao</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    September 2022
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>arXiv</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/zhang-pa-boot2023/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/zhang-pa-boot2023/featured_huf2746915050b2c31e38c56d37e2b5c80_317462_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="PA-Boot: A Formally Verified Authentication Protocol for Multiprocessor Secure Boot" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/zhang-pa-boot2023/" >PA-Boot: A Formally Verified Authentication Protocol for Multiprocessor Secure Boot</a>
+  </div>
+
+  
+  <a href="/publication/zhang-pa-boot2023/"  class="summary-link">
+    <div class="article-style">
+      <p>Hardware supply-chain attacks are raising significant security threats to the boot process of multiprocessor systems. This paper identifies a new, prevalent hardware supply-chain attack surface that can bypass multiprocessor secure boot due to the absence of processor-authentication mechanisms. To defend against such attacks, we present PA-Boot, the first formally verified processor-authentication protocol for secure boot in multiprocessor systems. PA-Boot is proved functionally correct and is guaranteed to detect multiple adversarial behaviors, e.g., processor replacements, man-in-the-middle attacks, and tampering with certificates. The fine-grained formalization of PA-Boot and its fully mechanized security proofs are carried out in the Isabelle/HOL theorem prover with 306 lemmas/theorems and ~7,100 LoC. Experiments on a proof-of-concept implementation indicate that PA-Boot can effectively identify boot-process attacks with a considerably minor overhead and thereby improve the security of multiprocessor systems.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2209.07936.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/zhang-pa-boot2023/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.48550/ARXIV.2209.07936" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2022">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>, <span >
+      <a href="/author/lutz-klinkenberg/">Lutz Klinkenberg</a></span>, <span >
+      <a href="/author/tobias-winkler/">Tobias Winkler</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    August 2022
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>CAV 2022</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/chen-cav2022/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/chen-cav2022/featured_hu6cb6d4e35887df0af2585c97caab5d58_89433_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Does a Program Yield the Right Distribution?" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/chen-cav2022/" >Does a Program Yield the Right Distribution?</a>
+  </div>
+
+  
+  <a href="/publication/chen-cav2022/"  class="summary-link">
+    <div class="article-style">
+      <p>We study discrete probabilistic programs with potentially unbounded looping behaviors over an infinite state space. We present, to the best of our knowledge, <em>the first decidability result for the problem of determining whether such a program generates exactly a specified distribution over its outputs</em> (provided the program terminates almost-surely). The class of distributions that can be specified in our formalism consists of standard distributions (geometric, uniform, etc.) and finite convolutions thereof. Our method relies on representing these (possibly infinite-support) distributions as <em>probability generating functions</em> which admit effective arithmetic operations. We have automated our techniques in a tool called <span style="font-variant:small-caps;">Prodigy</span>, which supports automatic invariance checking, compositional reasoning of nested loops, and efficient queries to the output distribution, as demonstrated by experiments.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/CAV2022.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/chen-cav2022/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-031-13185-1_5" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/LKlinke/Prodigy" target="_blank" rel="noopener">
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2021">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/qiuye-wang/">Qiuye Wang</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/bai-xue/">Bai Xue</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    July 2021
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>CAV 2021</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/wang-cav2021/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/wang-cav2021/featured_hued4c96377a2366e8e69c3f888b3f7017_485170_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Synthesizing Invariant Barrier Certificates via Difference-of-Convex Programming" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/wang-cav2021/" >Synthesizing Invariant Barrier Certificates via Difference-of-Convex Programming</a>
+  </div>
+
+  
+  <a href="/publication/wang-cav2021/"  class="summary-link">
+    <div class="article-style">
+      <p>A barrier certificate often serves as an inductive invariant that isolates an unsafe region from the reachable set of states, and hence is widely used in proving safety of hybrid systems possibly over the infinite time horizon. We present a novel condition on barrier certificates, termed the <em>invariant barrier-certificate condition</em>, that witnesses unbounded-time safety of differential dynamical systems. The proposed condition is by far the least conservative one on barrier certificates, and can be shown as the weakest possible one to attain inductive invariance. We show that discharging the invariant barrier-certificate condition—thereby synthesizing invariant barrier certificates—can be encoded as solving an <em>optimization problem subject to bilinear matrix inequalities</em> (BMIs). We further propose a synthesis algorithm based on difference-of-convex programming, which approaches a local optimum of the BMI problem via solving <em>a series of convex optimization problems</em>. This algorithm is incorporated in a branch-and-bound framework that searches for the global optimum in a divide-and-conquer fashion. We present a weak completeness result of our method, in the sense that a barrier certificate is guaranteed to be found (under some mild assumptions) whenever there exists an inductive invariant (in the form of a given template) that suffices to certify safety of the system. Experimental results on benchmark examples demonstrate the effectiveness and efficiency of our approach.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/CAV2021-a.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/wang-cav2021/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/CAV21-a.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ucl-pplv.github.io/CAV21/poster_P_116/#tab-extended" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-030-81685-8_21" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/Chenms404/BMI-DC" target="_blank" rel="noopener">
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2021">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/kevin-batz/">Kevin Batz</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/benjamin-lucien-kaminski/">Benjamin Lucien Kaminski</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>, <span >
+      <a href="/author/christoph-matheja/">Christoph Matheja</a></span>, <span >
+      <a href="/author/philipp-schroer/">Philipp Schröer</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    July 2021
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>CAV 2021</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/batz-cav2021/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/batz-cav2021/featured_hu684d806f61e58598b16ffb628f30d54f_48703_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Latticed $k$-Induction with an Application to Probabilistic Programs" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/batz-cav2021/" >Latticed $k$-Induction with an Application to Probabilistic Programs</a>
+  </div>
+
+  
+  <a href="/publication/batz-cav2021/"  class="summary-link">
+    <div class="article-style">
+      <p>We revisit two well-established verification techniques, <em>$k$-induction</em> and <em>bounded model checking</em> (BMC), in the more general setting of fixed point theory over complete lattices. Our main theoretical contribution is <em>latticed $k$-induction</em>, which (i) generalizes classical $k$-induction for verifying transition systems, (ii) generalizes Park induction for bounding fixed points of monotonic maps on complete lattices, and (iii) extends from naturals $k$ to transfinite ordinals $\kappa$, thus yielding $\kappa$-induction. The lattice-theoretic understanding of $k$-induction and BMC enables us to apply both techniques to the <em>fully automatic verification of infinite-state probabilistic programs</em>. Our prototypical implementation manages to automatically verify non-trivial specifications for probabilistic programs taken from the literature that &ndash; using existing techniques &ndash; cannot be verified without synthesizing a stronger inductive invariant first.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/CAV2021-b.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/batz-cav2021/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/ISCAS22.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-030-81688-9_25" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/moves-rwth/kipro2" target="_blank" rel="noopener">
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/pulp/21-04-18-pulp-k-induction/" >
+    <i class="fas fa-rocket mr-1"></i>Pulp Fiction</a>
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2020">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/yangjia-li/">Yangjia Li</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/hui-lu/">Hui Lu</a></span>, <span >
+      <a href="/author/guohua-wu/">Guohua Wu</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    September 2020
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>arXiv</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/li-mpp2023/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/li-mpp2023/featured_hu5d7ef78d2e3a0562352e5c2aed0b6a66_35147_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="On Termination of Polynomial Programs with Equality Conditions" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/li-mpp2023/" >On Termination of Polynomial Programs with Equality Conditions</a>
+  </div>
+
+  
+  <a href="/publication/li-mpp2023/"  class="summary-link">
+    <div class="article-style">
+      <p>We investigate the termination problem of a family of multi-path polynomial programs (MPPs), in which all assignments to program variables are polynomials, and test conditions of loops and conditional statements are polynomial equalities. We show that the set of non-terminating inputs (NTI) of such a program is algorithmically computable, thus leading to the decidability of its termination. To the best of our knowledge, the considered family of MPPs is hitherto the largest one for which termination is decidable. We present an explicit recursive function which is essentially Ackermannian, to compute the maximal length of ascending chains of polynomial ideals under a control function, and thereby obtain a complete answer to the questions raised by Seidenberg. This maximal length facilitates a precise complexity analysis of our algorithms for computing the NTI and deciding termination of MPPs. We extend our method to programs with polynomial guarded commands and show how an incomplete procedure for MPPs with inequality guards can be obtained. An application of our techniques to invariant generation of polynomial programs is further presented.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/1510.05201.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/li-mpp2023/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/Chenms404/MPPs" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.48550/ARXIV.1510.05201" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2020">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/shenghua-feng/">Shenghua Feng</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/bai-xue/">Bai Xue</a></span>, <span >
+      <a href="/author/sriram-sankaranarayanan/">Sriram Sankaranarayanan</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    July 2020
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>CAV 2020</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/feng-cav2020/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/feng-cav2020/featured_hud79fc9a71eea9d82363aaa7b749c0fec_690711_808x455_fill_q75_h2_lanczos_smart1.webp" height="455" width="808"
+           class="article-banner" alt="Unbounded-Time Safety Verification of Stochastic Differential Dynamics" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/feng-cav2020/" >Unbounded-Time Safety Verification of Stochastic Differential Dynamics</a>
+  </div>
+
+  
+  <a href="/publication/feng-cav2020/"  class="summary-link">
+    <div class="article-style">
+      <p>In this paper, we propose a method for bounding the probability that a stochastic differential equation (SDE) system violates a safety specification over the infinite time horizon. SDEs are mathematical models of stochastic processes that capture how states evolve continuously in time. They are widely used in numerous applications such as engineered systems (e.g., modeling how pedestrians move in an intersection), computational finance (e.g., modeling stock option prices), and ecological processes (e.g., population change over time). Previously the safety verification problem has been tackled over finite and infinite time horizons using a diverse set of approaches. The approach in this paper attempts to connect the two views by first identifying a finite time bound, beyond which the probability of a safety violation can be bounded by a negligibly small number. This is achieved by discovering an exponential barrier certificate that proves exponentially converging bounds on the probability of safety violations over time. Once the finite time interval is found, a finite-time verification approach is used to bound the probability of violation over this interval. We demonstrate our approach over a collection of interesting examples from the literature, wherein our approach can be used to find tight bounds on the violation probability of safety properties over the infinite time horizon.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/CAV2020.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/feng-cav2020/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/CAV20.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.youtube.com/watch?v=vFjaz-k_f3Y&amp;t=29s" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-030-53291-8_18" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/feng-cav2020/" >
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/pulp/20-06-04-pulp-sdes/" >
+    <i class="fas fa-rocket mr-1"></i>Pulp Fiction</a>
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2020">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/jian-wang/">Jian Wang</a></span>, <span >
+      <a href="/author/jie-an/">Jie An</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>, <span >
+      <a href="/author/lulin-wang/">Lulin Wang</a></span>, <span >
+      <a href="/author/miaomiao-zhang/">Miaomiao Zhang</a></span>, <span >
+      <a href="/author/ting-gan/">Ting Gan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    June 2020
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>Sci. China Inf. Sci.</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/wang-scis2020/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/wang-scis2020/featured_hu38fa274d6290e4ac1a061020b9f298fd_126344_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="From Model to Implementation: A Network Algorithm Programming Language" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/wang-scis2020/" >From Model to Implementation: A Network Algorithm Programming Language</a>
+  </div>
+
+  
+  <a href="/publication/wang-scis2020/"  class="summary-link">
+    <div class="article-style">
+      <p>Software-defined networking (SDN) is a revolutionary technology that facilitates network management and enables programmatically efficient network configuration, thereby improving network performance and flexibility. However, as the application programming interfaces (APIs) of SDN are low-level or functionality-restricted, SDN programmers cannot easily keep pace with the ever-changing devices, topologies, and demands of SDN. By deriving motivation from industry practice, we define a novel network algorithm programming language (NAPL) that enhances the SDN framework with a rapid programming flow from topology-based network models to C++ implementations, thus bridging the gap between the limited capability of existing SDN APIs and the reality of practical network management. In contrast to several state-of-the-art languages, NAPL provides a range of critical high-level network programming features: (1) topology-based network modeling and visualization; (2) fast abstraction and expansion of network devices and constraints; (3) a declarative paradigm for the fast design of forwarding policies; (4) a built-in library for complex algorithm implementation; (5) full compatibility with C++ programming; and (6) user-friendly debugging support when compiling NAPL into highly readable C++ codes. The expressiveness and performance of NAPL are demonstrated in various industrial scenarios originating from practical network management.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/SCIS2020.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/wang-scis2020/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/CPS-SKLCS/NAPL" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/s11432-019-2644-8" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2020">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/jie-an/">Jie An</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/bohua-zhan/">Bohua Zhan</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>, <span >
+      <a href="/author/miaomiao-zhang/">Miaomiao Zhang</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    April 2020
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>TACAS 2020</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/an-tacas2020/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/an-tacas2020/featured_hub5a28469ccc0432ceb3ea6422c002af6_125377_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Learning One-Clock Timed Automata" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/an-tacas2020/" >Learning One-Clock Timed Automata</a>
+  </div>
+
+  
+  <a href="/publication/an-tacas2020/"  class="summary-link">
+    <div class="article-style">
+      <p>We present an algorithm for active learning of deterministic timed automata with a single clock. The algorithm is within the framework of Angluin’s $L^*$ algorithm and inspired by existing work on the active learning of symbolic automata. Due to the need of guessing for each transition whether it resets the clock, the algorithm is of exponential complexity in the size of the learned automata. Before presenting this algorithm, we propose a simpler version where the teacher is assumed to be <em>smart</em> in the sense of being able to provide the reset information. We show that this simpler setting yields a polynomial complexity of the learning process. Both of the algorithms are implemented and evaluated on a collection of randomly generated examples. We furthermore demonstrate the simpler algorithm on the functional specification of the TCP protocol.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/TACAS2020.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/an-tacas2020/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/TACAS20.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-030-45190-5_25" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/Leslieaj/OTALearning" target="_blank" rel="noopener">
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/files/BPA-FMAC19.png" >
+    <i class="fas fa-certificate mr-1"></i>Best Paper Award @ FMAC 2019</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.springernature.com/de/researchers/campaigns/chinese-research/computer-science#browse-the-book-chapters" target="_blank" rel="noopener">
+    <i class="fas fa-certificate mr-1"></i>Springer High-Impact Paper</a>
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2020">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/martin-franzle/">Martin Fränzle</a></span>, <span >
+      <a href="/author/yangjia-li/">Yangjia Li</a></span>, <span >
+      <a href="/author/peter-nazier-mosaad/">Peter Nazier Mosaad</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    February 2020
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>Acta Inform.</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/chen-acin2021/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/chen-acin2021/featured_hu3ddaa2bc940d896b2993060b1a1ad88f_35238_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Indecision and Delays are the Parents of Failure" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/chen-acin2021/" >Indecision and Delays are the Parents of Failure</a>
+  </div>
+
+  
+  <a href="/publication/chen-acin2021/"  class="summary-link">
+    <div class="article-style">
+      <p>The possible interactions between a controller and its environment can naturally be modelled as the arena of a two-player game, and adding an appropriate winning condition permits to specify desirable behavior. The classical model here is the positional game, where both players can (fully or partially) observe the current position in the game graph, which in turn is indicative of their mutual current states. In practice, neither sensing and actuating the environment through physical devices nor data forwarding to and from the controller and signal processing in the controller are instantaneous. The resultant delays force the controller to draw decisions before being aware of the recent history of a play and to submit these decisions well before they can take effect asynchronously. It is known that existence of a winning strategy for the controller in games with such delays is decidable over finite game graphs and with respect to $\omega$-regular objectives. The underlying reduction, however, is impractical for non-trivial delays as it incurs a blow-up of the game graph which is exponential in the magnitude of the delay. For safety objectives, we propose a more practical incremental algorithm successively synthesizing a series of controllers handling increasing delays and reducing the game-graph size in between. It is demonstrated using benchmark examples that even a simplistic explicit-state implementation of this algorithm outperforms state-of-the-art symbolic synthesis algorithms as soon as non-trivial delays have to be handled. We furthermore address the practically relevant cases of non-order-preserving delays and bounded message loss, as arising in actual networked control, thereby considerably extending the scope of regular game theory under delay.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/ACIN2021.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/chen-acin2021/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.notebookarchive.org/synthesizing-controllers-for-safety-games-under-delayed-information--2021-08-5lc88f4/" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/MISSION.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/6AjaYHy_3Fo" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/s00236-020-00374-7" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2019">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/jian-wang/">Jian Wang</a></span>, <span >
+      <a href="/author/jie-an/">Jie An</a></span>, <span >
+      <a href="/author/bohua-zhan/">Bohua Zhan</a></span>, <span >
+      <a href="/author/deepak-kapur/">Deepak Kapur</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    August 2019
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>CADE 2019</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/chen-cade2019/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/chen-cade2019/featured_hu051b6dba1d053d055d0203e4feda9d86_801136_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="NIL: Learning Nonlinear Interpolants" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/chen-cade2019/" >NIL: Learning Nonlinear Interpolants</a>
+  </div>
+
+  
+  <a href="/publication/chen-cade2019/"  class="summary-link">
+    <div class="article-style">
+      <p>Nonlinear interpolants have been shown useful for the verification of programs and hybrid systems in contexts of theorem proving, model checking, abstract interpretation, etc. The underlying synthesis problem, however, is challenging and existing methods have limitations on the form of formulae to be interpolated. We leverage classification techniques with space transformations and kernel tricks as established in the realm of machine learning, and present a counterexample-guided method named NIL for synthesizing polynomial interpolants, thereby yielding a unified framework tackling the interpolation problem for the general quantifier-free theory of nonlinear arithmetic, possibly involving transcendental functions. We prove the soundness of NIL and propose sufficient conditions under which NIL is guaranteed to converge, i.e., the derived sequence of candidate interpolants converges to an actual interpolant, and is complete, namely the algorithm terminates by producing an interpolant if there exists one. The applicability and effectiveness of our technique are demonstrated experimentally on a collection of representative benchmarks from the literature, where in particular, our method suffices to address more interpolation tasks, including those with perturbations in parameters, and in many cases synthesizes simpler interpolants compared with existing approaches.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/CADE-27.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/chen-cade2019/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://notebookarchive.org/nil-learning-nonlinear-interpolants--2021-08-5lcsyb7/" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/FACAS22.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-030-29436-6_11" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2019">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/shenghua-feng/">Shenghua Feng</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>, <span >
+      <a href="/author/martin-franzle/">Martin Fränzle</a></span>, <span >
+      <a href="/author/bai-xue/">Bai Xue</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    July 2019
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>CAV 2019</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/feng-cav2019/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/feng-cav2019/featured_huff99aaea0ebe07175a95131e909af0a6_46688_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Taming Delays in Dynamical Systems" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/feng-cav2019/" >Taming Delays in Dynamical Systems</a>
+  </div>
+
+  
+  <a href="/publication/feng-cav2019/"  class="summary-link">
+    <div class="article-style">
+      <p>Delayed coupling between state variables occurs regularly in technical dynamical systems, especially embedded control. As it consequently is omnipresent in safety-critical domains, there is an increasing interest in the safety verification of systems modelled by Delay Differential Equations (DDEs). In this paper, we leverage qualitative guarantees for the existence of an exponentially decreasing estimation on the solutions to DDEs as established in classical stability theory, and present a quantitative method for constructing such delay-dependent estimations, thereby facilitating a reduction of the verification problem over an unbounded temporal horizon to a bounded one. Our technique builds on the linearization technique of nonlinear dynamics and spectral analysis of the linearized counterparts. We show experimentally on a set of representative benchmarks from the literature that our technique indeed extends the scope of bounded verification techniques to unbounded verification tasks. Moreover, our technique is easy to implement and can be combined with any automatic tool dedicated to bounded verification of DDEs.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/CAV2019.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/feng-cav2019/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/CAV19.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-030-25540-4_37" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://lcs.ios.ac.cn/~chenms/tools/UDDER.tar.bz2" target="_blank" rel="noopener">
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-7 year-2019">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    June 2019
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/chen-thesis2019/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/chen-thesis2019/featured_hua0f7813913937408570678d7d3077d76_132606_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Verification and Synthesis of Time-Delayed Dynamical Systems" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/chen-thesis2019/" >Verification and Synthesis of Time-Delayed Dynamical Systems</a>
+  </div>
+
+  
+  <a href="/publication/chen-thesis2019/"  class="summary-link">
+    <div class="article-style">
+      <p>Conventional embedded systems have over the past two decades vividly evolved into an open, interconnected form that integrates capabilities of computing, communication and control, thereby triggering yet another round of global revolution of the information technology. This form, now known as cyber-physical systems, has witnessed an increasing number of safety-critical systems particularly in major scientific projects vital to the national well-being and the people&rsquo;s livelihood. Prominent examples include automotive electronics, health care, nuclear reactors, high-speed transportations, manned spaceflight, etc., in which a malfunction of any software or hardware component would potentially lead to catastrophic consequences like significant casualties and economic losses. Meanwhile with the rapid development of feedback control, sensor techniques and computer control, time delays have become an essential feature underlying both the continuous evolution of physical plants and the discrete transition of computer programs, which may well annihilate the safety certificate and control performance of embedded systems. Traditional engineering methods, e.g., testing and simulations, are nevertheless argued insufficient for the zero-tolerance of failures incurred in time-delayed systems in a safety-critical context. Therefore, how to rigorously verify and design reliable safety-critical embedded systems involving delays tends to be a grand challenge in computer science and the control community. In contrast to delay-free systems, time-delayed systems yield substantially higher theoretical complexity thus rendering the underlying design and verification tasks significantly harder. This dissertation focuses on the formal verification and controller synthesis of time-delayed dynamical systems, while particularly addressing the safety verification of continuous dynamics governed by delay differential equations and the control-strategy synthesis of discrete dynamics captured by delayed safety games, with applications in a typical set of representative benchmarks from the literature.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/chen-thesis2019/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/Defence.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/files/CAS-President-SA.png" >
+    <i class="fas fa-certificate mr-1"></i>CAS-President Special Award</a>
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2019">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/martin-franzle/">Martin Fränzle</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/paul-kroger/">Paul Kröger</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    January 2019
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>ACM SIGLOG News</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/fraenzle-siglog2019/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/fraenzle-siglog2019/featured_hubf966f2e242cc69669854cfe2129e9fd_152242_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="In Memory of Oded Maler: Automatic Reachability Analysis of Hybrid-State Automata" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/fraenzle-siglog2019/" >In Memory of Oded Maler: Automatic Reachability Analysis of Hybrid-State Automata</a>
+  </div>
+
+  
+  <a href="/publication/fraenzle-siglog2019/"  class="summary-link">
+    <div class="article-style">
+      <p>Hybrid automata are an elegant formal model seamlessly integrating differential equations representing continuous dynamics with automata capturing switching behavior. Since the introduction of the computational model more than a quarter of a century ago [Maler et al. 1992], its algorithmic verification has been an area of intense research. Within this note, which is dedicated to Oded Maler (1957&ndash;2018) as one of the inventors of the model, we are trying to delineate major lines of attack to the reachability problem for hybrid automata. Due to its relation to system safety, the reachability problem is a prototypical verification problem for hybrid discrete-continuous system dynamics.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/SIGLOG2019.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/fraenzle-siglog2019/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1145/3313909.3313913" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2018">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/martin-franzle/">Martin Fränzle</a></span>, <span >
+      <a href="/author/yangjia-li/">Yangjia Li</a></span>, <span >
+      <a href="/author/peter-nazier-mosaad/">Peter Nazier Mosaad</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    September 2018
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>ATVA 2018</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/chen-atva2018/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/chen-atva2018/featured_hu088e62ef8f7039b659484462af580644_54916_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="What&#39;s to Come is Still Unsure" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/chen-atva2018/" >What&#39;s to Come is Still Unsure</a>
+  </div>
+
+  
+  <a href="/publication/chen-atva2018/"  class="summary-link">
+    <div class="article-style">
+      <p>The possible interactions between a controller and its environment can naturally be modelled as the arena of a two-player game, and adding an appropriate winning condition permits to specify desirable behavior. The classical model here is the positional game, where both players can (fully or partially) observe the current position in the game graph, which in turn is indicative of their mutual current states. In practice, neither sensing or actuating the environment through physical devices nor data forwarding to and signal processing in the controller are instantaneous. The resultant delays force the controller to draw decisions before being aware of the recent history of a play. It is known that existence of a winning strategy for the controller in games with such delays is decidable over finite game graphs and with respect to $\omega$-regular objectives. The underlying reduction, however, is impractical for non-trivial delays as it incurs a blow-up of the game graph which is exponential in the magnitude of the delay. For safety objectives, we propose a more practical incremental algorithm synthesizing a series of controllers handling increasing delays and reducing game-graph size in between. It is demonstrated using benchmark examples that even a simplistic explicit-state implementation of this algorithm outperforms state-of-the-art symbolic synthesis algorithms as soon as non-trivial delays have to be handled. We furthermore shed some light on the practically relevant case of non-order-preserving delays, as arising in actual networked control, thereby considerably extending the scope of regular game theory under delay pioneered by Klein and Zimmermann.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/ATVA2018.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/chen-atva2018/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.notebookarchive.org/synthesizing-controllers-for-safety-games-under-delayed-information--2021-08-5lc88f4/" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/MISSION.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/6AjaYHy_3Fo" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-030-01090-4_4" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/files/DPA-ATVA18-photo.jpeg" >
+    <i class="fas fa-certificate mr-1"></i>Distinguished Paper Award</a>
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2018">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/ting-gan/">Ting Gan</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/yangjia-li/">Yangjia Li</a></span>, <span >
+      <a href="/author/bican-xia/">Bican Xia</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    July 2018
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>IEEE Trans. Automat. Contr.</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/gan-tac2018/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/gan-tac2018/featured_hu2f83f8b7f14615a984f81e70fd011354_108973_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Reachability Analysis for Solvable Dynamical Systems" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/gan-tac2018/" >Reachability Analysis for Solvable Dynamical Systems</a>
+  </div>
+
+  
+  <a href="/publication/gan-tac2018/"  class="summary-link">
+    <div class="article-style">
+      <p>The reachability problem is one of the most important issues in the verification of hybrid systems. But unfortunately the reachable sets for most of hybrid systems are not computable. In the literature, only some special families of linear vector fields are proved with decidable reachability problem, let alone nonlinear ones. In this paper, we investigate the reachability problem of nonlinear vector fields by identifying three families of nonlinear vector fields with solvability and prove that their reachability problems are decidable. An $n$-dimension dynamical system is called solvable if its state variables can be partitioned into $m$ groups such that the derivatives of the variables in the $i$th group are linear in themselves, but possibly nonlinear in the variables from the $1$-st to $i-1$th groups. The three families of nonlinear solvable vector fields under consideration are: the matrices corresponding to the linear parts of any vector field in the first family are nilpotent; the matrices corresponding to the linear parts of any vector in the second family are only with real eigenvalues; the matrices corresponding to the linear parts of any vector field in the third family are only with pure imaginary eigenvalues. The experimental results indicate the efficiency of our approach.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/TAC2018.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/gan-tac2018/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://lcs.ios.ac.cn/~chenms/tools/LinR.tar.bz2" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1109/TAC.2017.2763785" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2017">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/bai-xue/">Bai Xue</a></span>, <span >
+      <a href="/author/peter-nazier-mosaad/">Peter Nazier Mosaad</a></span>, <span >
+      <a href="/author/martin-franzle/">Martin Fränzle</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/yangjia-li/">Yangjia Li</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    August 2017
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>FORMATS 2017</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/xue-formats2017/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/xue-formats2017/featured_hue13d1cbd771e960a8c297d0275a9b2fb_208095_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Safe Over- and Under-Approximation of Reachable Sets for Delay Differential Equations" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/xue-formats2017/" >Safe Over- and Under-Approximation of Reachable Sets for Delay Differential Equations</a>
+  </div>
+
+  
+  <a href="/publication/xue-formats2017/"  class="summary-link">
+    <div class="article-style">
+      <p>Delays in feedback control loop, as induced by networked distributed control schemes, may have detrimental effects on control performance. This induces an interest in safety verification of delay differential equations (DDEs) used as a model of embedded control. This article explores reachable-set computation for a class of DDEs featuring a local homeomorphism property. This topological property facilitates construction of over- and under-approximations of their full reachable sets by performing reachability analysis on the boundaries of their initial sets, thereby permitting an efficient lifting of reach-set computation methods for ODEs to DDEs. Membership in this class of DDEs is determined by conducting sensitivity analysis of the solution mapping with respect to the initial states to impose a bound constraint on the time-lag term. We then generalize boundary-based reachability analysis to such DDEs. Our reachability algorithm is iterative along the time axis and the computations in each iteration are performed in two steps. The first step computes an enclosure of the set of states reachable from the boundary of the step&rsquo;s initial state set. The second step derives an over- and under-approximations of the full reachable set by including (excluding, resp.) the obtained boundary enclosure from certain convex combinations of points in that boundary enclosure. Experiments on two illustrative examples demonstrate the efficacy of our algorithm.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/FORMATS2017.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/xue-formats2017/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/ESWEEK22-T2.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/6AjaYHy_3Fo" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-319-65765-3_16" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-6 year-2017">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/xiao-han/">Xiao Han</a></span>, <span >
+      <a href="/author/tao-tang/">Tao Tang</a></span>, <span >
+      <a href="/author/shuling-wang/">Shuling Wang</a></span>, <span >
+      <a href="/author/mengfei-yang/">Mengfei Yang</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>, <span >
+      <a href="/author/hengjun-zhao/">Hengjun Zhao</a></span>, <span >
+      <a href="/author/liang-zou/">Liang Zou</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    March 2017
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>ProCoS</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/chen-procos2017/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/chen-procos2017/featured_hu01edb021f654c06a4dc87048d4028d04_175739_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="MARS: A Toolchain for Modelling, Analysis and Verification of Hybrid Systems" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/chen-procos2017/" >MARS: A Toolchain for Modelling, Analysis and Verification of Hybrid Systems</a>
+  </div>
+
+  
+  <a href="/publication/chen-procos2017/"  class="summary-link">
+    <div class="article-style">
+      <p>We introduce a toolchain MARS for Modelling, Analyzing and veRifying hybrid Systems we developed in the past years. Using MARS, we build executable models of hybrid systems using the industrial standard environment Simulink/Stateflow, which facilitates analysis by simulation. To complement simulation, formal verification of Simulink/Stateflow models is conducted in the toolchain via the following steps. First, we translate Simulink/Stateflow diagrams to Hybrid CSP (HCSP) processes by an automatic translator Sim2HCSP, where HCSP is an extension of CSP for formally modelling hybrid systems; Second, to justify the translation, another automatic translator HCSP2Sim that translates from HCSP to Simulink is provided, so that the consistency between the original Simulink/Stateflow model and the translated HCSP formal model can be checked by co-simulation; Then, the HCSP processes obtained in the first step are verified by an interactive Hybrid Hoare Logic (HHL) prover; During the verification, an invariant generator independent of the theorem prover for synthesizing invariants for differential equations and loops is needed. We demonstrate the toolchain by analysis and verification of a descent guidance control program of a lunar lander, which is a real-world industry example.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/ProCoS2017.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/chen-procos2017/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://lcs.ios.ac.cn/~chenms/tools/MARS_v1.0.tar.bz2" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-319-48628-4_3" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2017">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/anders-p.-ravn/">Anders P. Ravn</a></span>, <span >
+      <a href="/author/shuling-wang/">Shuling Wang</a></span>, <span >
+      <a href="/author/mengfei-yang/">Mengfei Yang</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    January 2017
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>UTP 2016</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/chen-utp2016/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/chen-utp2016/featured_huc5bffa65d87e357394b365c7977aa370_105101_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="A Two-Way Path between Formal and Informal Design of Embedded Systems" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/chen-utp2016/" >A Two-Way Path between Formal and Informal Design of Embedded Systems</a>
+  </div>
+
+  
+  <a href="/publication/chen-utp2016/"  class="summary-link">
+    <div class="article-style">
+      <p>It is well known that informal simulation-based design of embedded systems has a low initial cost and delivers early results; yet it cannot guarantee the correctness and reliability of the system to be developed. In contrast, the correctness and reliability of the system can be thoroughly investigated with formal design, but it requires a larger effort, which increases the development cost. Therefore, it is desirable for a designer to move between formal and informal design. This paper describes how to translate Hybrid CSP (HCSP) formal models into Simulink graphical models, so that the models can be simulated and tested using a MATLAB platform, thus avoiding expensive formal verification if the development is at a stage where it is considered unnecessary. Together with our previous work on encoding Simulink/Stateflow diagrams into HCSP, it provides a two-way path in the design of embedded systems, so that the designer can flexibly shift between formal and informal models. The translation from HCSP into Simulink diagrams is implemented as a fully automatic tool, and the correctness of the translation is justified using Unifying Theories of Programming (UTP).</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/UTP2016.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/chen-utp2016/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://lcs.ios.ac.cn/~chenms/tools/H2S.tar.bz2" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/UTP16.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-319-52228-9_4" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2016">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/martin-franzle/">Martin Fränzle</a></span>, <span >
+      <a href="/author/yangjia-li/">Yangjia Li</a></span>, <span >
+      <a href="/author/peter-nazier-mosaad/">Peter Nazier Mosaad</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    November 2016
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>FM 2016</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/chen-fm2016/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/chen-fm2016/featured_huec600f9976e2e92d2d978aec6fe350df_90253_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Validated Simulation-Based Verification of Delayed Differential Dynamics" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/chen-fm2016/" >Validated Simulation-Based Verification of Delayed Differential Dynamics</a>
+  </div>
+
+  
+  <a href="/publication/chen-fm2016/"  class="summary-link">
+    <div class="article-style">
+      <p>Verification by simulation, based on covering the set of time-bounded trajectories of a dynamical system evolving from the initial state set by means of a finite sample of initial states plus a sensitivity argument, has recently attracted interest due to the availability of powerful simulators for rich classes of dynamical systems. System models addressed by such techniques involve ordinary differential equations (ODEs) and can readily be extended to delay differential equations (DDEs). In doing so, the lack of validated solvers for DDEs, however, enforces the use of numeric approximations such that the resulting verification procedures would have to resort to (rather strong) assumptions on numerical accuracy of the underlying simulators, which lack formal validation or proof. In this paper, we pursue a closer integration of the numeric solving and the sensitivity-related state bloating algorithms underlying verification by simulation, together yielding a safe enclosure algorithm for DDEs suitable for use in automated formal verification. The key ingredient is an on-the-fly computation of piecewise linear, local error bounds by nonlinear optimization, with the error bounds uniformly covering sensitivity information concerning initial states as well as integration error.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/FM2016.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/chen-fm2016/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://lcs.ios.ac.cn/~chenms/tools/DDEChecker_v1.0.tar.bz2" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/FM16-POSTER.pdf" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/FM16.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-319-48989-6_9" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2016">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/ting-gan/">Ting Gan</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/yangjia-li/">Yangjia Li</a></span>, <span >
+      <a href="/author/bican-xia/">Bican Xia</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    July 2016
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>ECC 2016</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/gan-ecc2016/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/gan-ecc2016/featured_hu06450833a0dcf9544ae8685c24b1716f_169025_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Computing Reachable Sets of Linear Vector Fields Revisited" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/gan-ecc2016/" >Computing Reachable Sets of Linear Vector Fields Revisited</a>
+  </div>
+
+  
+  <a href="/publication/gan-ecc2016/"  class="summary-link">
+    <div class="article-style">
+      <p>The reachability problem is one of the most important issues in the verification of hybrid systems. But unfortunately the reachable sets for most of hybrid systems are not computable except for some special families. In our previous work, we identified a family of vector fields, whose state parts are linear with real eigenvalues, while input parts are exponential functions, and proved its reachability problem is decidable. In this paper, we investigate another family of vector fields, whose state parts are linear, but with pure imagine eigenvalues, while input parts are trigonometric functions, and prove its reachability problem is decidable also. To the best of our knowledge, the two families are the largest families of linear vector fields with a decidable reachability problem. In addition, we present an approach on how to abstract general linear dynamical systems to the first family. Comparing with existing abstractions for linear dynamical systems, experimental results indicate that our abstraction is more precise.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/ECC2016.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/gan-ecc2016/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://lcs.ios.ac.cn/~chenms/tools/LinR.tar.bz2" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/ECC16.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1109/ECC.2016.7810321" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2016">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/ting-gan/">Ting Gan</a></span>, <span >
+      <a href="/author/liyun-dai/">Liyun Dai</a></span>, <span >
+      <a href="/author/bican-xia/">Bican Xia</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>, <span >
+      <a href="/author/deepak-kapur/">Deepak Kapur</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    June 2016
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>IJCAR 2016</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/gan-ijcar2016/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/gan-ijcar2016/featured_hu2e3945f96735750f8bf8e9105ca7731a_259925_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Interpolant Synthesis for Quadratic Polynomial Inequalities and Combination with EUF" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/gan-ijcar2016/" >Interpolant Synthesis for Quadratic Polynomial Inequalities and Combination with EUF</a>
+  </div>
+
+  
+  <a href="/publication/gan-ijcar2016/"  class="summary-link">
+    <div class="article-style">
+      <p>An algorithm for generating interpolants for formulas which are conjunctions of quadratic polynomial inequalities (both strict and nonstrict) is proposed. The algorithm is based on a key observation that quadratic polynomial inequalities can be linearized if they are concave. A generalization of Motzkin&rsquo;s transposition theorem is proved, which is used to generate an interpolant between two mutually contradictory conjunctions of polynomial inequalities, using semi-definite programming in time complexity $\mathcal{O}(n^3+nm)$, where $n$ is the number of variables and $m$ is the number of inequalities (this complexity analysis assumes that despite the numerical nature of approximate SDP algorithms, they are able to generate correct answers in a fixed number of calls). Using the framework proposed by Sofronie-Stokkermans for combining interpolants for a combination of quantifier-free theories which have their own interpolation algorithms, a combination algorithm is given for the combined theory of concave quadratic polynomial inequalities and the equality theory over uninterpreted functions.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/IJCAR2016.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/gan-ijcar2016/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://lcs.ios.ac.cn/~chenms/tools/InterCQI_v1.1.tar.bz2" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/RWTH18.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-319-40229-1_14" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2015">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/ting-gan/">Ting Gan</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/liyun-dai/">Liyun Dai</a></span>, <span >
+      <a href="/author/bican-xia/">Bican Xia</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    November 2015
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>ATVA 2015</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/gan-atva2015/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/gan-atva2015/featured_hu9340443cc24ee5f2639b3f83610aab0e_133687_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Decidability of the Reachability for a Family of Linear Vector Fields" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/gan-atva2015/" >Decidability of the Reachability for a Family of Linear Vector Fields</a>
+  </div>
+
+  
+  <a href="/publication/gan-atva2015/"  class="summary-link">
+    <div class="article-style">
+      <p>The reachability problem is one of the most important issues in the verification of hybrid systems. Computing the reachable sets of differential equations is difficult, although computing the reachable sets of finite state machines is well developed. Hence, it is not surprising that the reachability of most of hybrid systems is undecidable. In this paper, we identify a family of vector fields and show its reachability problem is decidable. The family consists of all vector fields whose state parts are linear, while input parts are non-linear, possibly with exponential expressions. Such vector fields are commonly used in practice.To the best of our knowledge, the family is one of the most expressive families of vector fields with a decidable reachability problem.The decidability is achieved by proving the decidability of the extension of Tarski&rsquo;s algebra with some specific exponential functions, which has been proved by Strzeboński. In this paper, we propose another decision procedure, which is more efficient when all constraints are open sets. The experimental results indicate the efficiency of our approach, even better than existing approaches based on approximation and numeric computation in general.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/ATVA2015.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/gan-atva2015/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://lcs.ios.ac.cn/~chenms/tools/LinR.tar.bz2" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/ATVA15.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-319-24953-7_34" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+        </div>
+
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Formal Verification Group at Zhejiang University. This work is inspired by <a href="http://geneticlogiclab.org/" target="_blank" rel="noopener">Genetic Logic Lab</a> and licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+    <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.54dd6e4d8f2e4b1d098381b57f18dd83.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+      
+      <script>
+
+  
+
+
+  (function(window, document) {
+    
+    var _CREATE_ELEMENT_ = 'createElement';
+    var _GET_ELEMENTS_BY_TAG_NAME_ = 'getElementsByTagName';
+    var _LENGTH_ = 'length';
+    var _STYLE_ = 'style';
+    var _TITLE_ = 'title';
+    var _UNDEFINED_ = 'undefined';
+    var _SET_ATTRIBUTE_ = 'setAttribute';
+    var _GET_ATTRIBUTE_ = 'getAttribute';
+
+    var NULL = null;
+
+    
+    var __SVGINJECT = '__svgInject';
+    var ID_SUFFIX = '--inject-';
+    var ID_SUFFIX_REGEX = new RegExp(ID_SUFFIX + '\\d+', "g");
+    var LOAD_FAIL = 'LOAD_FAIL';
+    var SVG_NOT_SUPPORTED = 'SVG_NOT_SUPPORTED';
+    var SVG_INVALID = 'SVG_INVALID';
+    var ATTRIBUTE_EXCLUSION_NAMES = ['src', 'alt', 'onload', 'onerror'];
+    var A_ELEMENT = document[_CREATE_ELEMENT_]('a');
+    var IS_SVG_SUPPORTED = typeof SVGRect != _UNDEFINED_;
+    var DEFAULT_OPTIONS = {
+      useCache: true,
+      copyAttributes: true,
+      makeIdsUnique: true
+    };
+    
+    
+    var IRI_TAG_PROPERTIES_MAP = {
+      clipPath: ['clip-path'],
+      'color-profile': NULL,
+      cursor: NULL,
+      filter: NULL,
+      linearGradient: ['fill', 'stroke'],
+      marker: ['marker', 'marker-end', 'marker-mid', 'marker-start'],
+      mask: NULL,
+      pattern: ['fill', 'stroke'],
+      radialGradient: ['fill', 'stroke']
+    };
+    var INJECTED = 1;
+    var FAIL = 2;
+
+    var uniqueIdCounter = 1;
+    var xmlSerializer;
+    var domParser;
+
+
+    
+    function svgStringToSvgDoc(svgStr) {
+      domParser = domParser || new DOMParser();
+      return domParser.parseFromString(svgStr, 'text/xml');
+    }
+
+
+    
+    function svgElemToSvgString(svgElement) {
+      xmlSerializer = xmlSerializer || new XMLSerializer();
+      return xmlSerializer.serializeToString(svgElement);
+    }
+
+
+    
+    function getAbsoluteUrl(url) {
+      A_ELEMENT.href = url;
+      return A_ELEMENT.href;
+    }
+
+
+    
+    function loadSvg(url, callback, errorCallback) {
+      if (url) {
+        var req = new XMLHttpRequest();
+        req.onreadystatechange = function() {
+          if (req.readyState == 4) {
+            
+            var status = req.status;
+            if (status == 200) {
+              
+              callback(req.responseXML, req.responseText.trim());
+            } else if (status >= 400) {
+              
+              errorCallback();
+            } else if (status == 0) {
+              
+              errorCallback();
+            }
+          }
+        };
+        req.open('GET', url, true);
+        req.send();
+      }
+    }
+
+
+    
+    function copyAttributes(imgElem, svgElem) {
+      var attribute;
+      var attributeName;
+      var attributeValue;
+      var attributes = imgElem.attributes;
+      for (var i = 0; i < attributes[_LENGTH_]; i++) {
+        attribute = attributes[i];
+        attributeName = attribute.name;
+        
+        if (ATTRIBUTE_EXCLUSION_NAMES.indexOf(attributeName) == -1) {
+          attributeValue = attribute.value;
+          
+          if (attributeName == _TITLE_) {
+            var titleElem;
+            var firstElementChild = svgElem.firstElementChild;
+            if (firstElementChild && firstElementChild.localName.toLowerCase() == _TITLE_) {
+              
+              titleElem = firstElementChild;
+            } else {
+              
+              
+              titleElem = document[_CREATE_ELEMENT_ + 'NS']('http://www.w3.org/2000/svg', _TITLE_);
+              svgElem.insertBefore(titleElem, firstElementChild);
+            }
+            
+            titleElem.textContent = attributeValue;
+          } else {
+            
+            svgElem[_SET_ATTRIBUTE_](attributeName, attributeValue);
+          }
+        }
+      }
+    }
+
+
+    
+    
+    
+    
+    
+    
+    function makeIdsUnique(svgElem, onlyReferenced) {
+      var idSuffix = ID_SUFFIX + uniqueIdCounter++;
+      
+      
+      var funcIriRegex = /url\("?#([a-zA-Z][\w:.-]*)"?\)/g;
+      
+      
+      var idElements = svgElem.querySelectorAll('[id]');
+      var idElem;
+      
+      
+      var referencedIds = onlyReferenced ? [] : NULL;
+      var tagName;
+      var iriTagNames = {};
+      var iriProperties = [];
+      var changed = false;
+      var i, j;
+
+      if (idElements[_LENGTH_]) {
+        
+        
+        for (i = 0; i < idElements[_LENGTH_]; i++) {
+          tagName = idElements[i].localName; 
+          
+          if (tagName in IRI_TAG_PROPERTIES_MAP) {
+            iriTagNames[tagName] = 1;
+          }
+        }
+        
+        for (tagName in iriTagNames) {
+          (IRI_TAG_PROPERTIES_MAP[tagName] || [tagName]).forEach(function (mappedProperty) {
+            
+            
+            if (iriProperties.indexOf(mappedProperty) < 0) {
+              iriProperties.push(mappedProperty);
+            }
+          });
+        }
+        if (iriProperties[_LENGTH_]) {
+          
+          iriProperties.push(_STYLE_);
+        }
+        
+        
+        
+        var descElements = svgElem[_GET_ELEMENTS_BY_TAG_NAME_]('*');
+        var element = svgElem;
+        var propertyName;
+        var value;
+        var newValue;
+        for (i = -1; element != NULL;) {
+          if (element.localName == _STYLE_) {
+            
+            value = element.textContent;
+            newValue = value && value.replace(funcIriRegex, function(match, id) {
+              if (referencedIds) {
+                referencedIds[id] = 1;
+              }
+              return 'url(#' + id + idSuffix + ')';
+            });
+            if (newValue !== value) {
+              element.textContent = newValue;
+            }
+          } else if (element.hasAttributes()) {
+            
+            for (j = 0; j < iriProperties[_LENGTH_]; j++) {
+              propertyName = iriProperties[j];
+              value = element[_GET_ATTRIBUTE_](propertyName);
+              newValue = value && value.replace(funcIriRegex, function(match, id) {
+                if (referencedIds) {
+                  referencedIds[id] = 1;
+                }
+                  return 'url(#' + id + idSuffix + ')';
+              });
+              if (newValue !== value) {
+                element[_SET_ATTRIBUTE_](propertyName, newValue);
+              }
+            }
+            
+            ['xlink:href', 'href'].forEach(function(refAttrName) {
+              var iri = element[_GET_ATTRIBUTE_](refAttrName);
+              if (/^\s*#/.test(iri)) { 
+                iri = iri.trim();
+                element[_SET_ATTRIBUTE_](refAttrName, iri + idSuffix);
+                if (referencedIds) {
+                  
+                  referencedIds[iri.substring(1)] = 1;
+                }
+              }
+            });
+          }
+          element = descElements[++i];
+        }
+        for (i = 0; i < idElements[_LENGTH_]; i++) {
+          idElem = idElements[i];
+          
+          
+          if (!referencedIds || referencedIds[idElem.id]) {
+            
+            idElem.id += idSuffix;
+            changed = true;
+          }
+        }
+      }
+      
+      return changed;
+    }
+
+
+    
+    
+    function makeIdsUniqueCached(svgString) {
+      return svgString.replace(ID_SUFFIX_REGEX, ID_SUFFIX + uniqueIdCounter++);
+    }
+
+
+    
+    function inject(imgElem, svgElem, absUrl, options) {
+      if (svgElem) {
+        svgElem[_SET_ATTRIBUTE_]('data-inject-url', absUrl);
+        var parentNode = imgElem.parentNode;
+        if (parentNode) {
+          if (options.copyAttributes) {
+            copyAttributes(imgElem, svgElem);
+          }
+          
+          var beforeInject = options.beforeInject;
+          var injectElem = (beforeInject && beforeInject(imgElem, svgElem)) || svgElem;
+          
+          parentNode.replaceChild(injectElem, imgElem);
+          
+          imgElem[__SVGINJECT] = INJECTED;
+          removeOnLoadAttribute(imgElem);
+          
+          var afterInject = options.afterInject;
+          if (afterInject) {
+            afterInject(imgElem, injectElem);
+          }
+        }
+      } else {
+        svgInvalid(imgElem, options);
+      }
+    }
+
+
+    
+    function mergeOptions() {
+      var mergedOptions = {};
+      var args = arguments;
+      
+      for (var i = 0; i < args[_LENGTH_]; i++) {
+        var argument = args[i];
+          for (var key in argument) {
+            if (argument.hasOwnProperty(key)) {
+              mergedOptions[key] = argument[key];
+            }
+          }
+        }
+      return mergedOptions;
+    }
+
+
+    
+    function addStyleToHead(css) {
+      var head = document[_GET_ELEMENTS_BY_TAG_NAME_]('head')[0];
+      if (head) {
+        var style = document[_CREATE_ELEMENT_](_STYLE_);
+        style.type = 'text/css';
+        style.appendChild(document.createTextNode(css));
+        head.appendChild(style);
+      }
+    }
+
+
+    
+    function buildSvgElement(svgStr, verify) {
+      if (verify) {
+        var svgDoc;
+        try {
+          
+          svgDoc = svgStringToSvgDoc(svgStr);
+        } catch(e) {
+          return NULL;
+        }
+        if (svgDoc[_GET_ELEMENTS_BY_TAG_NAME_]('parsererror')[_LENGTH_]) {
+          
+          return NULL;
+        }
+        return svgDoc.documentElement;
+      } else {
+        var div = document.createElement('div');
+        div.innerHTML = svgStr;
+        return div.firstElementChild;
+      }
+    }
+
+
+    function removeOnLoadAttribute(imgElem) {
+      
+      
+      imgElem.removeAttribute('onload');
+    }
+
+
+    function errorMessage(msg) {
+      console.error('SVGInject: ' + msg);
+    }
+
+
+    function fail(imgElem, status, options) {
+      imgElem[__SVGINJECT] = FAIL;
+      if (options.onFail) {
+        options.onFail(imgElem, status);
+      } else {
+        errorMessage(status);
+      }
+    }
+
+
+    function svgInvalid(imgElem, options) {
+      removeOnLoadAttribute(imgElem);
+      fail(imgElem, SVG_INVALID, options);
+    }
+
+
+    function svgNotSupported(imgElem, options) {
+      removeOnLoadAttribute(imgElem);
+      fail(imgElem, SVG_NOT_SUPPORTED, options);
+    }
+
+
+    function loadFail(imgElem, options) {
+      fail(imgElem, LOAD_FAIL, options);
+    }
+
+
+    function removeEventListeners(imgElem) {
+      imgElem.onload = NULL;
+      imgElem.onerror = NULL;
+    }
+
+
+    function imgNotSet(msg) {
+      errorMessage('no img element');
+    }
+
+
+    function createSVGInject(globalName, options) {
+      var defaultOptions = mergeOptions(DEFAULT_OPTIONS, options);
+      var svgLoadCache = {};
+
+      if (IS_SVG_SUPPORTED) {
+        
+        
+        addStyleToHead('img[onload^="' + globalName + '("]{visibility:hidden;}');
+      }
+
+
+      
+
+      function SVGInject(img, options) {
+        options = mergeOptions(defaultOptions, options);
+
+        var run = function(resolve) {
+          var allFinish = function() {
+            var onAllFinish = options.onAllFinish;
+            if (onAllFinish) {
+              onAllFinish();
+            }
+            resolve && resolve();
+          };
+
+          if (img && typeof img[_LENGTH_] != _UNDEFINED_) {
+            
+            var injectIndex = 0;
+            var injectCount = img[_LENGTH_];
+
+            if (injectCount == 0) {
+              allFinish();
+            } else {
+              var finish = function() {
+                if (++injectIndex == injectCount) {
+                  allFinish();
+                }
+              };
+
+              for (var i = 0; i < injectCount; i++) {
+                SVGInjectElement(img[i], options, finish);
+              }
+            }
+          } else {
+            
+            SVGInjectElement(img, options, allFinish);
+          }
+        };
+
+        
+        return typeof Promise == _UNDEFINED_ ? run() : new Promise(run);
+      }
+
+
+      
+      function SVGInjectElement(imgElem, options, callback) {
+        if (imgElem) {
+          var svgInjectAttributeValue = imgElem[__SVGINJECT];
+          if (!svgInjectAttributeValue) {
+            removeEventListeners(imgElem);
+
+            if (!IS_SVG_SUPPORTED) {
+              svgNotSupported(imgElem, options);
+              callback();
+              return;
+            }
+            
+            
+            var beforeLoad = options.beforeLoad;
+            var src = (beforeLoad && beforeLoad(imgElem)) || imgElem[_GET_ATTRIBUTE_]('src');
+
+            if (!src) {
+              
+              
+              if (src === '') {
+                loadFail(imgElem, options);
+              }
+              callback();
+              return;
+            }
+
+            
+            var onFinishCallbacks = [];
+            imgElem[__SVGINJECT] = onFinishCallbacks;
+
+            var onFinish = function() {
+              callback();
+              onFinishCallbacks.forEach(function(onFinishCallback) {
+                onFinishCallback();
+              });
+            };
+
+            var absUrl = getAbsoluteUrl(src);
+            var useCacheOption = options.useCache;
+            var makeIdsUniqueOption = options.makeIdsUnique;
+
+            var setSvgLoadCacheValue = function(val) {
+              if (useCacheOption) {
+                svgLoadCache[absUrl].forEach(function(svgLoad) {
+                  svgLoad(val);
+                });
+                svgLoadCache[absUrl] = val;
+              }
+            };
+
+            if (useCacheOption) {
+              var svgLoad = svgLoadCache[absUrl];
+
+              var handleLoadValue = function(loadValue) {
+                if (loadValue === LOAD_FAIL) {
+                  loadFail(imgElem, options);
+                } else if (loadValue === SVG_INVALID) {
+                  svgInvalid(imgElem, options);
+                } else {
+                  var hasUniqueIds = loadValue[0];
+                  var svgString = loadValue[1];
+                  var uniqueIdsSvgString = loadValue[2];
+                  var svgElem;
+
+                  if (makeIdsUniqueOption) {
+                    if (hasUniqueIds === NULL) {
+                      
+                      
+                      svgElem = buildSvgElement(svgString, false);
+                      hasUniqueIds = makeIdsUnique(svgElem, false);
+
+                      loadValue[0] = hasUniqueIds;
+                      loadValue[2] = hasUniqueIds && svgElemToSvgString(svgElem);
+                    } else if (hasUniqueIds) {
+                      
+                      svgString = makeIdsUniqueCached(uniqueIdsSvgString);
+                    }
+                  }
+
+                  svgElem = svgElem || buildSvgElement(svgString, false);
+
+                  inject(imgElem, svgElem, absUrl, options);
+                }
+                onFinish();
+              };
+
+              if (typeof svgLoad != _UNDEFINED_) {
+                
+                if (svgLoad.isCallbackQueue) {
+                  
+                  svgLoad.push(handleLoadValue);
+                } else {
+                  handleLoadValue(svgLoad);
+                }
+                return;
+              } else {
+                var svgLoad = [];
+                
+                svgLoad.isCallbackQueue = true;
+                svgLoadCache[absUrl] = svgLoad;
+              }
+            }
+
+            
+            loadSvg(absUrl, function(svgXml, svgString) {
+              
+              
+              var svgElem = svgXml instanceof Document ? svgXml.documentElement : buildSvgElement(svgString, true);
+
+              var afterLoad = options.afterLoad;
+              if (afterLoad) {
+                
+                
+                var svgElemOrSvgString = afterLoad(svgElem, svgString) || svgElem;
+                if (svgElemOrSvgString) {
+                  
+                  
+                  var isString = typeof svgElemOrSvgString == 'string';
+                  svgString = isString ? svgElemOrSvgString : svgElemToSvgString(svgElem);
+                  svgElem = isString ? buildSvgElement(svgElemOrSvgString, true) : svgElemOrSvgString;
+                }
+              }
+
+              if (svgElem instanceof SVGElement) {
+                var hasUniqueIds = NULL;
+                if (makeIdsUniqueOption) {
+                  hasUniqueIds = makeIdsUnique(svgElem, false);
+                }
+
+                if (useCacheOption) {
+                  var uniqueIdsSvgString = hasUniqueIds && svgElemToSvgString(svgElem);
+                  
+                  setSvgLoadCacheValue([hasUniqueIds, svgString, uniqueIdsSvgString]);
+                }
+
+                inject(imgElem, svgElem, absUrl, options);
+              } else {
+                svgInvalid(imgElem, options);
+                setSvgLoadCacheValue(SVG_INVALID);
+              }
+              onFinish();
+            }, function() {
+              loadFail(imgElem, options);
+              setSvgLoadCacheValue(LOAD_FAIL);
+              onFinish();
+            });
+          } else {
+            if (Array.isArray(svgInjectAttributeValue)) {
+              
+              svgInjectAttributeValue.push(callback);
+            } else {
+              callback();
+            }
+          }
+        } else {
+          imgNotSet();
+        }
+      }
+
+
+      
+
+      SVGInject.setOptions = function(options) {
+        defaultOptions = mergeOptions(defaultOptions, options);
+      };
+
+
+      
+      SVGInject.create = createSVGInject;
+
+
+      
+
+      SVGInject.err = function(img, fallbackSrc) {
+        if (img) {
+          if (img[__SVGINJECT] != FAIL) {
+            removeEventListeners(img);
+
+            if (!IS_SVG_SUPPORTED) {
+              svgNotSupported(img, defaultOptions);
+            } else {
+              removeOnLoadAttribute(img);
+              loadFail(img, defaultOptions);
+            }
+            if (fallbackSrc) {
+              removeOnLoadAttribute(img);
+              img.src = fallbackSrc;
+            }
+          }
+        } else {
+          imgNotSet();
+        }
+      };
+
+      window[globalName] = SVGInject;
+
+      return SVGInject;
+    }
+
+    var SVGInjectInstance = createSVGInject('SVGInject');
+
+    if (typeof module == 'object' && typeof module.exports == 'object') {
+      module.exports = SVGInjectInstance;
+    }
+  })(window, document);
+
+  
+  SVGInject(document.querySelectorAll('img[alt="Formal Verification Group"]'));
+
+</script>
+
+      
+    
+  
+
+
+
+
+
+
+</body>
+</html>

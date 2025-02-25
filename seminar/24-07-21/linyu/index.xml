@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automated Verification of Higher-Order Probabilistic Programs via a Dependent Refinement Type System | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/seminar/24-07-21/linyu/</link>
+      <atom:link href="https://fiction-zju.github.io/seminar/24-07-21/linyu/index.xml" rel="self" type="application/rss+xml" />
+    <description>Automated Verification of Higher-Order Probabilistic Programs via a Dependent Refinement Type System</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 21 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Automated Verification of Higher-Order Probabilistic Programs via a Dependent Refinement Type System</title>
+      <link>https://fiction-zju.github.io/seminar/24-07-21/linyu/</link>
+    </image>
+    
+  </channel>
+</rss>

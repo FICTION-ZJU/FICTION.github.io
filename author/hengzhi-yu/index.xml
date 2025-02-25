@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hengzhi Yu | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/author/hengzhi-yu/</link>
+      <atom:link href="https://fiction-zju.github.io/author/hengzhi-yu/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hengzhi Yu</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://fiction-zju.github.io/author/hengzhi-yu/avatar_hu568962ddf8962ae3c367199ede300e97_163115_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Hengzhi Yu</title>
+      <link>https://fiction-zju.github.io/author/hengzhi-yu/</link>
+    </image>
+    
+  </channel>
+</rss>

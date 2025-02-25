@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Autoformalization with Large Language Models | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/seminar/24-09-22/yutao/</link>
+      <atom:link href="https://fiction-zju.github.io/seminar/24-09-22/yutao/index.xml" rel="self" type="application/rss+xml" />
+    <description>Autoformalization with Large Language Models</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Autoformalization with Large Language Models</title>
+      <link>https://fiction-zju.github.io/seminar/24-09-22/yutao/</link>
+    </image>
+    
+  </channel>
+</rss>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>quantifier elimination | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/tag/quantifier-elimination/</link>
+      <atom:link href="https://fiction-zju.github.io/tag/quantifier-elimination/index.xml" rel="self" type="application/rss+xml" />
+    <description>quantifier elimination</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 02 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>quantifier elimination</title>
+      <link>https://fiction-zju.github.io/tag/quantifier-elimination/</link>
+    </image>
+    
+    <item>
+      <title>MARS: A Toolchain for Modelling, Analysis and Verification of Hybrid Systems</title>
+      <link>https://fiction-zju.github.io/publication/chen-procos2017/</link>
+      <pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/chen-procos2017/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Decidability of the Reachability for a Family of Linear Vector Fields</title>
+      <link>https://fiction-zju.github.io/publication/gan-atva2015/</link>
+      <pubDate>Sun, 22 Nov 2015 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/gan-atva2015/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

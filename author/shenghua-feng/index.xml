@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shenghua Feng | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/author/shenghua-feng/</link>
+      <atom:link href="https://fiction-zju.github.io/author/shenghua-feng/index.xml" rel="self" type="application/rss+xml" />
+    <description>Shenghua Feng</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 13 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Shenghua Feng</title>
+      <link>https://fiction-zju.github.io/author/shenghua-feng/</link>
+    </image>
+    
+    <item>
+      <title>A Unified Framework for Quantitative Analysis of Probabilistic Programs</title>
+      <link>https://fiction-zju.github.io/publication/feng-jpk60/</link>
+      <pubDate>Wed, 13 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/feng-jpk60/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lower Bounds for Possibly Divergent Probabilistic Programs</title>
+      <link>https://fiction-zju.github.io/publication/feng-oopsla2023/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/feng-oopsla2023/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unbounded-Time Safety Verification of Stochastic Differential Dynamics</title>
+      <link>https://fiction-zju.github.io/publication/feng-cav2020/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/feng-cav2020/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Taming Delays in Dynamical Systems</title>
+      <link>https://fiction-zju.github.io/publication/feng-cav2019/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/feng-cav2019/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

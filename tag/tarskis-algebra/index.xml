@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tarski&#39;s algebra | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/tag/tarskis-algebra/</link>
+      <atom:link href="https://fiction-zju.github.io/tag/tarskis-algebra/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tarski&#39;s algebra</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Tarski&#39;s algebra</title>
+      <link>https://fiction-zju.github.io/tag/tarskis-algebra/</link>
+    </image>
+    
+    <item>
+      <title>Reachability Analysis for Solvable Dynamical Systems</title>
+      <link>https://fiction-zju.github.io/publication/gan-tac2018/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/gan-tac2018/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Computing Reachable Sets of Linear Vector Fields Revisited</title>
+      <link>https://fiction-zju.github.io/publication/gan-ecc2016/</link>
+      <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/gan-ecc2016/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Decidability of the Reachability for a Family of Linear Vector Fields</title>
+      <link>https://fiction-zju.github.io/publication/gan-atva2015/</link>
+      <pubDate>Sun, 22 Nov 2015 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/gan-atva2015/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

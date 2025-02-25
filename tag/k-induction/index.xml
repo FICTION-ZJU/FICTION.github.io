@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>$k$-induction | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/tag/k-induction/</link>
+      <atom:link href="https://fiction-zju.github.io/tag/k-induction/index.xml" rel="self" type="application/rss+xml" />
+    <description>$k$-induction</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 15 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>$k$-induction</title>
+      <link>https://fiction-zju.github.io/tag/k-induction/</link>
+    </image>
+    
+    <item>
+      <title>Latticed $k$-Induction with an Application to Probabilistic Programs</title>
+      <link>https://fiction-zju.github.io/publication/batz-cav2021/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/batz-cav2021/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Latticed $k$-Induction and Probabilistic Programs</title>
+      <link>https://fiction-zju.github.io/pulp/21-04-18-pulp-k-induction/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/pulp/21-04-18-pulp-k-induction/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Induction is a process of inference; it proceeds from the known to the unknown.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ndash; &lt;cite&gt;John S. Mill, 1806 &amp;ndash; 1873&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A &lt;a href=&#34;https://mp.weixin.qq.com/s/Kc3OGwSf0yUvtnDDO5rAjA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blog post&lt;/a&gt; (in Chinese) for &lt;a href=&#34;https://fiction-zju.github.io/publication/batz-cav2021/&#34;&gt;this publication&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

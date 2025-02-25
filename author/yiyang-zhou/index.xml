@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yiyang Zhou | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/author/yiyang-zhou/</link>
+      <atom:link href="https://fiction-zju.github.io/author/yiyang-zhou/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yiyang Zhou</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://fiction-zju.github.io/author/yiyang-zhou/avatar_hu3d4f9a095ef883082f0c728ff2312a85_4623_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Yiyang Zhou</title>
+      <link>https://fiction-zju.github.io/author/yiyang-zhou/</link>
+    </image>
+    
+  </channel>
+</rss>

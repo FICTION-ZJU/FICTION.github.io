@@ -1,0 +1,6488 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.6.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="The Formal Verification Group (FICTION), headed by Prof. Dr. Mingshuai Chen, is a research unit embedded in the College of Computer Science and Technology at Zhejiang University, Hangzhou, China. We develop formal reasoning techniques for programs and hybrid discrete-continuous systems for ensuring the reliability and effectiveness of safety-critical software systems while pushing the limits of automation as far as possible." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://fiction-zju.github.io/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.eae541781b54fa7848b1a55d8c72c5da.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+
+  
+  
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Formal Verification Group" />
+  
+
+  
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu05dae1538d00d7195fbc8a02478b8221_4208_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu05dae1538d00d7195fbc8a02478b8221_4208_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://fiction-zju.github.io/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="Formal Verification Group" />
+  <meta property="og:url" content="https://fiction-zju.github.io/" />
+  <meta property="og:title" content="Formal Verification Group" />
+  <meta property="og:description" content="The Formal Verification Group (FICTION), headed by Prof. Dr. Mingshuai Chen, is a research unit embedded in the College of Computer Science and Technology at Zhejiang University, Hangzhou, China. We develop formal reasoning techniques for programs and hybrid discrete-continuous systems for ensuring the reliability and effectiveness of safety-critical software systems while pushing the limits of automation as far as possible." /><meta property="og:image" content="https://fiction-zju.github.io/media/sharing.jpeg" />
+    <meta property="twitter:image" content="https://fiction-zju.github.io/media/sharing.jpeg" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2025-02-26T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://fiction-zju.github.io?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://fiction-zju.github.io"
+}
+</script>
+
+
+  
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://fiction-zju.github.io",
+  "name": "Formal Verification Group",
+  "logo": "https://fiction-zju.github.io/media/logo.svg",
+  "image": "https://fiction-zju.github.io/media/sharing.jpeg",
+  
+  
+  
+  "url": "https://fiction-zju.github.io"
+}
+</script>
+
+  
+
+  
+
+
+  <title>Formal Verification Group</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+      
+      
+<meta name="google-site-verification" content="egmOGCPk-Y14FThPF-zP9WbIjo-_dPe6RRYb0DWo7Xs" />
+
+      
+    
+  
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   "  >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.613040fe4f2c0f007b4dcb64404201cb.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo.svg" alt="Formal Verification Group"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo.svg" alt="Formal Verification Group"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about" data-target="#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/news"><span>News</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/seminar"><span>Seminar</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/courses"><span>Courses</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/vacancies"><span>Vacancies</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/pulp"><span>Pulp Fictions</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+<span class="js-widget-page d-none"></span>
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="about" class="home-section wg-about  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+
+      
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
+
+      
+        
+        
+        <svg viewBox="219.693 137.649 263.739 317.148" width="220" height="268">
+          <rect style="stroke: currentColor; fill-rule: nonzero; stroke-linecap: round; stroke-linejoin: round; stroke-width: 5px; paint-order: fill; fill: none;" x="225.831" y="142.16" width="252.881" height="308.457" rx="15" ry="15"></rect>
+          <path d="M 347.066 267.981 L 351.888 267.981 L 351.888 287.271 L 347.066 287.271 L 347.066 267.981 Z" style=""></path>
+          <path d="M 361.535 287.271 L 366.356 287.271 C 369.017 287.271 371.179 285.109 371.179 282.449 L 371.179 272.804 C 371.179 270.144 369.017 267.981 366.356 267.981 L 361.535 267.981 C 358.874 267.981 356.712 270.144 356.712 272.804 L 356.712 282.449 C 356.712 285.109 358.874 287.271 361.535 287.271 Z M 361.535 272.804 L 366.356 272.804 L 366.359 282.449 L 361.535 282.449 L 361.535 272.804 Z" style=""></path>
+          <path d="M 376.002 267.981 L 380.824 267.981 L 380.824 287.271 L 376.002 287.271 L 376.002 267.981 Z" style=""></path>
+          <path d="M 390.47 267.981 C 387.809 267.981 385.647 270.144 385.647 272.804 L 385.647 282.449 C 385.647 285.109 387.809 287.271 390.47 287.271 L 395.292 287.271 C 397.952 287.271 400.114 285.109 400.114 282.449 L 400.114 272.804 C 400.114 270.144 397.952 267.981 395.292 267.981 L 390.47 267.981 Z M 390.47 282.449 L 390.47 272.804 L 395.292 272.804 L 395.294 282.449 L 390.47 282.449 Z" style=""></path>
+          <path d="M 404.936 267.981 L 409.759 267.981 L 409.759 287.271 L 404.936 287.271 L 404.936 267.981 Z" style=""></path>
+          <path d="M 432.874 258.336 L 382.588 258.336 L 382.588 239.575 L 376.61 238.079 C 375.323 232.027 372.98 226.358 369.627 221.194 L 372.791 215.92 L 359.9 203.027 L 354.625 206.19 C 353.24 205.291 351.813 204.478 350.356 203.726 L 357.354 193.233 L 397.055 193.233 L 397.055 188.41 L 392.233 188.41 L 392.233 173.942 L 387.41 173.942 L 387.41 188.41 L 382.588 188.41 L 382.588 178.764 L 377.766 178.764 L 377.766 188.41 L 372.943 188.41 L 372.943 173.942 L 368.12 173.942 L 368.12 188.41 L 363.297 188.41 L 363.297 183.586 L 358.475 183.586 L 358.475 188.41 L 354.774 188.41 L 345.908 201.708 C 343.275 200.66 340.555 199.811 337.741 199.213 L 336.243 193.233 L 318.014 193.233 L 316.516 199.212 C 310.464 200.499 304.799 202.841 299.634 206.192 L 294.358 203.029 L 281.466 215.922 L 284.629 221.195 C 281.278 226.36 278.937 232.029 277.646 238.082 L 271.669 239.575 L 271.669 257.809 L 277.646 259.304 C 278.934 265.356 281.278 271.026 284.629 276.19 L 281.466 281.461 L 294.356 294.354 L 299.633 291.19 C 304.797 294.542 310.464 296.884 316.516 298.17 L 318.014 304.15 L 325.248 304.15 L 330.069 323.44 L 377.765 323.44 L 377.765 318.618 L 372.943 318.618 L 372.943 308.973 L 368.119 308.973 L 368.119 318.618 L 363.296 318.618 L 363.296 313.796 L 358.475 313.796 L 358.475 318.618 L 353.652 318.618 L 353.652 304.15 L 348.829 304.15 L 348.829 318.618 L 344.007 318.618 L 344.007 308.973 L 339.184 308.973 L 339.184 318.618 L 333.833 318.618 L 330.214 304.15 L 336.098 304.15 L 338.51 296.916 L 432.874 296.916 L 432.874 292.094 L 335.035 292.094 L 332.624 299.328 L 321.774 299.328 L 320.444 294.005 L 318.913 293.728 C 312.443 292.556 306.442 290.072 301.074 286.352 L 299.797 285.465 L 295.106 288.279 L 287.536 280.712 L 290.35 276.022 L 289.466 274.743 C 285.745 269.375 283.264 263.372 282.09 256.904 L 281.811 255.373 L 276.491 254.042 L 276.491 243.341 L 281.812 242.011 L 282.091 240.481 C 283.263 234.01 285.746 228.009 289.466 222.642 L 290.351 221.361 L 287.536 216.67 L 295.104 209.101 L 299.795 211.915 L 301.073 211.029 C 306.442 207.308 312.443 204.827 318.912 203.652 L 320.443 203.374 L 321.774 198.054 L 332.477 198.054 L 333.808 203.377 L 335.339 203.654 C 341.81 204.827 347.81 207.311 353.178 211.03 L 354.456 211.917 L 359.146 209.103 L 366.714 216.672 L 363.901 221.363 L 364.785 222.642 C 368.505 228.009 370.987 234.011 372.162 240.481 L 372.439 242.012 L 377.765 243.34 L 377.765 258.336 L 366.977 258.336 C 367.736 255.195 368.119 251.96 368.119 248.692 C 368.119 226.088 349.732 207.7 327.127 207.7 C 304.524 207.7 286.137 226.088 286.137 248.692 C 286.137 271.294 304.524 289.682 327.127 289.682 C 331.504 289.682 335.816 288.996 339.936 287.641 L 338.429 283.059 C 337.096 283.499 335.734 283.829 334.359 284.108 L 334.359 275.785 C 334.359 273.465 333.809 271.139 332.772 269.061 C 330.211 263.933 325.058 260.748 319.325 260.748 L 309.786 260.748 C 306.563 260.748 303.43 261.392 300.469 262.659 C 298.622 263.453 296.891 264.517 295.274 265.799 C 292.524 260.702 290.959 254.877 290.959 248.692 C 290.959 246.942 291.128 245.231 291.368 243.548 C 292.273 243.756 293.188 243.868 294.112 243.868 C 297.066 243.868 299.682 245.639 300.777 248.381 C 302.607 252.964 306.984 255.925 311.917 255.925 L 324.716 255.925 C 330.035 255.925 334.361 251.6 334.361 246.281 C 334.361 240.961 330.035 236.635 324.716 236.635 C 322.056 236.635 319.894 234.473 319.894 231.813 L 319.894 227.943 C 319.894 225.266 319.11 222.674 317.625 220.446 L 314.009 215.026 C 317.821 213.536 321.94 212.675 326.249 212.571 C 325.263 214.447 324.716 216.538 324.716 218.694 C 324.716 223.187 326.949 227.358 330.686 229.85 L 335.361 232.966 C 337.755 234.563 339.183 237.234 339.183 240.107 C 339.183 247.499 345.198 253.515 352.59 253.515 C 356.417 253.515 360.057 252.446 363.226 250.483 C 363.068 253.731 362.506 256.926 361.496 259.993 L 360.453 263.159 L 432.874 263.159 L 432.874 258.336 Z M 302.366 267.091 C 304.725 266.082 307.22 265.57 309.786 265.57 L 319.325 265.57 C 323.218 265.57 326.719 267.733 328.46 271.215 C 329.168 272.627 329.539 274.207 329.539 275.785 L 329.539 284.767 C 328.738 284.82 327.935 284.861 327.127 284.861 C 315.097 284.861 304.452 278.935 297.872 269.877 C 299.265 268.714 300.769 267.777 302.365 267.091 L 302.366 267.091 Z M 313.612 223.12 C 314.568 224.554 315.071 226.222 315.071 227.944 L 315.071 231.813 C 315.071 237.132 319.397 241.458 324.716 241.458 C 327.376 241.458 329.539 243.621 329.539 246.281 C 329.539 248.941 327.376 251.103 324.716 251.103 L 311.917 251.103 C 308.963 251.103 306.347 249.333 305.253 246.592 C 303.423 242.008 299.046 239.047 294.112 239.047 C 293.529 239.047 292.944 238.972 292.361 238.829 C 295.009 229.507 301.288 221.709 309.591 217.085 L 313.612 223.12 Z M 344.006 240.108 C 344.006 235.616 341.773 231.445 338.036 228.954 L 333.361 225.837 C 330.967 224.241 329.538 221.57 329.538 218.695 C 329.538 216.528 330.428 214.476 331.94 212.881 C 348.273 215.069 361.185 228.166 363.046 244.6 C 360.174 247.239 356.505 248.693 352.589 248.693 C 347.855 248.693 344.005 244.842 344.005 240.109 L 344.006 240.108 Z" style=""></path>
+          <path d="M 342.244 258.336 L 359.123 258.336 L 359.123 263.159 L 342.244 263.159 L 342.244 258.336 Z" style=""></path>
+          <path d="M 419.404 267.981 C 416.745 267.981 414.583 270.144 414.583 272.804 L 414.583 282.449 C 414.583 285.109 416.745 287.271 419.404 287.271 L 424.227 287.271 C 426.887 287.271 429.05 285.109 429.05 282.449 L 429.05 272.804 C 429.05 270.144 426.887 267.981 424.227 267.981 L 419.404 267.981 Z M 419.404 282.449 L 419.404 272.804 L 424.227 272.804 L 424.23 282.449 L 419.404 282.449 Z" style=""></path>
+          <path d="M 290.719 386.804 L 280.794 386.804 L 280.794 396.57 L 288.973 396.57 L 288.973 398.714 L 280.794 398.714 L 280.794 411.656 L 274.045 411.656 L 274.045 384.66 L 290.719 384.66 L 290.719 386.804 Z M 278.968 409.83 L 278.968 386.486 L 275.872 386.486 L 275.872 409.83 L 278.968 409.83 Z M 301.82 411.656 L 295.071 411.656 L 295.071 384.66 L 301.82 384.66 L 301.82 411.656 Z M 299.994 409.83 L 299.994 386.486 L 296.898 386.486 L 296.898 409.83 L 299.994 409.83 Z M 330.916 392.243 L 329.328 393.196 C 328.587 390.946 327.343 389.179 325.596 387.896 C 323.849 386.612 321.785 385.97 319.403 385.97 C 317.444 385.97 315.671 386.433 314.083 387.36 L 314.083 409.036 C 315.698 409.962 317.471 410.425 319.403 410.425 C 321.732 410.425 323.764 409.803 325.497 408.559 C 327.23 407.316 328.494 405.595 329.288 403.398 L 330.837 404.351 C 329.858 406.866 328.362 408.811 326.351 410.187 C 324.339 411.564 321.983 412.252 319.284 412.252 C 315.631 412.252 312.614 410.796 310.232 407.885 C 308.009 405.185 306.898 401.956 306.898 398.198 C 306.898 394.439 308.009 391.197 310.232 388.471 C 312.614 385.586 315.645 384.144 319.324 384.144 C 322.05 384.144 324.425 384.852 326.45 386.268 C 328.475 387.684 329.963 389.676 330.916 392.243 Z M 312.257 407.527 L 312.257 388.868 C 310.986 390.324 310.08 391.76 309.538 393.176 C 308.995 394.592 308.724 396.266 308.724 398.198 C 308.724 401.745 309.902 404.854 312.257 407.527 Z M 357.474 386.804 L 348.74 386.804 L 348.74 411.656 L 341.991 411.656 L 341.991 386.804 L 333.257 386.804 L 333.257 384.66 L 357.474 384.66 L 357.474 386.804 Z M 346.913 409.83 L 346.913 386.804 L 343.817 386.804 L 343.817 409.83 L 346.913 409.83 Z M 368.259 411.656 L 361.51 411.656 L 361.51 384.66 L 368.259 384.66 L 368.259 411.656 Z M 366.433 409.83 L 366.433 386.486 L 363.337 386.486 L 363.337 409.83 L 366.433 409.83 Z M 400.809 398.158 C 400.809 401.996 399.479 405.304 396.819 408.083 C 394.159 410.862 390.924 412.252 387.113 412.252 C 383.302 412.252 380.066 410.862 377.406 408.083 C 374.746 405.304 373.416 401.996 373.416 398.158 C 373.416 394.321 374.746 391.019 377.406 388.253 C 380.066 385.487 383.302 384.104 387.113 384.104 C 390.924 384.104 394.159 385.487 396.819 388.253 C 399.479 391.019 400.809 394.321 400.809 398.158 Z M 398.983 398.198 C 398.983 394.572 397.686 391.541 395.092 389.106 L 395.092 407.249 C 397.686 404.814 398.983 401.797 398.983 398.198 Z M 393.266 408.639 L 393.266 387.717 C 391.387 386.526 389.336 385.93 387.113 385.93 C 384.89 385.93 382.838 386.526 380.959 387.717 L 380.959 408.639 C 382.864 409.83 384.916 410.425 387.113 410.425 C 389.31 410.425 391.361 409.83 393.266 408.639 Z M 379.133 407.249 L 379.133 389.106 C 376.539 391.541 375.242 394.572 375.242 398.198 C 375.242 401.797 376.539 404.814 379.133 407.249 Z M 430.261 411.656 L 422.797 411.656 L 408.188 389.742 L 408.188 411.656 L 406.044 411.656 L 406.044 384.66 L 412.833 384.66 L 428.117 407.567 L 428.117 384.66 L 430.261 384.66 L 430.261 411.656 Z M 427.482 409.83 L 411.88 386.486 L 408.188 386.486 L 423.75 409.83 L 427.482 409.83 Z" style="fill: currentColor; white-space: pre;"></path>
+        </svg>
+        
+      
+
+      <div class="portrait-title">
+        <h2></h2>
+        
+
+        
+        <h3>
+          
+          <span>College of Computer Science and Technology</span>
+          
+        </h3>
+        
+        <h3>
+          
+          <span>Zhejiang University</span>
+          
+        </h3>
+        
+      </div>
+      <ul class="network-icon" aria-hidden="true">
+        
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a href="mailto:m.chen@zju.edu.cn" >
+            
+              <i class="fas fa-envelope"></i>
+            
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a href="http://www.en.cs.zju.edu.cn/" target="_blank" rel="noopener">
+            
+              <i class="fas fa-building-columns"></i>
+            
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a href="https://www.zju.edu.cn/english/" target="_blank" rel="noopener">
+            
+              <i class="fas fa-graduation-cap"></i>
+            
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a href="https://github.com/FICTION-ZJU" target="_blank" rel="noopener">
+            
+              <i class="fab fa-github"></i>
+            
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+    <h1>Formal Verification Group</h1>
+
+    <p>The Formal Verification Group (FICTION<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>), headed by Prof. Dr. <a href="/author/mingshuai-chen/">Mingshuai Chen</a>, is a research unit embedded in the College of Computer Science and Technology at Zhejiang University (ZJU), Hangzhou, China. We develop formal reasoning techniques for programs and hybrid discrete-continuous systems for ensuring the reliability and effectiveness of safety-critical software systems while pushing the limits of automation as far as possible. Check out the <a href="/#featured">featured publications</a> as examples of our research.</p>
+<p>We are constantly on the hunt of self-motivated Postdocs, Ph.D./Master Students, and Research Assistants/Interns to join our group at ZJU. Check out the <a href="/vacancies/">open positions</a> in case you are interested.</p>
+<!-- <i class="fa-solid fa-triangle-exclamation"></i> This site is currently under construction. -->
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>FICTION (/ˈfɪkʃn/) refers to any creative work that may deviate from plausibility.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+    <div class="row">
+
+      
+
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="news" class="home-section wg-pages  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Latest News</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 26, 2024
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/news/24-11-26-paper-jos2025/" >
+    <div class="img-hover-zoom">
+      <img src="/news/24-11-26-paper-jos2025/featured_hu6e49e5ab4656fc190a32a7d2c7d291bd_346736_808x455_fill_q75_h2_lanczos_center_3.webp" height="455" width="808"
+           class="article-banner" alt="Paper Accepted by Journal of Software" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/news/24-11-26-paper-jos2025/" >Paper Accepted by Journal of Software</a>
+  </div>
+
+  
+  <a href="/news/24-11-26-paper-jos2025/"  class="summary-link">
+    <div class="article-style">
+      <p><p>Our paper has been accepted by Journal of Software.</p></p>
+    </div>
+  </a>
+  
+
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 17, 2024
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/news/24-11-17-prize-chinasoft2024/" >
+    <div class="img-hover-zoom">
+      <img src="/news/24-11-17-prize-chinasoft2024/featured_hu5ca1316822865350978ec69157409136_732678_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Parf Wins the 2nd Prize at ChinaSoft 2024" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/news/24-11-17-prize-chinasoft2024/" >Parf Wins the 2nd Prize at ChinaSoft 2024</a>
+  </div>
+
+  
+  <a href="/news/24-11-17-prize-chinasoft2024/"  class="summary-link">
+    <div class="article-style">
+      <p><p>Our tool Parf has been awarded the 2nd prize in the Software Prototype System Competition at ChinaSoft 2024.</p></p>
+    </div>
+  </a>
+  
+
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 13, 2024
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/news/24-11-13-paper-jpk60/" >
+    <div class="img-hover-zoom">
+      <img src="/news/24-11-13-paper-jpk60/featured_hud4f0915ddf4f6e99fd1e9b16c36047c2_879222_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Book Chapter in JPK&#39;s Festschrift" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/news/24-11-13-paper-jpk60/" >Book Chapter in JPK&#39;s Festschrift</a>
+  </div>
+
+  
+  <a href="/news/24-11-13-paper-jpk60/"  class="summary-link">
+    <div class="article-style">
+      <p><p>Our paper appears in the Festschrift dedicated to Joost-Pieter Katoen.</p></p>
+    </div>
+  </a>
+  
+
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Aug 25, 2024
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/news/24-08-07-paper-ase2024/" >
+    <div class="img-hover-zoom">
+      <img src="/news/24-08-07-paper-ase2024/featured_hu65632fee1cb45e2af88f872453eb9f2b_168838_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Paper Accepted by ASE 2024" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/news/24-08-07-paper-ase2024/" >Paper Accepted by ASE 2024</a>
+  </div>
+
+  
+  <a href="/news/24-08-07-paper-ase2024/"  class="summary-link">
+    <div class="article-style">
+      <p><p>Our paper has been accepted for presentation at ASE 2024.</p></p>
+    </div>
+  </a>
+  
+
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jul 16, 2024
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/news/24-07-16-paper-acmmm2024/" >
+    <div class="img-hover-zoom">
+      <img src="/news/24-07-16-paper-acmmm2024/featured_hu38d8ef420f085b36d883a1e72018e0de_233858_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Paper Accepted by ACM MM 2024" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/news/24-07-16-paper-acmmm2024/" >Paper Accepted by ACM MM 2024</a>
+  </div>
+
+  
+  <a href="/news/24-07-16-paper-acmmm2024/"  class="summary-link">
+    <div class="article-style">
+      <p><p>Our paper has been accepted for presentation at ACM MM 2024.</p></p>
+    </div>
+  </a>
+  
+
+  
+
+</div>
+
+  
+
+  
+  
+  
+
+    
+    
+      
+    
+
+    
+    
+    
+    
+      
+    
+
+    
+
+    <div class="see-all">
+      <a href="/news/">
+        See all
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="team" class="home-section wg-awesome  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+
+      
+
+
+
+
+
+
+
+
+
+<div class="row justify-content-center people-widget">
+    
+    <div class="col-md-12 section-heading">
+      <h1>Meet the Team</h1>
+      
+    </div>
+    
+  
+    
+    <div class="col-md-12">
+      
+
+
+
+
+
+
+
+
+
+
+
+<div class="gallery-grid">
+
+  
+  
+  
+    
+    
+    
+    
+    
+  
+  
+  <div class="gallery-item gallery-item--medium">
+    <a data-fancybox="gallery-group-photos" href="/media/albums/group-photos/230911-1.jpg" >
+      <img src="/media/albums/group-photos/230911-1_hue49f502ec6fc876657a7e7a480f04d93_6704379_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="230911-1.jpg" width="750" height="563">
+    </a>
+  </div>
+  
+    
+    
+    
+    
+    
+  
+  
+  <div class="gallery-item gallery-item--medium">
+    <a data-fancybox="gallery-group-photos" href="/media/albums/group-photos/241117.jpeg" >
+      <img src="/media/albums/group-photos/241117_huf0342d42503317b96ed4f4592e96c9e4_2964981_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="241117.jpeg" width="750" height="563">
+    </a>
+  </div>
+  
+
+</div>
+
+    </div>
+    
+  
+    
+  
+    
+  
+    
+    <div class="col-md-12">
+      <h2 class="mb-4">Researchers</h2>
+    </div>
+    
+  
+    
+    
+    
+    
+    
+      
+    
+    <div class="col-12 col-sm-auto people-person">
+      
+      
+        
+        
+      
+      
+        
+        <a href="/author/mingshuai-chen/"><img class="avatar avatar-circle" src="/author/mingshuai-chen/avatar_hud4df639824b86afa48261adc317427f6_1256730_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
+      
+  
+      <div class="portrait-title">
+        <h2><a href="/author/mingshuai-chen/">Mingshuai Chen</a></h2>
+        <ul class="network-icon" aria-hidden="true">
+    
+  
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://person.zju.edu.cn/en/chenms" target="_blank" rel="noopener">
+        
+          <i class="fas fa-building-columns"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+  
+      <li>
+        <a href="mailto:m.chen@zju.edu.cn" >
+        
+          <i class="fas fa-envelope"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://dblp.org/pid/169/1207" target="_blank" rel="noopener">
+        
+          <i class="ai ai-dblp"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://scholar.google.de/citations?hl=en&amp;user=n7odC-EAAAAJ" target="_blank" rel="noopener">
+        
+          <i class="ai ai-google-scholar"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://www.researchgate.net/profile/Mingshuai_Chen" target="_blank" rel="noopener">
+        
+          <i class="ai ai-researchgate"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://www.semanticscholar.org/author/Mingshuai-Chen/2855195" target="_blank" rel="noopener">
+        
+          <i class="ai ai-semantic-scholar"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://orcid.org/0000-0001-9663-7441" target="_blank" rel="noopener">
+        
+          <i class="fab fa-orcid"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://github.com/Chenms404" target="_blank" rel="noopener">
+        
+          <i class="fab fa-github"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://publons.com/researcher/3415244/mingshuai-chen/" target="_blank" rel="noopener">
+        
+          <i class="ai ai-publons"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://www.linkedin.com/in/mingshuai-chen-481838aa/" target="_blank" rel="noopener">
+        
+          <i class="fab fa-linkedin"></i>
+        
+        </a>
+      </li>
+    
+  </ul>
+        <h3>ZJU100 Young Professor</h3>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    
+    
+    
+      
+    
+    <div class="col-12 col-sm-auto people-person">
+      
+      
+        
+        
+      
+      
+        
+        <a href="/author/yutao-sun/"><img class="avatar avatar-circle" src="/author/yutao-sun/avatar_huef50a600a9d8f3441e966af209675137_10852_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
+      
+  
+      <div class="portrait-title">
+        <h2><a href="/author/yutao-sun/">Yutao Sun</a></h2>
+        <ul class="network-icon" aria-hidden="true">
+    
+  
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+  
+      <li>
+        <a href="mailto:ytsun@zju.edu.cn" >
+        
+          <i class="fas fa-envelope"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://github.com/Xxxxxsun" target="_blank" rel="noopener">
+        
+          <i class="fab fa-github"></i>
+        
+        </a>
+      </li>
+    
+  </ul>
+        <h3>Ph.D. Candidate</h3>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    
+    
+    
+      
+    
+    <div class="col-12 col-sm-auto people-person">
+      
+      
+        
+        
+      
+      
+        
+        <a href="/author/linyu-yang/"><img class="avatar avatar-circle" src="/author/linyu-yang/avatar_hud2c16dd9643b9c957e5005ad17bc230b_564484_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
+      
+  
+      <div class="portrait-title">
+        <h2><a href="/author/linyu-yang/">Linyu Yang</a></h2>
+        <ul class="network-icon" aria-hidden="true">
+    
+  
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+  
+      <li>
+        <a href="mailto:yly1228@foxmail.com" >
+        
+          <i class="fas fa-envelope"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://github.com/godalin" target="_blank" rel="noopener">
+        
+          <i class="fab fa-github"></i>
+        
+        </a>
+      </li>
+    
+  </ul>
+        <h3>Ph.D. Candidate</h3>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    
+    
+    
+      
+    
+    <div class="col-12 col-sm-auto people-person">
+      
+      
+        
+        
+      
+      
+        
+        <a href="/author/zhiyang-li/"><img class="avatar avatar-circle" src="/author/zhiyang-li/avatar_hu8122a539d5376688e5259210ac7f1297_133249_270x270_fill_q75_lanczos_center.jpeg" alt="Avatar"></a>
+      
+  
+      <div class="portrait-title">
+        <h2><a href="/author/zhiyang-li/">Zhiyang Li</a></h2>
+        <ul class="network-icon" aria-hidden="true">
+    
+  
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+  
+      <li>
+        <a href="mailto:misakalzy@zju.edu.cn" >
+        
+          <i class="fas fa-envelope"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://github.com/meowConflict" target="_blank" rel="noopener">
+        
+          <i class="fab fa-github"></i>
+        
+        </a>
+      </li>
+    
+  </ul>
+        <h3>M.Sc. Candidate</h3>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    
+    
+    
+      
+    
+    <div class="col-12 col-sm-auto people-person">
+      
+      
+        
+        
+      
+      
+        
+        <a href="/author/zhongyi-wang/"><img class="avatar avatar-circle" src="/author/zhongyi-wang/avatar_hu02aa61ae1d9de35cbe238d2676170cb9_99326_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
+      
+  
+      <div class="portrait-title">
+        <h2><a href="/author/zhongyi-wang/">Zhongyi Wang</a></h2>
+        <ul class="network-icon" aria-hidden="true">
+    
+  
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+  
+      <li>
+        <a href="mailto:wzygomboc@zju.edu.cn" >
+        
+          <i class="fas fa-envelope"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://github.com/wzyb-52" target="_blank" rel="noopener">
+        
+          <i class="fab fa-github"></i>
+        
+        </a>
+      </li>
+    
+  </ul>
+        <h3>M.Sc. Candidate</h3>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    
+    
+    
+      
+    
+    <div class="col-12 col-sm-auto people-person">
+      
+      
+        
+        
+      
+      
+        
+        <a href="/author/mingqi-yang/"><img class="avatar avatar-circle" src="/author/mingqi-yang/avatar_hub38193adaea044e08db9826889b6dadb_81455_270x270_fill_q75_lanczos_center.jpeg" alt="Avatar"></a>
+      
+  
+      <div class="portrait-title">
+        <h2><a href="/author/mingqi-yang/">Mingqi Yang</a></h2>
+        <ul class="network-icon" aria-hidden="true">
+    
+  
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+  
+      <li>
+        <a href="mailto:mingqiyang@zju.edu.cn" >
+        
+          <i class="fas fa-envelope"></i>
+        
+        </a>
+      </li>
+    
+  </ul>
+        <h3>Ph.D. Candidate</h3>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    
+    
+    
+      
+    
+    <div class="col-12 col-sm-auto people-person">
+      
+      
+        
+        
+      
+      
+        
+        <a href="/author/bohan-ma/"><img class="avatar avatar-circle" src="/author/bohan-ma/avatar_huc0e3811ee2ec69659f830db946f38806_25797_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
+      
+  
+      <div class="portrait-title">
+        <h2><a href="/author/bohan-ma/">Bohan Ma</a></h2>
+        <ul class="network-icon" aria-hidden="true">
+    
+  
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+  
+      <li>
+        <a href="mailto:rhinegst@outlook.com" >
+        
+          <i class="fas fa-envelope"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://github.com/RhineGST" target="_blank" rel="noopener">
+        
+          <i class="fab fa-github"></i>
+        
+        </a>
+      </li>
+    
+  </ul>
+        <h3>Ph.D. Candidate</h3>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    
+    
+    
+      
+    
+    <div class="col-12 col-sm-auto people-person">
+      
+      
+        
+        
+      
+      
+        
+        <a href="/author/hengzhi-yu/"><img class="avatar avatar-circle" src="/author/hengzhi-yu/avatar_hu568962ddf8962ae3c367199ede300e97_163115_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
+      
+  
+      <div class="portrait-title">
+        <h2><a href="/author/hengzhi-yu/">Hengzhi Yu</a></h2>
+        <ul class="network-icon" aria-hidden="true">
+    
+  
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+  
+      <li>
+        <a href="mailto:hengzhiyu@zju.edu.cn" >
+        
+          <i class="fas fa-envelope"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://github.com/aiwenjian" target="_blank" rel="noopener">
+        
+          <i class="fab fa-github"></i>
+        
+        </a>
+      </li>
+    
+  </ul>
+        <h3>M.Sc. Candidate</h3>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    
+    
+    
+      
+    
+    <div class="col-12 col-sm-auto people-person">
+      
+      
+        
+        
+      
+      
+        
+        <a href="/author/sergei-novozhilov/"><img class="avatar avatar-circle" src="/author/sergei-novozhilov/avatar_huf18b288742b22d550e645245464e0596_699073_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
+      
+  
+      <div class="portrait-title">
+        <h2><a href="/author/sergei-novozhilov/">Sergei Novozhilov</a></h2>
+        <ul class="network-icon" aria-hidden="true">
+    
+  
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+  
+      <li>
+        <a href="mailto:snovozhilov@connect.ust.hk" >
+        
+          <i class="fas fa-envelope"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://github.com/polka125" target="_blank" rel="noopener">
+        
+          <i class="fab fa-github"></i>
+        
+        </a>
+      </li>
+    
+  </ul>
+        <h3>Visitors</h3>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    
+    
+    
+      
+    
+    <div class="col-12 col-sm-auto people-person">
+      
+      
+        
+        
+      
+      
+        
+        <a href="/author/tengjie-lin/"><img class="avatar avatar-circle" src="/author/tengjie-lin/avatar_hub4d05cdea7a5c18724f5fc30e7a8af07_114111_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
+      
+  
+      <div class="portrait-title">
+        <h2><a href="/author/tengjie-lin/">Tengjie Lin</a></h2>
+        <ul class="network-icon" aria-hidden="true">
+    
+  
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+  
+      <li>
+        <a href="mailto:tengjiecs@gmail.com" >
+        
+          <i class="fas fa-envelope"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://github.com/IOExceptionOI" target="_blank" rel="noopener">
+        
+          <i class="fab fa-github"></i>
+        
+        </a>
+      </li>
+    
+  </ul>
+        <h3>M.Sc. Candidate</h3>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    
+    
+    
+      
+    
+    <div class="col-12 col-sm-auto people-person">
+      
+      
+        
+        
+      
+      
+        
+        <a href="/author/xiaqing-zhou/"><img class="avatar avatar-circle" src="/author/xiaqing-zhou/avatar_hu7ff236ab463063c3d0ae3d499dddf547_3323734_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
+      
+  
+      <div class="portrait-title">
+        <h2><a href="/author/xiaqing-zhou/">Xiaqing Zhou</a></h2>
+        <ul class="network-icon" aria-hidden="true">
+    
+  
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+  
+      <li>
+        <a href="mailto:1993813049@qq.com" >
+        
+          <i class="fas fa-envelope"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://github.com/Crazyqing" target="_blank" rel="noopener">
+        
+          <i class="fab fa-github"></i>
+        
+        </a>
+      </li>
+    
+  </ul>
+        <h3>Ph.D. Candidate</h3>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    
+    
+    
+      
+    
+    <div class="col-12 col-sm-auto people-person">
+      
+      
+        
+        
+      
+      
+        
+        <a href="/author/yiyang-zhou/"><img class="avatar avatar-circle" src="/author/yiyang-zhou/avatar_hu3d4f9a095ef883082f0c728ff2312a85_4623_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
+      
+  
+      <div class="portrait-title">
+        <h2><a href="/author/yiyang-zhou/">Yiyang Zhou</a></h2>
+        <ul class="network-icon" aria-hidden="true">
+    
+  
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+  
+      <li>
+        <a href="mailto:zyy2542013045@163.com" >
+        
+          <i class="fas fa-envelope"></i>
+        
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+  
+      <li>
+        <a href="https://github.com/TheDarrrkForest" target="_blank" rel="noopener">
+        
+          <i class="fab fa-github"></i>
+        
+        </a>
+      </li>
+    
+  </ul>
+        <h3>M.Sc. Candidate</h3>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+  
+    
+  
+    
+    <div class="col-md-12">
+      <h2 class="mb-4">Administration</h2>
+    </div>
+    
+  
+    
+    
+    
+    
+    
+      
+    
+    <div class="col-12 col-sm-auto people-person">
+      
+      
+        
+        
+      
+      
+        
+        <a href="/author/lu-lin/"><img class="avatar avatar-circle" src="/author/lu-lin/avatar_hu391d2e3d697847512942e7af9d4cd113_384887_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
+      
+  
+      <div class="portrait-title">
+        <h2><a href="/author/lu-lin/">Lu Lin</a></h2>
+        <ul class="network-icon" aria-hidden="true">
+    
+  
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+  
+      <li>
+        <a href="mailto:m18668228988@163.com" >
+        
+          <i class="fas fa-envelope"></i>
+        
+        </a>
+      </li>
+    
+  </ul>
+        <h3>Secretary</h3>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+  </div>
+
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="featured" class="home-section wg-featured  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Featured Publications</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/zhongyi-wang/">Zhongyi Wang</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="equal contribution"></i>, <span >
+      <a href="/author/linyu-yang/">Linyu Yang</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="equal contribution"></i>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/yixuan-bu/">Yixuan Bu</a></span>, <span >
+      <a href="/author/zhiyang-li/">Zhiyang Li</a></span>, <span >
+      <a href="/author/qiuye-wang/">Qiuye Wang</a></span>, <span >
+      <a href="/author/shengchao-qin/">Shengchao Qin</a></span>, <span >
+      <a href="/author/xiao-yi/">Xiao Yi</a></span>, <span >
+      <a href="/author/jianwei-yin/">Jianwei Yin</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    October 2024
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>ASE 2024</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/wang-ase2024/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/wang-ase2024/featured_hu65632fee1cb45e2af88f872453eb9f2b_168838_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Parf: Adaptive Parameter Refining for Abstract Interpretation" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/wang-ase2024/" >Parf: Adaptive Parameter Refining for Abstract Interpretation</a>
+  </div>
+
+  
+  <a href="/publication/wang-ase2024/"  class="summary-link">
+    <div class="article-style">
+      <p>Abstract interpretation is a key formal method for the static analysis of programs. The core challenge in applying abstract interpretation lies in the configuration of abstraction and analysis strategies encoded by a large number of external parameters of static analysis tools. To attain low false-positive rates (i.e., accuracy) while preserving analysis efficiency, tuning the parameters heavily relies on expert knowledge and is thus difficult to automate. In this paper, we present a fully automated framework called Parf to adaptively tune the external parameters of abstract interpretation-based static analyzers. Parf models various types of parameters as random variables subject to probability distributions over latticed parameter spaces. It incrementally refines the probability distributions based on accumulated intermediate results generated by repeatedly sampling and analyzing, thereby ultimately yielding a set of highly accurate parameter settings within a given time budget. We have implemented Parf on top of Frama-C/Eva &ndash; an off-the-shelf open-source abstract interpretation-based static analyzer for C programs &ndash; and compared it against the expert refinement strategy and Frama-C/Eva&rsquo;s official configurations over the Frama-C OSCS benchmark. Experimental results indicate that Parf achieves the lowest number of false positives on 34/37 (91.9%) program repositories with exclusively best results on 13/37 (35.1%) cases. In particular, Parf exhibits promising performance for analyzing complex, large-scale real-world programs.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/ASE2024.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/wang-ase2024/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://hub.docker.com/r/parfdocker/parf" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/ASE24.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://zenodo.org/records/14252572?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImY5ODE3NWYwLWM3ZjQtNDU2Yy04YWQ5LTZlZWYxYTdkYzgwYyIsImRhdGEiOnt9LCJyYW5kb20iOiJmNzU1ZWY3ZjkxNWM3YzgyYzJiNGVlNjNlZjgxZmYxZCJ9.qxP2OqbRu1l8URrZU4H9lzx39bKbozHo8k7G1rI583SXzJ24_vs2ZNuD6Jf5dftvU_cSGyqCQDZlxV9rwaeLSQ" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1145/3691620.3695487" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/files/Parf-ChinaSoft24.png" >
+    <i class="fas fa-certificate mr-1"></i>2nd Prize@ChinaSoft'24</a>
+
+
+  </div>
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/lutz-klinkenberg/">Lutz Klinkenberg</a></span>, <span >
+      <a href="/author/christian-blumenthal/">Christian Blumenthal</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/darion-haase/">Darion Haase</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    April 2024
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>Proc. ACM Program. Lang. (OOPSLA)</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/klinkenberg-oopsla2024/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/klinkenberg-oopsla2024/featured_hu136c1c5b8b1a2c35f6e42865f20d3a5a_157204_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Exact Bayesian Inference for Loopy Probabilistic Programs using Generating Functions" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/klinkenberg-oopsla2024/" >Exact Bayesian Inference for Loopy Probabilistic Programs using Generating Functions</a>
+  </div>
+
+  
+  <a href="/publication/klinkenberg-oopsla2024/"  class="summary-link">
+    <div class="article-style">
+      <p>We present an exact Bayesian inference method for inferring posterior distributions encoded by probabilistic programs featuring possibly <em>unbounded loops</em>. Our method is built on a denotational semantics represented by <em>probability generating functions</em>, which resolves semantic intricacies induced by intertwining discrete probabilistic loops with conditioning (for encoding posterior observations). We implement our method in a tool called <span style="font-variant:small-caps;">Prodigy</span>; it augments existing computer algebra systems with the theory of generating functions for the (semi-)automatic inference and quantitative verification of conditioned probabilistic programs. Experimental results show that <span style="font-variant:small-caps;">Prodigy</span> can handle various infinite-state loopy programs and exhibits comparable performance to state-of-the-art exact inference tools over loop-free benchmarks.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/OOPSLA2024.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/klinkenberg-oopsla2024/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/LKlinke/Prodigy" target="_blank" rel="noopener">
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+
+  </div>
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/kevin-batz/">Kevin Batz</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/sebastian-junges/">Sebastian Junges</a></span>, <span >
+      <a href="/author/benjamin-lucien-kaminski/">Benjamin Lucien Kaminski</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>, <span >
+      <a href="/author/christoph-matheja/">Christoph Matheja</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    April 2023
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>TACAS 2023</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/batz-cegis2023/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/batz-cegis2023/featured_hu44ba891a282f372f695ed66a24c4638e_27051_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Probabilistic Program Verification via Inductive Synthesis of Inductive Invariants" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/batz-cegis2023/" >Probabilistic Program Verification via Inductive Synthesis of Inductive Invariants</a>
+  </div>
+
+  
+  <a href="/publication/batz-cegis2023/"  class="summary-link">
+    <div class="article-style">
+      <p>Essential tasks for the verification of probabilistic programs include bounding expected outcomes and proving termination in finite expected runtime. We contribute a simple yet effective <em>inductive synthesis</em> approach for proving such <em>quantitative reachability properties</em> by generating <em>inductive invariants</em> on <em>source-code level</em>. Our implementation shows promise: It finds invariants for (in)finite-state programs, can beat state-of-the-art probabilistic model checkers, and is competitive with modern tools dedicated to invariant synthesis and expected runtime reasoning.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/TACAS2023.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/batz-cegis2023/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-031-30820-8_25" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/moves-rwth/cegispro2" target="_blank" rel="noopener">
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+
+  </div>
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/shenghua-feng/">Shenghua Feng</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/han-su/">Han Su</a></span>, <span >
+      <a href="/author/benjamin-lucien-kaminski/">Benjamin Lucien Kaminski</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    April 2023
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>Proc. ACM Program. Lang. (OOPSLA)</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/feng-oopsla2023/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/feng-oopsla2023/featured_hub3336149e3979eb5c1a290fccbc2737f_136546_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Lower Bounds for Possibly Divergent Probabilistic Programs" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/feng-oopsla2023/" >Lower Bounds for Possibly Divergent Probabilistic Programs</a>
+  </div>
+
+  
+  <a href="/publication/feng-oopsla2023/"  class="summary-link">
+    <div class="article-style">
+      <p>We present a new proof rule for verifying lower bounds on quantities of probabilistic programs. Our proof rule is not confined to almost-surely terminating programs &ndash; as is the case for existing rules &ndash; and can be used to establish non-trivial lower bounds on, e.g., termination probabilities and expected values, for possibly <em>divergent</em> probabilistic loops, e.g., the well-known three-dimensional random walk on a lattice.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/OOPSLA2023.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/feng-oopsla2023/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/OOPSLA23-POSTER.pdf" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/OOPSLA23.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1145/3586051" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/qiuye-wang/">Qiuye Wang</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/bai-xue/">Bai Xue</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    September 2022
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>Inf. Comput.</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/wang-infcomp2022/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/wang-infcomp2022/featured_hua885e307a3468f28576a4e9d80123c63_76435_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Encoding Inductive Invariants as Barrier Certificates" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/wang-infcomp2022/" >Encoding Inductive Invariants as Barrier Certificates</a>
+  </div>
+
+  
+  <a href="/publication/wang-infcomp2022/"  class="summary-link">
+    <div class="article-style">
+      <p>We present the <em>invariant barrier-certificate condition</em> that witnesses unbounded-time safety of differential dynamical systems. The proposed condition is the weakest possible one to attain inductive invariance. We show that discharging the invariant barrier-certificate condition —thereby synthesizing invariant barrier certificates— can be encoded as solving an <em>optimization problem subject to bilinear matrix inequalities</em> (BMIs). We further propose a synthesis algorithm based on difference-of-convex programming, which approaches a local optimum of the BMI problem via solving <em>a series of convex optimization problems</em>. This algorithm is incorporated in a branch-and-bound framework that searches for the global optimum in a divide-and-conquer fashion. We present a weak completeness result of our method, namely, a barrier certificate is guaranteed to be found (under some mild assumptions) whenever there exists an inductive invariant (in the form of a given template) that suffices to certify safety. Experimental results on benchmarks demonstrate the effectiveness and efficiency of our approach.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/INFCOMP2022.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/wang-infcomp2022/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/Chenms404/BMI-DC" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/CAV21-a.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1016/j.ic.2022.104965" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>, <span >
+      <a href="/author/lutz-klinkenberg/">Lutz Klinkenberg</a></span>, <span >
+      <a href="/author/tobias-winkler/">Tobias Winkler</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    August 2022
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>CAV 2022</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/chen-cav2022/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/chen-cav2022/featured_hu6cb6d4e35887df0af2585c97caab5d58_89433_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Does a Program Yield the Right Distribution?" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/chen-cav2022/" >Does a Program Yield the Right Distribution?</a>
+  </div>
+
+  
+  <a href="/publication/chen-cav2022/"  class="summary-link">
+    <div class="article-style">
+      <p>We study discrete probabilistic programs with potentially unbounded looping behaviors over an infinite state space. We present, to the best of our knowledge, <em>the first decidability result for the problem of determining whether such a program generates exactly a specified distribution over its outputs</em> (provided the program terminates almost-surely). The class of distributions that can be specified in our formalism consists of standard distributions (geometric, uniform, etc.) and finite convolutions thereof. Our method relies on representing these (possibly infinite-support) distributions as <em>probability generating functions</em> which admit effective arithmetic operations. We have automated our techniques in a tool called <span style="font-variant:small-caps;">Prodigy</span>, which supports automatic invariance checking, compositional reasoning of nested loops, and efficient queries to the output distribution, as demonstrated by experiments.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/CAV2022.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/chen-cav2022/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-031-13185-1_5" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/LKlinke/Prodigy" target="_blank" rel="noopener">
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+
+  </div>
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/kevin-batz/">Kevin Batz</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/benjamin-lucien-kaminski/">Benjamin Lucien Kaminski</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>, <span >
+      <a href="/author/christoph-matheja/">Christoph Matheja</a></span>, <span >
+      <a href="/author/philipp-schroer/">Philipp Schröer</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    July 2021
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>CAV 2021</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/batz-cav2021/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/batz-cav2021/featured_hu684d806f61e58598b16ffb628f30d54f_48703_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Latticed $k$-Induction with an Application to Probabilistic Programs" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/batz-cav2021/" >Latticed $k$-Induction with an Application to Probabilistic Programs</a>
+  </div>
+
+  
+  <a href="/publication/batz-cav2021/"  class="summary-link">
+    <div class="article-style">
+      <p>We revisit two well-established verification techniques, <em>$k$-induction</em> and <em>bounded model checking</em> (BMC), in the more general setting of fixed point theory over complete lattices. Our main theoretical contribution is <em>latticed $k$-induction</em>, which (i) generalizes classical $k$-induction for verifying transition systems, (ii) generalizes Park induction for bounding fixed points of monotonic maps on complete lattices, and (iii) extends from naturals $k$ to transfinite ordinals $\kappa$, thus yielding $\kappa$-induction. The lattice-theoretic understanding of $k$-induction and BMC enables us to apply both techniques to the <em>fully automatic verification of infinite-state probabilistic programs</em>. Our prototypical implementation manages to automatically verify non-trivial specifications for probabilistic programs taken from the literature that &ndash; using existing techniques &ndash; cannot be verified without synthesizing a stronger inductive invariant first.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/CAV2021-b.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/batz-cav2021/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/ISCAS22.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-030-81688-9_25" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/moves-rwth/kipro2" target="_blank" rel="noopener">
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/pulp/21-04-18-pulp-k-induction/" >
+    <i class="fas fa-rocket mr-1"></i>Pulp Fiction</a>
+
+
+  </div>
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/qiuye-wang/">Qiuye Wang</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/bai-xue/">Bai Xue</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>, <span >
+      <a href="/author/joost-pieter-katoen/">Joost-Pieter Katoen</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    July 2021
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>CAV 2021</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/wang-cav2021/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/wang-cav2021/featured_hued4c96377a2366e8e69c3f888b3f7017_485170_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Synthesizing Invariant Barrier Certificates via Difference-of-Convex Programming" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/wang-cav2021/" >Synthesizing Invariant Barrier Certificates via Difference-of-Convex Programming</a>
+  </div>
+
+  
+  <a href="/publication/wang-cav2021/"  class="summary-link">
+    <div class="article-style">
+      <p>A barrier certificate often serves as an inductive invariant that isolates an unsafe region from the reachable set of states, and hence is widely used in proving safety of hybrid systems possibly over the infinite time horizon. We present a novel condition on barrier certificates, termed the <em>invariant barrier-certificate condition</em>, that witnesses unbounded-time safety of differential dynamical systems. The proposed condition is by far the least conservative one on barrier certificates, and can be shown as the weakest possible one to attain inductive invariance. We show that discharging the invariant barrier-certificate condition—thereby synthesizing invariant barrier certificates—can be encoded as solving an <em>optimization problem subject to bilinear matrix inequalities</em> (BMIs). We further propose a synthesis algorithm based on difference-of-convex programming, which approaches a local optimum of the BMI problem via solving <em>a series of convex optimization problems</em>. This algorithm is incorporated in a branch-and-bound framework that searches for the global optimum in a divide-and-conquer fashion. We present a weak completeness result of our method, in the sense that a barrier certificate is guaranteed to be found (under some mild assumptions) whenever there exists an inductive invariant (in the form of a given template) that suffices to certify safety of the system. Experimental results on benchmark examples demonstrate the effectiveness and efficiency of our approach.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/CAV2021-a.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/wang-cav2021/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/CAV21-a.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ucl-pplv.github.io/CAV21/poster_P_116/#tab-extended" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-030-81685-8_21" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/Chenms404/BMI-DC" target="_blank" rel="noopener">
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+
+  </div>
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/shenghua-feng/">Shenghua Feng</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/bai-xue/">Bai Xue</a></span>, <span >
+      <a href="/author/sriram-sankaranarayanan/">Sriram Sankaranarayanan</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    July 2020
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>CAV 2020</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/feng-cav2020/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/feng-cav2020/featured_hud79fc9a71eea9d82363aaa7b749c0fec_690711_808x455_fill_q75_h2_lanczos_smart1.webp" height="455" width="808"
+           class="article-banner" alt="Unbounded-Time Safety Verification of Stochastic Differential Dynamics" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/feng-cav2020/" >Unbounded-Time Safety Verification of Stochastic Differential Dynamics</a>
+  </div>
+
+  
+  <a href="/publication/feng-cav2020/"  class="summary-link">
+    <div class="article-style">
+      <p>In this paper, we propose a method for bounding the probability that a stochastic differential equation (SDE) system violates a safety specification over the infinite time horizon. SDEs are mathematical models of stochastic processes that capture how states evolve continuously in time. They are widely used in numerous applications such as engineered systems (e.g., modeling how pedestrians move in an intersection), computational finance (e.g., modeling stock option prices), and ecological processes (e.g., population change over time). Previously the safety verification problem has been tackled over finite and infinite time horizons using a diverse set of approaches. The approach in this paper attempts to connect the two views by first identifying a finite time bound, beyond which the probability of a safety violation can be bounded by a negligibly small number. This is achieved by discovering an exponential barrier certificate that proves exponentially converging bounds on the probability of safety violations over time. Once the finite time interval is found, a finite-time verification approach is used to bound the probability of violation over this interval. We demonstrate our approach over a collection of interesting examples from the literature, wherein our approach can be used to find tight bounds on the violation probability of safety properties over the infinite time horizon.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/CAV2020.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/feng-cav2020/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/CAV20.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.youtube.com/watch?v=vFjaz-k_f3Y&amp;t=29s" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-030-53291-8_18" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/feng-cav2020/" >
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/pulp/20-06-04-pulp-sdes/" >
+    <i class="fas fa-rocket mr-1"></i>Pulp Fiction</a>
+
+
+  </div>
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/jie-an/">Jie An</a></span>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/bohua-zhan/">Bohua Zhan</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>, <span >
+      <a href="/author/miaomiao-zhang/">Miaomiao Zhang</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    April 2020
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>TACAS 2020</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/an-tacas2020/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/an-tacas2020/featured_hub5a28469ccc0432ceb3ea6422c002af6_125377_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Learning One-Clock Timed Automata" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/an-tacas2020/" >Learning One-Clock Timed Automata</a>
+  </div>
+
+  
+  <a href="/publication/an-tacas2020/"  class="summary-link">
+    <div class="article-style">
+      <p>We present an algorithm for active learning of deterministic timed automata with a single clock. The algorithm is within the framework of Angluin’s $L^*$ algorithm and inspired by existing work on the active learning of symbolic automata. Due to the need of guessing for each transition whether it resets the clock, the algorithm is of exponential complexity in the size of the learned automata. Before presenting this algorithm, we propose a simpler version where the teacher is assumed to be <em>smart</em> in the sense of being able to provide the reset information. We show that this simpler setting yields a polynomial complexity of the learning process. Both of the algorithms are implemented and evaluated on a collection of randomly generated examples. We furthermore demonstrate the simpler algorithm on the functional specification of the TCP protocol.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/TACAS2020.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/an-tacas2020/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/TACAS20.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-030-45190-5_25" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/Leslieaj/OTALearning" target="_blank" rel="noopener">
+    <i class="fas fa-stamp mr-1"></i>Artifact Evaluated</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/files/BPA-FMAC19.png" >
+    <i class="fas fa-certificate mr-1"></i>Best Paper Award @ FMAC 2019</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.springernature.com/de/researchers/campaigns/chinese-research/computer-science#browse-the-book-chapters" target="_blank" rel="noopener">
+    <i class="fas fa-certificate mr-1"></i>Springer High-Impact Paper</a>
+
+
+  </div>
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/martin-franzle/">Martin Fränzle</a></span>, <span >
+      <a href="/author/yangjia-li/">Yangjia Li</a></span>, <span >
+      <a href="/author/peter-nazier-mosaad/">Peter Nazier Mosaad</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    February 2020
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>Acta Inform.</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/chen-acin2021/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/chen-acin2021/featured_hu3ddaa2bc940d896b2993060b1a1ad88f_35238_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="Indecision and Delays are the Parents of Failure" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/chen-acin2021/" >Indecision and Delays are the Parents of Failure</a>
+  </div>
+
+  
+  <a href="/publication/chen-acin2021/"  class="summary-link">
+    <div class="article-style">
+      <p>The possible interactions between a controller and its environment can naturally be modelled as the arena of a two-player game, and adding an appropriate winning condition permits to specify desirable behavior. The classical model here is the positional game, where both players can (fully or partially) observe the current position in the game graph, which in turn is indicative of their mutual current states. In practice, neither sensing and actuating the environment through physical devices nor data forwarding to and from the controller and signal processing in the controller are instantaneous. The resultant delays force the controller to draw decisions before being aware of the recent history of a play and to submit these decisions well before they can take effect asynchronously. It is known that existence of a winning strategy for the controller in games with such delays is decidable over finite game graphs and with respect to $\omega$-regular objectives. The underlying reduction, however, is impractical for non-trivial delays as it incurs a blow-up of the game graph which is exponential in the magnitude of the delay. For safety objectives, we propose a more practical incremental algorithm successively synthesizing a series of controllers handling increasing delays and reducing the game-graph size in between. It is demonstrated using benchmark examples that even a simplistic explicit-state implementation of this algorithm outperforms state-of-the-art symbolic synthesis algorithms as soon as non-trivial delays have to be handled. We furthermore address the practically relevant cases of non-order-preserving delays and bounded message loss, as arising in actual networked control, thereby considerably extending the scope of regular game theory under delay.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/ACIN2021.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/chen-acin2021/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.notebookarchive.org/synthesizing-controllers-for-safety-games-under-delayed-information--2021-08-5lc88f4/" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/MISSION.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/6AjaYHy_3Fo" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/s00236-020-00374-7" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple view-card">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/jian-wang/">Jian Wang</a></span>, <span >
+      <a href="/author/jie-an/">Jie An</a></span>, <span >
+      <a href="/author/bohua-zhan/">Bohua Zhan</a></span>, <span >
+      <a href="/author/deepak-kapur/">Deepak Kapur</a></span>, <span >
+      <a href="/author/naijun-zhan/">Naijun Zhan</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    August 2019
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      In <em>CADE 2019</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/chen-cade2019/" >
+    <div class="img-hover-zoom">
+      <img src="/publication/chen-cade2019/featured_hu051b6dba1d053d055d0203e4feda9d86_801136_808x455_fill_q75_h2_lanczos_smart1_3.webp" height="455" width="808"
+           class="article-banner" alt="NIL: Learning Nonlinear Interpolants" loading="lazy">
+    </div>
+  </a>
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/publication/chen-cade2019/" >NIL: Learning Nonlinear Interpolants</a>
+  </div>
+
+  
+  <a href="/publication/chen-cade2019/"  class="summary-link">
+    <div class="article-style">
+      <p>Nonlinear interpolants have been shown useful for the verification of programs and hybrid systems in contexts of theorem proving, model checking, abstract interpretation, etc. The underlying synthesis problem, however, is challenging and existing methods have limitations on the form of formulae to be interpolated. We leverage classification techniques with space transformations and kernel tricks as established in the realm of machine learning, and present a counterexample-guided method named NIL for synthesizing polynomial interpolants, thereby yielding a unified framework tackling the interpolation problem for the general quantifier-free theory of nonlinear arithmetic, possibly involving transcendental functions. We prove the soundness of NIL and propose sufficient conditions under which NIL is guaranteed to converge, i.e., the derived sequence of candidate interpolants converges to an actual interpolant, and is complete, namely the algorithm terminates by producing an interpolant if there exists one. The applicability and effectiveness of our technique are demonstrated experimentally on a collection of representative benchmarks from the literature, where in particular, our method suffices to address more interpolation tasks, including those with perturbations in parameters, and in many cases synthesizes simpler interpolants compared with existing approaches.</p>
+    </div>
+  </a>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/CADE-27.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/chen-cade2019/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://notebookarchive.org/nil-learning-nonlinear-interpolants--2021-08-5lcsyb7/" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/FACAS22.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-030-29436-6_11" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+  
+
+</div>
+
+  
+
+  
+  
+  
+
+    
+    
+      
+    
+
+    
+
+    <div class="see-all">
+      <a href="/publication/">
+        See all publications
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="tags" class="home-section wg-tag-cloud  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Key Topics</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<div class="col-12 col-lg-8">
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    <div class="tag-cloud">
+      
+        
+        
+        
+        <a href="/tag/barrier-certificates/" style="font-size:0.7rem">barrier certificates</a>
+      
+        
+        
+        
+        <a href="/tag/decidability/" style="font-size:1.193146066635273rem">decidability</a>
+      
+        
+        
+        
+        <a href="/tag/delay/" style="font-size:1.1034269666823637rem">delay</a>
+      
+        
+        
+        
+        <a href="/tag/differential-dynamics/" style="font-size:1.5534405569093717rem">differential dynamics</a>
+      
+        
+        
+        
+        <a href="/tag/fixed-point-theory/" style="font-size:1.1034269666823637rem">fixed point theory</a>
+      
+        
+        
+        
+        <a href="/tag/hybrid-systems/" style="font-size:1.2708642860758612rem">hybrid systems</a>
+      
+        
+        
+        
+        <a href="/tag/inductive-invariants/" style="font-size:1.2708642860758612rem">inductive invariants</a>
+      
+        
+        
+        
+        <a href="/tag/large-language-models/" style="font-size:0.8674373193934977rem">large language models</a>
+      
+        
+        
+        
+        <a href="/tag/papers/" style="font-size:1.6367284081749678rem">Papers</a>
+      
+        
+        
+        
+        <a href="/tag/probabilistic-model-checking/" style="font-size:0.8674373193934977rem">probabilistic model checking</a>
+      
+        
+        
+        
+        <a href="/tag/probabilistic-programs/" style="font-size:1.3394166139712298rem">probabilistic programs</a>
+      
+        
+        
+        
+        <a href="/tag/quantitative-reasoning/" style="font-size:1.2708642860758612rem">quantitative reasoning</a>
+      
+        
+        
+        
+        <a href="/tag/reachability/" style="font-size:1.4007387608861022rem">reachability</a>
+      
+        
+        
+        
+        <a href="/tag/safety/" style="font-size:1.4007387608861022rem">safety</a>
+      
+        
+        
+        
+        <a href="/tag/semidefinite-programming/" style="font-size:0.8674373193934977rem">semidefinite programming</a>
+      
+        
+        
+        
+        <a href="/tag/service-computing/" style="font-size:0.8674373193934977rem">service computing</a>
+      
+        
+        
+        
+        <a href="/tag/service-regulation/" style="font-size:0.8674373193934977rem">service regulation</a>
+      
+        
+        
+        
+        <a href="/tag/synthesis/" style="font-size:1.1034269666823637rem">synthesis</a>
+      
+        
+        
+        
+        <a href="/tag/uncertainty/" style="font-size:1.6367284081749678rem">uncertainty</a>
+      
+        
+        
+        
+        <a href="/tag/verification/" style="font-size:1.9788332279424592rem">verification</a>
+      
+    </div>
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="contact" class="home-section wg-contact  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Contact</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-12 col-lg-8">
+  
+
+  
+
+    
+    
+      
+      
+      
+    
+
+    <div class="mb-3">
+      <form name="contact" method="POST" action="https://formspree.io/f/mpznejbp"  data-netlify-recaptcha="true" >
+        <div class="form-group form-inline">
+          <label class="sr-only" for="inputName">Name</label>
+          <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
+        </div>
+        <div class="form-group form-inline">
+          <label class="sr-only" for="inputEmail">Email</label>
+          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="inputMessage">Message</label>
+          <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required></textarea>
+        </div>
+        
+        <div class="d-none">
+          <label>Do not fill this field unless you are a bot: <input name="_gotcha"></label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary px-3 py-2 w-100">Send</button>
+      </form>
+    </div>
+  
+
+  <ul class="fa-ul">
+
+    
+
+    
+
+    
+    
+      
+      <li>
+        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+        <span id="person-address">Wensan Road 232, Hangzhou, Zhejiang 310012</span>
+      </li>
+    
+
+    
+    <li>
+      <i class="fa-li fas fa-compass fa-2x" aria-hidden="true"></i>
+      <span>Room 510, East Building, North Park, Xixi Campus</span>
+    </li>
+    
+
+    
+
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <i class="fa-li fab fa-github fa-2x" aria-hidden="true"></i>
+      <a href="https://github.com/FICTION-ZJU" target="_blank" rel="noopener">GitHub Contact</a>
+    </li>
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <i class="fa-li fas fa-video fa-2x" aria-hidden="true"></i>
+      <a href="https://rwth.zoom.us/my/m.chen" target="_blank" rel="noopener">Zoom Us</a>
+    </li>
+    
+
+  </ul>
+
+  
+  <div class="d-none">
+    <input id="map-provider" value="mapnik">
+    <input id="map-lat" value="30.27969768121209">
+    <input id="map-lng" value="120.13787503932599">
+    <input id="map-dir" value="Wensan Road 232, Hangzhou, Zhejiang 310012">
+    <input id="map-zoom" value="15">
+    <input id="map-api-key" value="">
+  </div>
+  <div id="map"></div>
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Formal Verification Group at Zhejiang University. This work is inspired by <a href="http://geneticlogiclab.org/" target="_blank" rel="noopener">Genetic Logic Lab</a> and licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.54dd6e4d8f2e4b1d098381b57f18dd83.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+      
+      <script>
+
+  
+
+
+  (function(window, document) {
+    
+    var _CREATE_ELEMENT_ = 'createElement';
+    var _GET_ELEMENTS_BY_TAG_NAME_ = 'getElementsByTagName';
+    var _LENGTH_ = 'length';
+    var _STYLE_ = 'style';
+    var _TITLE_ = 'title';
+    var _UNDEFINED_ = 'undefined';
+    var _SET_ATTRIBUTE_ = 'setAttribute';
+    var _GET_ATTRIBUTE_ = 'getAttribute';
+
+    var NULL = null;
+
+    
+    var __SVGINJECT = '__svgInject';
+    var ID_SUFFIX = '--inject-';
+    var ID_SUFFIX_REGEX = new RegExp(ID_SUFFIX + '\\d+', "g");
+    var LOAD_FAIL = 'LOAD_FAIL';
+    var SVG_NOT_SUPPORTED = 'SVG_NOT_SUPPORTED';
+    var SVG_INVALID = 'SVG_INVALID';
+    var ATTRIBUTE_EXCLUSION_NAMES = ['src', 'alt', 'onload', 'onerror'];
+    var A_ELEMENT = document[_CREATE_ELEMENT_]('a');
+    var IS_SVG_SUPPORTED = typeof SVGRect != _UNDEFINED_;
+    var DEFAULT_OPTIONS = {
+      useCache: true,
+      copyAttributes: true,
+      makeIdsUnique: true
+    };
+    
+    
+    var IRI_TAG_PROPERTIES_MAP = {
+      clipPath: ['clip-path'],
+      'color-profile': NULL,
+      cursor: NULL,
+      filter: NULL,
+      linearGradient: ['fill', 'stroke'],
+      marker: ['marker', 'marker-end', 'marker-mid', 'marker-start'],
+      mask: NULL,
+      pattern: ['fill', 'stroke'],
+      radialGradient: ['fill', 'stroke']
+    };
+    var INJECTED = 1;
+    var FAIL = 2;
+
+    var uniqueIdCounter = 1;
+    var xmlSerializer;
+    var domParser;
+
+
+    
+    function svgStringToSvgDoc(svgStr) {
+      domParser = domParser || new DOMParser();
+      return domParser.parseFromString(svgStr, 'text/xml');
+    }
+
+
+    
+    function svgElemToSvgString(svgElement) {
+      xmlSerializer = xmlSerializer || new XMLSerializer();
+      return xmlSerializer.serializeToString(svgElement);
+    }
+
+
+    
+    function getAbsoluteUrl(url) {
+      A_ELEMENT.href = url;
+      return A_ELEMENT.href;
+    }
+
+
+    
+    function loadSvg(url, callback, errorCallback) {
+      if (url) {
+        var req = new XMLHttpRequest();
+        req.onreadystatechange = function() {
+          if (req.readyState == 4) {
+            
+            var status = req.status;
+            if (status == 200) {
+              
+              callback(req.responseXML, req.responseText.trim());
+            } else if (status >= 400) {
+              
+              errorCallback();
+            } else if (status == 0) {
+              
+              errorCallback();
+            }
+          }
+        };
+        req.open('GET', url, true);
+        req.send();
+      }
+    }
+
+
+    
+    function copyAttributes(imgElem, svgElem) {
+      var attribute;
+      var attributeName;
+      var attributeValue;
+      var attributes = imgElem.attributes;
+      for (var i = 0; i < attributes[_LENGTH_]; i++) {
+        attribute = attributes[i];
+        attributeName = attribute.name;
+        
+        if (ATTRIBUTE_EXCLUSION_NAMES.indexOf(attributeName) == -1) {
+          attributeValue = attribute.value;
+          
+          if (attributeName == _TITLE_) {
+            var titleElem;
+            var firstElementChild = svgElem.firstElementChild;
+            if (firstElementChild && firstElementChild.localName.toLowerCase() == _TITLE_) {
+              
+              titleElem = firstElementChild;
+            } else {
+              
+              
+              titleElem = document[_CREATE_ELEMENT_ + 'NS']('http://www.w3.org/2000/svg', _TITLE_);
+              svgElem.insertBefore(titleElem, firstElementChild);
+            }
+            
+            titleElem.textContent = attributeValue;
+          } else {
+            
+            svgElem[_SET_ATTRIBUTE_](attributeName, attributeValue);
+          }
+        }
+      }
+    }
+
+
+    
+    
+    
+    
+    
+    
+    function makeIdsUnique(svgElem, onlyReferenced) {
+      var idSuffix = ID_SUFFIX + uniqueIdCounter++;
+      
+      
+      var funcIriRegex = /url\("?#([a-zA-Z][\w:.-]*)"?\)/g;
+      
+      
+      var idElements = svgElem.querySelectorAll('[id]');
+      var idElem;
+      
+      
+      var referencedIds = onlyReferenced ? [] : NULL;
+      var tagName;
+      var iriTagNames = {};
+      var iriProperties = [];
+      var changed = false;
+      var i, j;
+
+      if (idElements[_LENGTH_]) {
+        
+        
+        for (i = 0; i < idElements[_LENGTH_]; i++) {
+          tagName = idElements[i].localName; 
+          
+          if (tagName in IRI_TAG_PROPERTIES_MAP) {
+            iriTagNames[tagName] = 1;
+          }
+        }
+        
+        for (tagName in iriTagNames) {
+          (IRI_TAG_PROPERTIES_MAP[tagName] || [tagName]).forEach(function (mappedProperty) {
+            
+            
+            if (iriProperties.indexOf(mappedProperty) < 0) {
+              iriProperties.push(mappedProperty);
+            }
+          });
+        }
+        if (iriProperties[_LENGTH_]) {
+          
+          iriProperties.push(_STYLE_);
+        }
+        
+        
+        
+        var descElements = svgElem[_GET_ELEMENTS_BY_TAG_NAME_]('*');
+        var element = svgElem;
+        var propertyName;
+        var value;
+        var newValue;
+        for (i = -1; element != NULL;) {
+          if (element.localName == _STYLE_) {
+            
+            value = element.textContent;
+            newValue = value && value.replace(funcIriRegex, function(match, id) {
+              if (referencedIds) {
+                referencedIds[id] = 1;
+              }
+              return 'url(#' + id + idSuffix + ')';
+            });
+            if (newValue !== value) {
+              element.textContent = newValue;
+            }
+          } else if (element.hasAttributes()) {
+            
+            for (j = 0; j < iriProperties[_LENGTH_]; j++) {
+              propertyName = iriProperties[j];
+              value = element[_GET_ATTRIBUTE_](propertyName);
+              newValue = value && value.replace(funcIriRegex, function(match, id) {
+                if (referencedIds) {
+                  referencedIds[id] = 1;
+                }
+                  return 'url(#' + id + idSuffix + ')';
+              });
+              if (newValue !== value) {
+                element[_SET_ATTRIBUTE_](propertyName, newValue);
+              }
+            }
+            
+            ['xlink:href', 'href'].forEach(function(refAttrName) {
+              var iri = element[_GET_ATTRIBUTE_](refAttrName);
+              if (/^\s*#/.test(iri)) { 
+                iri = iri.trim();
+                element[_SET_ATTRIBUTE_](refAttrName, iri + idSuffix);
+                if (referencedIds) {
+                  
+                  referencedIds[iri.substring(1)] = 1;
+                }
+              }
+            });
+          }
+          element = descElements[++i];
+        }
+        for (i = 0; i < idElements[_LENGTH_]; i++) {
+          idElem = idElements[i];
+          
+          
+          if (!referencedIds || referencedIds[idElem.id]) {
+            
+            idElem.id += idSuffix;
+            changed = true;
+          }
+        }
+      }
+      
+      return changed;
+    }
+
+
+    
+    
+    function makeIdsUniqueCached(svgString) {
+      return svgString.replace(ID_SUFFIX_REGEX, ID_SUFFIX + uniqueIdCounter++);
+    }
+
+
+    
+    function inject(imgElem, svgElem, absUrl, options) {
+      if (svgElem) {
+        svgElem[_SET_ATTRIBUTE_]('data-inject-url', absUrl);
+        var parentNode = imgElem.parentNode;
+        if (parentNode) {
+          if (options.copyAttributes) {
+            copyAttributes(imgElem, svgElem);
+          }
+          
+          var beforeInject = options.beforeInject;
+          var injectElem = (beforeInject && beforeInject(imgElem, svgElem)) || svgElem;
+          
+          parentNode.replaceChild(injectElem, imgElem);
+          
+          imgElem[__SVGINJECT] = INJECTED;
+          removeOnLoadAttribute(imgElem);
+          
+          var afterInject = options.afterInject;
+          if (afterInject) {
+            afterInject(imgElem, injectElem);
+          }
+        }
+      } else {
+        svgInvalid(imgElem, options);
+      }
+    }
+
+
+    
+    function mergeOptions() {
+      var mergedOptions = {};
+      var args = arguments;
+      
+      for (var i = 0; i < args[_LENGTH_]; i++) {
+        var argument = args[i];
+          for (var key in argument) {
+            if (argument.hasOwnProperty(key)) {
+              mergedOptions[key] = argument[key];
+            }
+          }
+        }
+      return mergedOptions;
+    }
+
+
+    
+    function addStyleToHead(css) {
+      var head = document[_GET_ELEMENTS_BY_TAG_NAME_]('head')[0];
+      if (head) {
+        var style = document[_CREATE_ELEMENT_](_STYLE_);
+        style.type = 'text/css';
+        style.appendChild(document.createTextNode(css));
+        head.appendChild(style);
+      }
+    }
+
+
+    
+    function buildSvgElement(svgStr, verify) {
+      if (verify) {
+        var svgDoc;
+        try {
+          
+          svgDoc = svgStringToSvgDoc(svgStr);
+        } catch(e) {
+          return NULL;
+        }
+        if (svgDoc[_GET_ELEMENTS_BY_TAG_NAME_]('parsererror')[_LENGTH_]) {
+          
+          return NULL;
+        }
+        return svgDoc.documentElement;
+      } else {
+        var div = document.createElement('div');
+        div.innerHTML = svgStr;
+        return div.firstElementChild;
+      }
+    }
+
+
+    function removeOnLoadAttribute(imgElem) {
+      
+      
+      imgElem.removeAttribute('onload');
+    }
+
+
+    function errorMessage(msg) {
+      console.error('SVGInject: ' + msg);
+    }
+
+
+    function fail(imgElem, status, options) {
+      imgElem[__SVGINJECT] = FAIL;
+      if (options.onFail) {
+        options.onFail(imgElem, status);
+      } else {
+        errorMessage(status);
+      }
+    }
+
+
+    function svgInvalid(imgElem, options) {
+      removeOnLoadAttribute(imgElem);
+      fail(imgElem, SVG_INVALID, options);
+    }
+
+
+    function svgNotSupported(imgElem, options) {
+      removeOnLoadAttribute(imgElem);
+      fail(imgElem, SVG_NOT_SUPPORTED, options);
+    }
+
+
+    function loadFail(imgElem, options) {
+      fail(imgElem, LOAD_FAIL, options);
+    }
+
+
+    function removeEventListeners(imgElem) {
+      imgElem.onload = NULL;
+      imgElem.onerror = NULL;
+    }
+
+
+    function imgNotSet(msg) {
+      errorMessage('no img element');
+    }
+
+
+    function createSVGInject(globalName, options) {
+      var defaultOptions = mergeOptions(DEFAULT_OPTIONS, options);
+      var svgLoadCache = {};
+
+      if (IS_SVG_SUPPORTED) {
+        
+        
+        addStyleToHead('img[onload^="' + globalName + '("]{visibility:hidden;}');
+      }
+
+
+      
+
+      function SVGInject(img, options) {
+        options = mergeOptions(defaultOptions, options);
+
+        var run = function(resolve) {
+          var allFinish = function() {
+            var onAllFinish = options.onAllFinish;
+            if (onAllFinish) {
+              onAllFinish();
+            }
+            resolve && resolve();
+          };
+
+          if (img && typeof img[_LENGTH_] != _UNDEFINED_) {
+            
+            var injectIndex = 0;
+            var injectCount = img[_LENGTH_];
+
+            if (injectCount == 0) {
+              allFinish();
+            } else {
+              var finish = function() {
+                if (++injectIndex == injectCount) {
+                  allFinish();
+                }
+              };
+
+              for (var i = 0; i < injectCount; i++) {
+                SVGInjectElement(img[i], options, finish);
+              }
+            }
+          } else {
+            
+            SVGInjectElement(img, options, allFinish);
+          }
+        };
+
+        
+        return typeof Promise == _UNDEFINED_ ? run() : new Promise(run);
+      }
+
+
+      
+      function SVGInjectElement(imgElem, options, callback) {
+        if (imgElem) {
+          var svgInjectAttributeValue = imgElem[__SVGINJECT];
+          if (!svgInjectAttributeValue) {
+            removeEventListeners(imgElem);
+
+            if (!IS_SVG_SUPPORTED) {
+              svgNotSupported(imgElem, options);
+              callback();
+              return;
+            }
+            
+            
+            var beforeLoad = options.beforeLoad;
+            var src = (beforeLoad && beforeLoad(imgElem)) || imgElem[_GET_ATTRIBUTE_]('src');
+
+            if (!src) {
+              
+              
+              if (src === '') {
+                loadFail(imgElem, options);
+              }
+              callback();
+              return;
+            }
+
+            
+            var onFinishCallbacks = [];
+            imgElem[__SVGINJECT] = onFinishCallbacks;
+
+            var onFinish = function() {
+              callback();
+              onFinishCallbacks.forEach(function(onFinishCallback) {
+                onFinishCallback();
+              });
+            };
+
+            var absUrl = getAbsoluteUrl(src);
+            var useCacheOption = options.useCache;
+            var makeIdsUniqueOption = options.makeIdsUnique;
+
+            var setSvgLoadCacheValue = function(val) {
+              if (useCacheOption) {
+                svgLoadCache[absUrl].forEach(function(svgLoad) {
+                  svgLoad(val);
+                });
+                svgLoadCache[absUrl] = val;
+              }
+            };
+
+            if (useCacheOption) {
+              var svgLoad = svgLoadCache[absUrl];
+
+              var handleLoadValue = function(loadValue) {
+                if (loadValue === LOAD_FAIL) {
+                  loadFail(imgElem, options);
+                } else if (loadValue === SVG_INVALID) {
+                  svgInvalid(imgElem, options);
+                } else {
+                  var hasUniqueIds = loadValue[0];
+                  var svgString = loadValue[1];
+                  var uniqueIdsSvgString = loadValue[2];
+                  var svgElem;
+
+                  if (makeIdsUniqueOption) {
+                    if (hasUniqueIds === NULL) {
+                      
+                      
+                      svgElem = buildSvgElement(svgString, false);
+                      hasUniqueIds = makeIdsUnique(svgElem, false);
+
+                      loadValue[0] = hasUniqueIds;
+                      loadValue[2] = hasUniqueIds && svgElemToSvgString(svgElem);
+                    } else if (hasUniqueIds) {
+                      
+                      svgString = makeIdsUniqueCached(uniqueIdsSvgString);
+                    }
+                  }
+
+                  svgElem = svgElem || buildSvgElement(svgString, false);
+
+                  inject(imgElem, svgElem, absUrl, options);
+                }
+                onFinish();
+              };
+
+              if (typeof svgLoad != _UNDEFINED_) {
+                
+                if (svgLoad.isCallbackQueue) {
+                  
+                  svgLoad.push(handleLoadValue);
+                } else {
+                  handleLoadValue(svgLoad);
+                }
+                return;
+              } else {
+                var svgLoad = [];
+                
+                svgLoad.isCallbackQueue = true;
+                svgLoadCache[absUrl] = svgLoad;
+              }
+            }
+
+            
+            loadSvg(absUrl, function(svgXml, svgString) {
+              
+              
+              var svgElem = svgXml instanceof Document ? svgXml.documentElement : buildSvgElement(svgString, true);
+
+              var afterLoad = options.afterLoad;
+              if (afterLoad) {
+                
+                
+                var svgElemOrSvgString = afterLoad(svgElem, svgString) || svgElem;
+                if (svgElemOrSvgString) {
+                  
+                  
+                  var isString = typeof svgElemOrSvgString == 'string';
+                  svgString = isString ? svgElemOrSvgString : svgElemToSvgString(svgElem);
+                  svgElem = isString ? buildSvgElement(svgElemOrSvgString, true) : svgElemOrSvgString;
+                }
+              }
+
+              if (svgElem instanceof SVGElement) {
+                var hasUniqueIds = NULL;
+                if (makeIdsUniqueOption) {
+                  hasUniqueIds = makeIdsUnique(svgElem, false);
+                }
+
+                if (useCacheOption) {
+                  var uniqueIdsSvgString = hasUniqueIds && svgElemToSvgString(svgElem);
+                  
+                  setSvgLoadCacheValue([hasUniqueIds, svgString, uniqueIdsSvgString]);
+                }
+
+                inject(imgElem, svgElem, absUrl, options);
+              } else {
+                svgInvalid(imgElem, options);
+                setSvgLoadCacheValue(SVG_INVALID);
+              }
+              onFinish();
+            }, function() {
+              loadFail(imgElem, options);
+              setSvgLoadCacheValue(LOAD_FAIL);
+              onFinish();
+            });
+          } else {
+            if (Array.isArray(svgInjectAttributeValue)) {
+              
+              svgInjectAttributeValue.push(callback);
+            } else {
+              callback();
+            }
+          }
+        } else {
+          imgNotSet();
+        }
+      }
+
+
+      
+
+      SVGInject.setOptions = function(options) {
+        defaultOptions = mergeOptions(defaultOptions, options);
+      };
+
+
+      
+      SVGInject.create = createSVGInject;
+
+
+      
+
+      SVGInject.err = function(img, fallbackSrc) {
+        if (img) {
+          if (img[__SVGINJECT] != FAIL) {
+            removeEventListeners(img);
+
+            if (!IS_SVG_SUPPORTED) {
+              svgNotSupported(img, defaultOptions);
+            } else {
+              removeOnLoadAttribute(img);
+              loadFail(img, defaultOptions);
+            }
+            if (fallbackSrc) {
+              removeOnLoadAttribute(img);
+              img.src = fallbackSrc;
+            }
+          }
+        } else {
+          imgNotSet();
+        }
+      };
+
+      window[globalName] = SVGInject;
+
+      return SVGInject;
+    }
+
+    var SVGInjectInstance = createSVGInject('SVGInject');
+
+    if (typeof module == 'object' && typeof module.exports == 'object') {
+      module.exports = SVGInjectInstance;
+    }
+  })(window, document);
+
+  
+  SVGInject(document.querySelectorAll('img[alt="Formal Verification Group"]'));
+
+</script>
+
+      
+    
+  
+
+
+
+
+
+
+</body>
+</html>

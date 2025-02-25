@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hybrid Hoare logic | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/tag/hybrid-hoare-logic/</link>
+      <atom:link href="https://fiction-zju.github.io/tag/hybrid-hoare-logic/index.xml" rel="self" type="application/rss+xml" />
+    <description>hybrid Hoare logic</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 02 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>hybrid Hoare logic</title>
+      <link>https://fiction-zju.github.io/tag/hybrid-hoare-logic/</link>
+    </image>
+    
+    <item>
+      <title>MARS: A Toolchain for Modelling, Analysis and Verification of Hybrid Systems</title>
+      <link>https://fiction-zju.github.io/publication/chen-procos2017/</link>
+      <pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/chen-procos2017/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Two-Way Path between Formal and Informal Design of Embedded Systems</title>
+      <link>https://fiction-zju.github.io/publication/chen-utp2016/</link>
+      <pubDate>Wed, 11 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/chen-utp2016/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

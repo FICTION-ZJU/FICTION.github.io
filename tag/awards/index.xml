@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Awards | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/tag/awards/</link>
+      <atom:link href="https://fiction-zju.github.io/tag/awards/index.xml" rel="self" type="application/rss+xml" />
+    <description>Awards</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 17 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Awards</title>
+      <link>https://fiction-zju.github.io/tag/awards/</link>
+    </image>
+    
+    <item>
+      <title>Parf Wins the 2nd Prize at ChinaSoft 2024</title>
+      <link>https://fiction-zju.github.io/news/24-11-17-prize-chinasoft2024/</link>
+      <pubDate>Sun, 17 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/news/24-11-17-prize-chinasoft2024/</guid>
+      <description>&lt;p&gt;Our tool Parf has been awarded the 2nd prize in the Software Prototype System Competition at ChinaSoft 2024.&lt;/p&gt;
+&lt;p&gt;Our prototypical tool Parf (&lt;a href=&#34;https://fiction-zju.github.io/publication/wang-ase2024/&#34;&gt;Parf: Adaptive Parameter Refining for Abstract Interpretation&lt;/a&gt;) by &lt;a href=&#34;https://fiction-zju.github.io/author/zhongyi-wang/&#34;&gt;Zhongyi Wang&lt;/a&gt;, &lt;a href=&#34;https://fiction-zju.github.io/author/linyu-yang/&#34;&gt;Linyu Yang&lt;/a&gt;, &lt;a href=&#34;https://fiction-zju.github.io/author/yixuan-bu/&#34;&gt;Yixuan Bu&lt;/a&gt;, Junhao Zhuo, Jinhan Wu, Yunxiang Wei, &lt;a href=&#34;https://fiction-zju.github.io/author/zhiyang-li/&#34;&gt;Zhiyang Li&lt;/a&gt;, &lt;a href=&#34;https://fiction-zju.github.io/author/mingshuai-chen/&#34;&gt;Mingshuai Chen&lt;/a&gt;, and Jianwei Yin has been awarded the 2nd prize (ranking 5/74) in the Software Prototype System Competition as part of ChinaSoft 2024, Xi&amp;rsquo;an, China. Parf is geared towards automatically refining external parameters of abstract interpretation-based static analyzers for C programs; It now incorporates a web-based UI that supports the intuitive configuration of static analyzers and a visualization of dynamic distribution refinement of the external parameters. An entry to the Parf website will be published soon.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NSFC Excellent Young Scientists Fund (Overseas) Granted</title>
+      <link>https://fiction-zju.github.io/news/23-10-13-grant-nsfc-excellent-young-scientist/</link>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/news/23-10-13-grant-nsfc-excellent-young-scientist/</guid>
+      <description>&lt;p&gt;Prof. Dr. &lt;a href=&#34;https://fiction-zju.github.io/author/mingshuai-chen/&#34;&gt;Mingshuai Chen&lt;/a&gt; is awarded the NSFC Excellent Young Scientists Fund Program (Overseas).&lt;/p&gt;
+&lt;p&gt;Our project proposal titled &amp;ldquo;Formal Design of Safety-Critical Cyber-Physical Systems&amp;rdquo; has been granted for funding by the National Natural Science Foundation of China (NSFC) as an Excellent Young Scientists Fund Program (Overseas). This program is known as one of the most prestigious grants for young researchers across China. The project aims to carry out research under the umbrella of automated synthesis of cyber-physical systems by exploring mechanized principles for designing complex safety-critical systems while aiming to establish cutting-edge synthesis techniques powered by verification methods.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

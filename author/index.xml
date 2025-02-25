@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/author/</link>
+      <atom:link href="https://fiction-zju.github.io/author/index.xml" rel="self" type="application/rss+xml" />
+    <description>Formal Verification Group</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://fiction-zju.github.io/author/avatar_hud4112984eb60e6b6160653ef55ce9699_4936_270x270_fill_lanczos_center_3.png</url>
+      <title>Formal Verification Group</title>
+      <link>https://fiction-zju.github.io/author/</link>
+    </image>
+    
+  </channel>
+</rss>

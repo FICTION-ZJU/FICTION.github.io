@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probabilistic Trees | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/seminar/24-12-20/linyu/</link>
+      <atom:link href="https://fiction-zju.github.io/seminar/24-12-20/linyu/index.xml" rel="self" type="application/rss+xml" />
+    <description>Probabilistic Trees</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Probabilistic Trees</title>
+      <link>https://fiction-zju.github.io/seminar/24-12-20/linyu/</link>
+    </image>
+    
+  </channel>
+</rss>

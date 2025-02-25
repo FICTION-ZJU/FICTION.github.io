@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hybrid System Identification | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/seminar/25-02-26/hengzhi-bohan/</link>
+      <atom:link href="https://fiction-zju.github.io/seminar/25-02-26/hengzhi-bohan/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hybrid System Identification</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 26 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Hybrid System Identification</title>
+      <link>https://fiction-zju.github.io/seminar/25-02-26/hengzhi-bohan/</link>
+    </image>
+    
+  </channel>
+</rss>

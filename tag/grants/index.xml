@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grants | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/tag/grants/</link>
+      <atom:link href="https://fiction-zju.github.io/tag/grants/index.xml" rel="self" type="application/rss+xml" />
+    <description>Grants</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 08 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Grants</title>
+      <link>https://fiction-zju.github.io/tag/grants/</link>
+    </image>
+    
+    <item>
+      <title>ZJNSF Project Proposal Granted</title>
+      <link>https://fiction-zju.github.io/news/23-12-08-grant-zjnsf/</link>
+      <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/news/23-12-08-grant-zjnsf/</guid>
+      <description>&lt;p&gt;Our project proposal has been granted for funding by the ZJNSF Major Program.&lt;/p&gt;
+&lt;p&gt;Our project proposal titled &amp;ldquo;Hybrid Computational Models and Theories for Heterogeneous Quantum-Super-Intelligent Computing&amp;rdquo; has been granted for funding by the Zhejiang Provincial Natural Science Foundation (ZJNSF) as a Major Program. This project aims to develop hybrid computational models and theories for emerging computing paradigms consisting of distributed, heterogeneous quantum-, super-, and intelligent-computing infrastructures.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NSFC Excellent Young Scientists Fund (Overseas) Granted</title>
+      <link>https://fiction-zju.github.io/news/23-10-13-grant-nsfc-excellent-young-scientist/</link>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/news/23-10-13-grant-nsfc-excellent-young-scientist/</guid>
+      <description>&lt;p&gt;Prof. Dr. &lt;a href=&#34;https://fiction-zju.github.io/author/mingshuai-chen/&#34;&gt;Mingshuai Chen&lt;/a&gt; is awarded the NSFC Excellent Young Scientists Fund Program (Overseas).&lt;/p&gt;
+&lt;p&gt;Our project proposal titled &amp;ldquo;Formal Design of Safety-Critical Cyber-Physical Systems&amp;rdquo; has been granted for funding by the National Natural Science Foundation of China (NSFC) as an Excellent Young Scientists Fund Program (Overseas). This program is known as one of the most prestigious grants for young researchers across China. The project aims to carry out research under the umbrella of automated synthesis of cyber-physical systems by exploring mechanized principles for designing complex safety-critical systems while aiming to establish cutting-edge synthesis techniques powered by verification methods.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CCF-Huawei Project Proposal Granted</title>
+      <link>https://fiction-zju.github.io/news/23-07-26-grant-huyanglin/</link>
+      <pubDate>Wed, 26 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/news/23-07-26-grant-huyanglin/</guid>
+      <description>&lt;p&gt;Our project proposal has been granted for funding by the joint foundation of CCF and Huawei.&lt;/p&gt;
+&lt;p&gt;Our project proposal titled &amp;ldquo;Self-Adaptive Abstract Interpretation for C Programs&amp;rdquo; has been granted for funding by the joint foundation of The China Computer Federation (CCF) and Huawei. This project aims to develop formal techniques for automating the procedure of abstract interpretation for analyzing C/C++ programs where, in particular, we explore a mechanism for (semi-)automatically adapting the abstract domains and refinement strategies during static analysis of real-world, industry-scale programs, in the hope of improving efficiency and reducing the rate of false alarms.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

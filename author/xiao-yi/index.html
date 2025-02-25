@@ -1,0 +1,1883 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.6.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="The Formal Verification Group (FICTION), headed by Prof. Dr. Mingshuai Chen, is a research unit embedded in the College of Computer Science and Technology at Zhejiang University, Hangzhou, China. We develop formal reasoning techniques for programs and hybrid discrete-continuous systems for ensuring the reliability and effectiveness of safety-critical software systems while pushing the limits of automation as far as possible." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://fiction-zju.github.io/author/xiao-yi/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.eae541781b54fa7848b1a55d8c72c5da.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+    <link rel="alternate" href="/author/xiao-yi/index.xml" type="application/rss+xml" title="Formal Verification Group" />
+  
+
+  
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu05dae1538d00d7195fbc8a02478b8221_4208_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu05dae1538d00d7195fbc8a02478b8221_4208_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://fiction-zju.github.io/author/xiao-yi/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="Formal Verification Group" />
+  <meta property="og:url" content="https://fiction-zju.github.io/author/xiao-yi/" />
+  <meta property="og:title" content="Xiao Yi | Formal Verification Group" />
+  <meta property="og:description" content="The Formal Verification Group (FICTION), headed by Prof. Dr. Mingshuai Chen, is a research unit embedded in the College of Computer Science and Technology at Zhejiang University, Hangzhou, China. We develop formal reasoning techniques for programs and hybrid discrete-continuous systems for ensuring the reliability and effectiveness of safety-critical software systems while pushing the limits of automation as far as possible." /><meta property="og:image" content="https://fiction-zju.github.io/media/sharing.jpeg" />
+    <meta property="twitter:image" content="https://fiction-zju.github.io/media/sharing.jpeg" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2024-10-27T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+
+
+  
+
+
+  <title>Xiao Yi | Formal Verification Group</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+      
+      
+<meta name="google-site-verification" content="egmOGCPk-Y14FThPF-zP9WbIjo-_dPe6RRYb0DWo7Xs" />
+
+      
+    
+  
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   "  >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.613040fe4f2c0f007b4dcb64404201cb.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo.svg" alt="Formal Verification Group"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo.svg" alt="Formal Verification Group"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/news"><span>News</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/seminar"><span>Seminar</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/courses"><span>Courses</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/vacancies"><span>Vacancies</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/pulp"><span>Pulp Fictions</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+<div class="universal-wrapper pt-3">
+  <h1>Xiao Yi</h1>
+</div>
+
+
+<section id="profile-page" class="pt-5">
+  <div class="container">
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+      
+        
+          
+        
+      
+    
+
+    <div class="article-widget">
+    
+      <h3>Publications with FICTION</h3>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+      <div class="hr-light"></div>
+      <h4>Conference Papers</h4>
+      <ol>
+        
+          <li><div class="pub-list-item" style="margin-bottom: 0.5rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+  <span >
+      <a href="/author/zhongyi-wang/">Zhongyi Wang</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="equal contribution"></i>, <span >
+      <a href="/author/linyu-yang/">Linyu Yang</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="equal contribution"></i>, <span >
+      <a href="/author/mingshuai-chen/">Mingshuai Chen</a></span>, <span >
+      <a href="/author/yixuan-bu/">Yixuan Bu</a></span>, <span >
+      <a href="/author/zhiyang-li/">Zhiyang Li</a></span>, <span >
+      <a href="/author/qiuye-wang/">Qiuye Wang</a></span>, <span >
+      <a href="/author/shengchao-qin/">Shengchao Qin</a></span>, <span >
+      <a href="/author/xiao-yi/">Xiao Yi</a></span>, <span >
+      <a href="/author/jianwei-yin/">Jianwei Yin</a></span>
+  </span>
+  
+  
+    (2024).
+  
+  <a href="/publication/wang-ase2024/" >Parf: Adaptive Parameter Refining for Abstract Interpretation</a>.
+  In <em>ASE 2024</em>.
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/papers/ASE2024.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/wang-ase2024/cite.bib">
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://hub.docker.com/r/parfdocker/parf" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/ASE24.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://zenodo.org/records/14252572?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImY5ODE3NWYwLWM3ZjQtNDU2Yy04YWQ5LTZlZWYxYTdkYzgwYyIsImRhdGEiOnt9LCJyYW5kb20iOiJmNzU1ZWY3ZjkxNWM3YzgyYzJiNGVlNjNlZjgxZmYxZCJ9.qxP2OqbRu1l8URrZU4H9lzx39bKbozHo8k7G1rI583SXzJ24_vs2ZNuD6Jf5dftvU_cSGyqCQDZlxV9rwaeLSQ" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1145/3691620.3695487" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/files/Parf-ChinaSoft24.png" >
+    <i class="fas fa-certificate mr-1"></i>2nd Prize@ChinaSoft'24</a>
+
+
+</div>
+</li>
+        
+      </ol>
+    
+
+    
+
+    
+
+    
+  </div>
+</section>
+
+
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Formal Verification Group at Zhejiang University. This work is inspired by <a href="http://geneticlogiclab.org/" target="_blank" rel="noopener">Genetic Logic Lab</a> and licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.54dd6e4d8f2e4b1d098381b57f18dd83.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+      
+      <script>
+
+  
+
+
+  (function(window, document) {
+    
+    var _CREATE_ELEMENT_ = 'createElement';
+    var _GET_ELEMENTS_BY_TAG_NAME_ = 'getElementsByTagName';
+    var _LENGTH_ = 'length';
+    var _STYLE_ = 'style';
+    var _TITLE_ = 'title';
+    var _UNDEFINED_ = 'undefined';
+    var _SET_ATTRIBUTE_ = 'setAttribute';
+    var _GET_ATTRIBUTE_ = 'getAttribute';
+
+    var NULL = null;
+
+    
+    var __SVGINJECT = '__svgInject';
+    var ID_SUFFIX = '--inject-';
+    var ID_SUFFIX_REGEX = new RegExp(ID_SUFFIX + '\\d+', "g");
+    var LOAD_FAIL = 'LOAD_FAIL';
+    var SVG_NOT_SUPPORTED = 'SVG_NOT_SUPPORTED';
+    var SVG_INVALID = 'SVG_INVALID';
+    var ATTRIBUTE_EXCLUSION_NAMES = ['src', 'alt', 'onload', 'onerror'];
+    var A_ELEMENT = document[_CREATE_ELEMENT_]('a');
+    var IS_SVG_SUPPORTED = typeof SVGRect != _UNDEFINED_;
+    var DEFAULT_OPTIONS = {
+      useCache: true,
+      copyAttributes: true,
+      makeIdsUnique: true
+    };
+    
+    
+    var IRI_TAG_PROPERTIES_MAP = {
+      clipPath: ['clip-path'],
+      'color-profile': NULL,
+      cursor: NULL,
+      filter: NULL,
+      linearGradient: ['fill', 'stroke'],
+      marker: ['marker', 'marker-end', 'marker-mid', 'marker-start'],
+      mask: NULL,
+      pattern: ['fill', 'stroke'],
+      radialGradient: ['fill', 'stroke']
+    };
+    var INJECTED = 1;
+    var FAIL = 2;
+
+    var uniqueIdCounter = 1;
+    var xmlSerializer;
+    var domParser;
+
+
+    
+    function svgStringToSvgDoc(svgStr) {
+      domParser = domParser || new DOMParser();
+      return domParser.parseFromString(svgStr, 'text/xml');
+    }
+
+
+    
+    function svgElemToSvgString(svgElement) {
+      xmlSerializer = xmlSerializer || new XMLSerializer();
+      return xmlSerializer.serializeToString(svgElement);
+    }
+
+
+    
+    function getAbsoluteUrl(url) {
+      A_ELEMENT.href = url;
+      return A_ELEMENT.href;
+    }
+
+
+    
+    function loadSvg(url, callback, errorCallback) {
+      if (url) {
+        var req = new XMLHttpRequest();
+        req.onreadystatechange = function() {
+          if (req.readyState == 4) {
+            
+            var status = req.status;
+            if (status == 200) {
+              
+              callback(req.responseXML, req.responseText.trim());
+            } else if (status >= 400) {
+              
+              errorCallback();
+            } else if (status == 0) {
+              
+              errorCallback();
+            }
+          }
+        };
+        req.open('GET', url, true);
+        req.send();
+      }
+    }
+
+
+    
+    function copyAttributes(imgElem, svgElem) {
+      var attribute;
+      var attributeName;
+      var attributeValue;
+      var attributes = imgElem.attributes;
+      for (var i = 0; i < attributes[_LENGTH_]; i++) {
+        attribute = attributes[i];
+        attributeName = attribute.name;
+        
+        if (ATTRIBUTE_EXCLUSION_NAMES.indexOf(attributeName) == -1) {
+          attributeValue = attribute.value;
+          
+          if (attributeName == _TITLE_) {
+            var titleElem;
+            var firstElementChild = svgElem.firstElementChild;
+            if (firstElementChild && firstElementChild.localName.toLowerCase() == _TITLE_) {
+              
+              titleElem = firstElementChild;
+            } else {
+              
+              
+              titleElem = document[_CREATE_ELEMENT_ + 'NS']('http://www.w3.org/2000/svg', _TITLE_);
+              svgElem.insertBefore(titleElem, firstElementChild);
+            }
+            
+            titleElem.textContent = attributeValue;
+          } else {
+            
+            svgElem[_SET_ATTRIBUTE_](attributeName, attributeValue);
+          }
+        }
+      }
+    }
+
+
+    
+    
+    
+    
+    
+    
+    function makeIdsUnique(svgElem, onlyReferenced) {
+      var idSuffix = ID_SUFFIX + uniqueIdCounter++;
+      
+      
+      var funcIriRegex = /url\("?#([a-zA-Z][\w:.-]*)"?\)/g;
+      
+      
+      var idElements = svgElem.querySelectorAll('[id]');
+      var idElem;
+      
+      
+      var referencedIds = onlyReferenced ? [] : NULL;
+      var tagName;
+      var iriTagNames = {};
+      var iriProperties = [];
+      var changed = false;
+      var i, j;
+
+      if (idElements[_LENGTH_]) {
+        
+        
+        for (i = 0; i < idElements[_LENGTH_]; i++) {
+          tagName = idElements[i].localName; 
+          
+          if (tagName in IRI_TAG_PROPERTIES_MAP) {
+            iriTagNames[tagName] = 1;
+          }
+        }
+        
+        for (tagName in iriTagNames) {
+          (IRI_TAG_PROPERTIES_MAP[tagName] || [tagName]).forEach(function (mappedProperty) {
+            
+            
+            if (iriProperties.indexOf(mappedProperty) < 0) {
+              iriProperties.push(mappedProperty);
+            }
+          });
+        }
+        if (iriProperties[_LENGTH_]) {
+          
+          iriProperties.push(_STYLE_);
+        }
+        
+        
+        
+        var descElements = svgElem[_GET_ELEMENTS_BY_TAG_NAME_]('*');
+        var element = svgElem;
+        var propertyName;
+        var value;
+        var newValue;
+        for (i = -1; element != NULL;) {
+          if (element.localName == _STYLE_) {
+            
+            value = element.textContent;
+            newValue = value && value.replace(funcIriRegex, function(match, id) {
+              if (referencedIds) {
+                referencedIds[id] = 1;
+              }
+              return 'url(#' + id + idSuffix + ')';
+            });
+            if (newValue !== value) {
+              element.textContent = newValue;
+            }
+          } else if (element.hasAttributes()) {
+            
+            for (j = 0; j < iriProperties[_LENGTH_]; j++) {
+              propertyName = iriProperties[j];
+              value = element[_GET_ATTRIBUTE_](propertyName);
+              newValue = value && value.replace(funcIriRegex, function(match, id) {
+                if (referencedIds) {
+                  referencedIds[id] = 1;
+                }
+                  return 'url(#' + id + idSuffix + ')';
+              });
+              if (newValue !== value) {
+                element[_SET_ATTRIBUTE_](propertyName, newValue);
+              }
+            }
+            
+            ['xlink:href', 'href'].forEach(function(refAttrName) {
+              var iri = element[_GET_ATTRIBUTE_](refAttrName);
+              if (/^\s*#/.test(iri)) { 
+                iri = iri.trim();
+                element[_SET_ATTRIBUTE_](refAttrName, iri + idSuffix);
+                if (referencedIds) {
+                  
+                  referencedIds[iri.substring(1)] = 1;
+                }
+              }
+            });
+          }
+          element = descElements[++i];
+        }
+        for (i = 0; i < idElements[_LENGTH_]; i++) {
+          idElem = idElements[i];
+          
+          
+          if (!referencedIds || referencedIds[idElem.id]) {
+            
+            idElem.id += idSuffix;
+            changed = true;
+          }
+        }
+      }
+      
+      return changed;
+    }
+
+
+    
+    
+    function makeIdsUniqueCached(svgString) {
+      return svgString.replace(ID_SUFFIX_REGEX, ID_SUFFIX + uniqueIdCounter++);
+    }
+
+
+    
+    function inject(imgElem, svgElem, absUrl, options) {
+      if (svgElem) {
+        svgElem[_SET_ATTRIBUTE_]('data-inject-url', absUrl);
+        var parentNode = imgElem.parentNode;
+        if (parentNode) {
+          if (options.copyAttributes) {
+            copyAttributes(imgElem, svgElem);
+          }
+          
+          var beforeInject = options.beforeInject;
+          var injectElem = (beforeInject && beforeInject(imgElem, svgElem)) || svgElem;
+          
+          parentNode.replaceChild(injectElem, imgElem);
+          
+          imgElem[__SVGINJECT] = INJECTED;
+          removeOnLoadAttribute(imgElem);
+          
+          var afterInject = options.afterInject;
+          if (afterInject) {
+            afterInject(imgElem, injectElem);
+          }
+        }
+      } else {
+        svgInvalid(imgElem, options);
+      }
+    }
+
+
+    
+    function mergeOptions() {
+      var mergedOptions = {};
+      var args = arguments;
+      
+      for (var i = 0; i < args[_LENGTH_]; i++) {
+        var argument = args[i];
+          for (var key in argument) {
+            if (argument.hasOwnProperty(key)) {
+              mergedOptions[key] = argument[key];
+            }
+          }
+        }
+      return mergedOptions;
+    }
+
+
+    
+    function addStyleToHead(css) {
+      var head = document[_GET_ELEMENTS_BY_TAG_NAME_]('head')[0];
+      if (head) {
+        var style = document[_CREATE_ELEMENT_](_STYLE_);
+        style.type = 'text/css';
+        style.appendChild(document.createTextNode(css));
+        head.appendChild(style);
+      }
+    }
+
+
+    
+    function buildSvgElement(svgStr, verify) {
+      if (verify) {
+        var svgDoc;
+        try {
+          
+          svgDoc = svgStringToSvgDoc(svgStr);
+        } catch(e) {
+          return NULL;
+        }
+        if (svgDoc[_GET_ELEMENTS_BY_TAG_NAME_]('parsererror')[_LENGTH_]) {
+          
+          return NULL;
+        }
+        return svgDoc.documentElement;
+      } else {
+        var div = document.createElement('div');
+        div.innerHTML = svgStr;
+        return div.firstElementChild;
+      }
+    }
+
+
+    function removeOnLoadAttribute(imgElem) {
+      
+      
+      imgElem.removeAttribute('onload');
+    }
+
+
+    function errorMessage(msg) {
+      console.error('SVGInject: ' + msg);
+    }
+
+
+    function fail(imgElem, status, options) {
+      imgElem[__SVGINJECT] = FAIL;
+      if (options.onFail) {
+        options.onFail(imgElem, status);
+      } else {
+        errorMessage(status);
+      }
+    }
+
+
+    function svgInvalid(imgElem, options) {
+      removeOnLoadAttribute(imgElem);
+      fail(imgElem, SVG_INVALID, options);
+    }
+
+
+    function svgNotSupported(imgElem, options) {
+      removeOnLoadAttribute(imgElem);
+      fail(imgElem, SVG_NOT_SUPPORTED, options);
+    }
+
+
+    function loadFail(imgElem, options) {
+      fail(imgElem, LOAD_FAIL, options);
+    }
+
+
+    function removeEventListeners(imgElem) {
+      imgElem.onload = NULL;
+      imgElem.onerror = NULL;
+    }
+
+
+    function imgNotSet(msg) {
+      errorMessage('no img element');
+    }
+
+
+    function createSVGInject(globalName, options) {
+      var defaultOptions = mergeOptions(DEFAULT_OPTIONS, options);
+      var svgLoadCache = {};
+
+      if (IS_SVG_SUPPORTED) {
+        
+        
+        addStyleToHead('img[onload^="' + globalName + '("]{visibility:hidden;}');
+      }
+
+
+      
+
+      function SVGInject(img, options) {
+        options = mergeOptions(defaultOptions, options);
+
+        var run = function(resolve) {
+          var allFinish = function() {
+            var onAllFinish = options.onAllFinish;
+            if (onAllFinish) {
+              onAllFinish();
+            }
+            resolve && resolve();
+          };
+
+          if (img && typeof img[_LENGTH_] != _UNDEFINED_) {
+            
+            var injectIndex = 0;
+            var injectCount = img[_LENGTH_];
+
+            if (injectCount == 0) {
+              allFinish();
+            } else {
+              var finish = function() {
+                if (++injectIndex == injectCount) {
+                  allFinish();
+                }
+              };
+
+              for (var i = 0; i < injectCount; i++) {
+                SVGInjectElement(img[i], options, finish);
+              }
+            }
+          } else {
+            
+            SVGInjectElement(img, options, allFinish);
+          }
+        };
+
+        
+        return typeof Promise == _UNDEFINED_ ? run() : new Promise(run);
+      }
+
+
+      
+      function SVGInjectElement(imgElem, options, callback) {
+        if (imgElem) {
+          var svgInjectAttributeValue = imgElem[__SVGINJECT];
+          if (!svgInjectAttributeValue) {
+            removeEventListeners(imgElem);
+
+            if (!IS_SVG_SUPPORTED) {
+              svgNotSupported(imgElem, options);
+              callback();
+              return;
+            }
+            
+            
+            var beforeLoad = options.beforeLoad;
+            var src = (beforeLoad && beforeLoad(imgElem)) || imgElem[_GET_ATTRIBUTE_]('src');
+
+            if (!src) {
+              
+              
+              if (src === '') {
+                loadFail(imgElem, options);
+              }
+              callback();
+              return;
+            }
+
+            
+            var onFinishCallbacks = [];
+            imgElem[__SVGINJECT] = onFinishCallbacks;
+
+            var onFinish = function() {
+              callback();
+              onFinishCallbacks.forEach(function(onFinishCallback) {
+                onFinishCallback();
+              });
+            };
+
+            var absUrl = getAbsoluteUrl(src);
+            var useCacheOption = options.useCache;
+            var makeIdsUniqueOption = options.makeIdsUnique;
+
+            var setSvgLoadCacheValue = function(val) {
+              if (useCacheOption) {
+                svgLoadCache[absUrl].forEach(function(svgLoad) {
+                  svgLoad(val);
+                });
+                svgLoadCache[absUrl] = val;
+              }
+            };
+
+            if (useCacheOption) {
+              var svgLoad = svgLoadCache[absUrl];
+
+              var handleLoadValue = function(loadValue) {
+                if (loadValue === LOAD_FAIL) {
+                  loadFail(imgElem, options);
+                } else if (loadValue === SVG_INVALID) {
+                  svgInvalid(imgElem, options);
+                } else {
+                  var hasUniqueIds = loadValue[0];
+                  var svgString = loadValue[1];
+                  var uniqueIdsSvgString = loadValue[2];
+                  var svgElem;
+
+                  if (makeIdsUniqueOption) {
+                    if (hasUniqueIds === NULL) {
+                      
+                      
+                      svgElem = buildSvgElement(svgString, false);
+                      hasUniqueIds = makeIdsUnique(svgElem, false);
+
+                      loadValue[0] = hasUniqueIds;
+                      loadValue[2] = hasUniqueIds && svgElemToSvgString(svgElem);
+                    } else if (hasUniqueIds) {
+                      
+                      svgString = makeIdsUniqueCached(uniqueIdsSvgString);
+                    }
+                  }
+
+                  svgElem = svgElem || buildSvgElement(svgString, false);
+
+                  inject(imgElem, svgElem, absUrl, options);
+                }
+                onFinish();
+              };
+
+              if (typeof svgLoad != _UNDEFINED_) {
+                
+                if (svgLoad.isCallbackQueue) {
+                  
+                  svgLoad.push(handleLoadValue);
+                } else {
+                  handleLoadValue(svgLoad);
+                }
+                return;
+              } else {
+                var svgLoad = [];
+                
+                svgLoad.isCallbackQueue = true;
+                svgLoadCache[absUrl] = svgLoad;
+              }
+            }
+
+            
+            loadSvg(absUrl, function(svgXml, svgString) {
+              
+              
+              var svgElem = svgXml instanceof Document ? svgXml.documentElement : buildSvgElement(svgString, true);
+
+              var afterLoad = options.afterLoad;
+              if (afterLoad) {
+                
+                
+                var svgElemOrSvgString = afterLoad(svgElem, svgString) || svgElem;
+                if (svgElemOrSvgString) {
+                  
+                  
+                  var isString = typeof svgElemOrSvgString == 'string';
+                  svgString = isString ? svgElemOrSvgString : svgElemToSvgString(svgElem);
+                  svgElem = isString ? buildSvgElement(svgElemOrSvgString, true) : svgElemOrSvgString;
+                }
+              }
+
+              if (svgElem instanceof SVGElement) {
+                var hasUniqueIds = NULL;
+                if (makeIdsUniqueOption) {
+                  hasUniqueIds = makeIdsUnique(svgElem, false);
+                }
+
+                if (useCacheOption) {
+                  var uniqueIdsSvgString = hasUniqueIds && svgElemToSvgString(svgElem);
+                  
+                  setSvgLoadCacheValue([hasUniqueIds, svgString, uniqueIdsSvgString]);
+                }
+
+                inject(imgElem, svgElem, absUrl, options);
+              } else {
+                svgInvalid(imgElem, options);
+                setSvgLoadCacheValue(SVG_INVALID);
+              }
+              onFinish();
+            }, function() {
+              loadFail(imgElem, options);
+              setSvgLoadCacheValue(LOAD_FAIL);
+              onFinish();
+            });
+          } else {
+            if (Array.isArray(svgInjectAttributeValue)) {
+              
+              svgInjectAttributeValue.push(callback);
+            } else {
+              callback();
+            }
+          }
+        } else {
+          imgNotSet();
+        }
+      }
+
+
+      
+
+      SVGInject.setOptions = function(options) {
+        defaultOptions = mergeOptions(defaultOptions, options);
+      };
+
+
+      
+      SVGInject.create = createSVGInject;
+
+
+      
+
+      SVGInject.err = function(img, fallbackSrc) {
+        if (img) {
+          if (img[__SVGINJECT] != FAIL) {
+            removeEventListeners(img);
+
+            if (!IS_SVG_SUPPORTED) {
+              svgNotSupported(img, defaultOptions);
+            } else {
+              removeOnLoadAttribute(img);
+              loadFail(img, defaultOptions);
+            }
+            if (fallbackSrc) {
+              removeOnLoadAttribute(img);
+              img.src = fallbackSrc;
+            }
+          }
+        } else {
+          imgNotSet();
+        }
+      };
+
+      window[globalName] = SVGInject;
+
+      return SVGInject;
+    }
+
+    var SVGInjectInstance = createSVGInject('SVGInject');
+
+    if (typeof module == 'object' && typeof module.exports == 'object') {
+      module.exports = SVGInjectInstance;
+    }
+  })(window, document);
+
+  
+  SVGInject(document.querySelectorAll('img[alt="Formal Verification Group"]'));
+
+</script>
+
+      
+    
+  
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Liyun Dai | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/author/liyun-dai/</link>
+      <atom:link href="https://fiction-zju.github.io/author/liyun-dai/index.xml" rel="self" type="application/rss+xml" />
+    <description>Liyun Dai</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 12 Jun 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Liyun Dai</title>
+      <link>https://fiction-zju.github.io/author/liyun-dai/</link>
+    </image>
+    
+    <item>
+      <title>Interpolant Synthesis for Quadratic Polynomial Inequalities and Combination with EUF</title>
+      <link>https://fiction-zju.github.io/publication/gan-ijcar2016/</link>
+      <pubDate>Sun, 12 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/gan-ijcar2016/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Decidability of the Reachability for a Family of Linear Vector Fields</title>
+      <link>https://fiction-zju.github.io/publication/gan-atva2015/</link>
+      <pubDate>Sun, 22 Nov 2015 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/gan-atva2015/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>supermartingales | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/tag/supermartingales/</link>
+      <atom:link href="https://fiction-zju.github.io/tag/supermartingales/index.xml" rel="self" type="application/rss+xml" />
+    <description>supermartingales</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 14 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>supermartingales</title>
+      <link>https://fiction-zju.github.io/tag/supermartingales/</link>
+    </image>
+    
+    <item>
+      <title>Unbounded-Time Safety Verification of Stochastic Differential Dynamics</title>
+      <link>https://fiction-zju.github.io/publication/feng-cav2020/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/feng-cav2020/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

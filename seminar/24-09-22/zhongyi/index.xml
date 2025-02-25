@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Verifying Numerical Programs via Iterative Abstract Testing | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/seminar/24-09-22/zhongyi/</link>
+      <atom:link href="https://fiction-zju.github.io/seminar/24-09-22/zhongyi/index.xml" rel="self" type="application/rss+xml" />
+    <description>Verifying Numerical Programs via Iterative Abstract Testing</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Verifying Numerical Programs via Iterative Abstract Testing</title>
+      <link>https://fiction-zju.github.io/seminar/24-09-22/zhongyi/</link>
+    </image>
+    
+  </channel>
+</rss>

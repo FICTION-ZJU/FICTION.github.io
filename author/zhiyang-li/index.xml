@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zhiyang Li | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/author/zhiyang-li/</link>
+      <atom:link href="https://fiction-zju.github.io/author/zhiyang-li/index.xml" rel="self" type="application/rss+xml" />
+    <description>Zhiyang Li</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/author/zhiyang-li/avatar_hu8122a539d5376688e5259210ac7f1297_133249_270x270_fill_q75_lanczos_center.jpeg</url>
+      <title>Zhiyang Li</title>
+      <link>https://fiction-zju.github.io/author/zhiyang-li/</link>
+    </image>
+    
+    <item>
+      <title>Parf: Adaptive Parameter Refining for Abstract Interpretation</title>
+      <link>https://fiction-zju.github.io/publication/wang-ase2024/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/wang-ase2024/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PS3: Precise Patch Presence Test Based on Semantic Symbolic Signature</title>
+      <link>https://fiction-zju.github.io/publication/zhan-icse2024/</link>
+      <pubDate>Sun, 14 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/zhan-icse2024/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

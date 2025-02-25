@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tengjie Lin | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/author/tengjie-lin/</link>
+      <atom:link href="https://fiction-zju.github.io/author/tengjie-lin/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tengjie Lin</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://fiction-zju.github.io/author/tengjie-lin/avatar_hub4d05cdea7a5c18724f5fc30e7a8af07_114111_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Tengjie Lin</title>
+      <link>https://fiction-zju.github.io/author/tengjie-lin/</link>
+    </image>
+    
+  </channel>
+</rss>

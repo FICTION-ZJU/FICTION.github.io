@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qiuye Wang | Formal Verification Group</title>
+    <link>https://fiction-zju.github.io/author/qiuye-wang/</link>
+      <atom:link href="https://fiction-zju.github.io/author/qiuye-wang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Qiuye Wang</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fiction-zju.github.io/media/sharing.jpeg</url>
+      <title>Qiuye Wang</title>
+      <link>https://fiction-zju.github.io/author/qiuye-wang/</link>
+    </image>
+    
+    <item>
+      <title>Parf: Adaptive Parameter Refining for Abstract Interpretation</title>
+      <link>https://fiction-zju.github.io/publication/wang-ase2024/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/wang-ase2024/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Encoding Inductive Invariants as Barrier Certificates</title>
+      <link>https://fiction-zju.github.io/publication/wang-infcomp2022/</link>
+      <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/wang-infcomp2022/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Synthesizing Invariant Barrier Certificates via Difference-of-Convex Programming</title>
+      <link>https://fiction-zju.github.io/publication/wang-cav2021/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://fiction-zju.github.io/publication/wang-cav2021/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
